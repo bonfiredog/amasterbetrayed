@@ -68,6 +68,5 @@ It is an expansion and adaptation of the [Arts Council-funded](http://artscounci
 
 <div style="margin-top:4%;display:flex;justify-content:center;align-items:center;">
 <img src="http://bonfiredog.co.uk/resources/amasterbetrayed/gitrabbit.png" style="display:block;width:10%;margin:0 auto;" />
-<span style="display:block;">Rob Sherman, 2024 </span>
 </div>
 
