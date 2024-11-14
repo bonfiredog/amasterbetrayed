@@ -16,7 +16,10 @@
 
 It is an expansion and adaptation of the [Arts Council-funded](http://artscouncil.org.uk) installation created by [Rob Sherman](http://bonfiredog.co.uk) and [Hugh McCann](http://hugh-mccann.com) for the [East Looe Old Guildhall Museum & Gaol](https://www.looemuseum.co.uk/) in 2022.
 
-<div style="width:80%;margin:0 auto;display:flex;justify-content:center;align-items:center;height:400px;"><img src="http://bonfiredog.co.uk/resources/amasterbetrayed/git1.jpeg" style="width:50%;height:100%;display:block;" /><img src="http://bonfiredog.co.uk/resources/amasterbetrayed/git2.jpeg" style="width:40%;height:100%;display:block;" /></div>
+<div style="width:80%;margin:0 auto;display:flex;justify-content:center;align-items:center;height:400px;">
+<img src="http://bonfiredog.co.uk/resources/amasterbetrayed/git1.jpeg" style="width:50%;display:block;" >
+<img src="http://bonfiredog.co.uk/resources/amasterbetrayed/git2.jpeg" style="width:50%;display:block;" >
+</div>
 
 *The physical installation at East Looe Old Guildhall*.
 
@@ -24,8 +27,9 @@ It is an expansion and adaptation of the [Arts Council-funded](http://artscounci
 
 ### Credits
 
-- With thanks to Petra Stephenson, Penny McHugh and the rest of the team at the East Looe Old Gaol and Museum.
-- Physical designs and fabrication by Hugh McCann, Malcolm Taylor and John at [Co-Create Exeter]().
+- With the greatest thanks to Hugh McCann.
+- Further thanks to Petra Stephenson, Penny McHugh and the rest of the team at the East Looe Old Gaol and Museum.
+- Physical designs and fabrication by Hugh McCann, Malcolm Taylor and John at [Co-Create Exeter](https://www.cocreateexeter.co.uk/).
 - Illustrations by [Hannah Harvey](https://www.instagram.com/hannah.harvey_art) and Rob Sherman
 - Voice acting by [Kate Edney](https://www.icantalk.co.uk/Voiceover-Artist/iCan-Talk-Ltd-Kate-Edney-VoiceOver-Artist.aspx) and [Scott Fleming](http://scottflemingvoiceacademy.co.uk/about-scott/).
 
@@ -62,4 +66,8 @@ It is an expansion and adaptation of the [Arts Council-funded](http://artscounci
 
 *All third party assets have been used according to their licenses and copyrights. If you think a mistake or omission has been made, please let us know and we will correct it as soon as possible.*
 
-Rob Sherman, 2024 <img src="http://bonfiredog.co.uk/resources/amasterbetrayed/gitrabbit.png" style="display:block;width:10%;margin:0 auto;" />
+<div style="margin-top:4%;display:flex;justify-content:center;align-items:center;">
+<img src="http://bonfiredog.co.uk/resources/amasterbetrayed/gitrabbit.png" style="display:block;width:10%;margin:0 auto;" />
+<span style="display:block;">Rob Sherman, 2024 </span>
+</div>
+
