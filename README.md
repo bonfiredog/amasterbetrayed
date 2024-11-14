@@ -1,7 +1,6 @@
 <img src="http://bonfiredog.co.uk/resources/amasterbetrayed/gittitle.png" style="width:100%;height:auto;margin-bottom:4%;">
 
-### A Web-Based, Cornish Murder Mystery
-#### (Inspired By Real People, Rather Than Real Events)
+### A Web-Based Who-Never-Dunnit Set In 18th Century Cornwall
 
 ----
 
@@ -15,6 +14,8 @@
 *A Master Betrayed!* is a web-based, interactive murder mystery in which you must query the evidence, hear the testimonies of local people and decide who is responsible for Chester's death. Though fictional, it draws on archival material and workshops held with local residents, reflecting both past and present concerns at the heart of this community.
 
 It is an expansion and adaptation of the [Arts Council-funded](http://artscouncil.org.uk) installation created by [Rob Sherman](http://bonfiredog.co.uk) and [Hugh McCann](http://hugh-mccann.com) for the [East Looe Old Guildhall Museum & Gaol](https://www.looemuseum.co.uk/) in 2022.
+
+For desktop and laptop, Firefox and Chrome.
 
 <div style="width:80%;margin:0 auto;display:flex;justify-content:center;align-items:center;height:400px;">
 <img src="http://bonfiredog.co.uk/resources/amasterbetrayed/git1.jpeg" style="width:50%;display:block;" >
