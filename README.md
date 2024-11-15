@@ -1,6 +1,6 @@
 <img src="http://bonfiredog.co.uk/resources/amasterbetrayed/gittitle.png" style="width:100%;height:auto;margin-bottom:4%;">
 
-### A Web-Based Who-Never-Dunnit Set In 18th Century Cornwall
+### A Web-Based Who-Never-Dunnit Set In 18th-Century Cornwall
 
 ----
 
@@ -33,6 +33,7 @@ For desktop and laptop, Firefox and Chrome.
 - Physical designs and fabrication by Hugh McCann, Malcolm Taylor and John at [Co-Create Exeter](https://www.cocreateexeter.co.uk/).
 - Illustrations by [Hannah Harvey](https://www.instagram.com/hannah.harvey_art) and Rob Sherman
 - Voice acting by [Kate Edney](https://www.icantalk.co.uk/Voiceover-Artist/iCan-Talk-Ltd-Kate-Edney-VoiceOver-Artist.aspx) and [Scott Fleming](http://scottflemingvoiceacademy.co.uk/about-scott/).
+- QA and technical advice by [Vael Victus](https://theflowerletters.com/)
 
 ---
 
