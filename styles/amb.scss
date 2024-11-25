@@ -1,0 +1,3936 @@
+/* VARIABLE SETUP */
+
+/* FONT SETUP */
+
+@font-face {
+  font-family: 'chapbookitalic';
+  src: url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/chapbook-italic-webfont.woff2') format('woff2'),
+       url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/chapbook-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'paris';
+  src: url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/paris.woff2') format('woff2'),
+       url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/paris.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'chapbookregular';
+  src: url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/chapbook-webfont.woff2') format('woff2'),
+       url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/chapbook-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'volutesregular';
+  src: url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/volutes-webfont.woff2') format('woff2'),
+       url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/volutes-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'shlopregular';
+  src: url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/shlop_rg-webfont.woff2') format('woff2'),
+       url('https://bonfiredog.co.uk/resources/amasterbetrayed/fonts/shlop_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Monsieur+La+Doulaise&display=swap');
+
+/* BASIC SETUP */
+
+
+
+:root {
+  font-size: calc(1rem + 0.25vw);
+}
+
+html {
+  scrollbar-color: rgb(221, 191, 153) rgb(20, 20, 20);
+  scrollbar-width: thin;
+  color: rgb(21, 7, 0);
+  cursor:  url('https://bonfiredog.co.uk/resources/amasterbetrayed/media/cursor.png'), auto;	
+  width:100vw;
+  height:calc(100vh + 169vw + 87vw);
+}
+
+.oridomi-stage {
+  cursor: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/cursorgrab.png"), auto;
+}
+
+.cursorclick {
+  cursor:  url('https://bonfiredog.co.uk/resources/amasterbetrayed/media/cursorclick.png'), auto;	
+}
+
+.cursorgrab {
+  cursor:  url('https://bonfiredog.co.uk/resources/amasterbetrayed/media/cursorgrab.png'), auto;	
+}
+    
+body {
+    width: 100%;
+    font-size: 16px;
+    background-color:rgb(20, 20, 20);
+    margin: 0 auto;
+    overflow-x:hidden;
+    max-width:100vw;
+    height:calc(100vh + 169vw + 87vw);
+}
+
+h1 {
+    margin:0;
+}
+
+
+button {
+  }
+
+  #svgcanvas {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -17%;
+    opacity: 0.9;
+    z-index: 1;
+    pointer-events: none;
+    //filter: blur(1px);
+  }
+
+  #p1, #p2, #p3, #p2a, #p2c, #p2b, #p2d, #p2e, #p7, #p15, #p8, #p9, #p12, #p10, #p4, #p5, #p5c, #p5d, #p5e, #p5a, #p5b {
+    z-index:2;
+  }
+
+
+  //============================================
+  //============================================
+  //============================================ TITLE STUFF
+
+
+  .titlejump {
+    height: 100vh;
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgb(218,7,7);
+background: linear-gradient(0deg, rgba(218,7,7,1) 0%, rgba(244,141,24,1) 100%);
+  }
+
+  .maincontent {
+      position: absolute;
+      top: 100vh;
+      width: 100vw;
+      height: 257vw;
+      left: 0%;
+      z-index:15;
+      overflow:hidden;
+  }
+
+  #boardtitle h1 {
+    font-family: "IM Fell Double Pica SC", serif;
+    letter-spacing: 1vw;
+    font-size: 5vw;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    border: none;
+    left: 0%;
+    width: 100vw;
+    height: 8vw;
+    top: 35%;
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    text-shadow: -1px -1px 0px;
+  }
+
+  #boardtitle h2 {
+    font-family: "IM Fell Double Pica SC", serif;
+    letter-spacing: 0.3vw;
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    border: none;
+    left: 0%;
+    width: 100vw;
+    height: 8vw;
+    top: 56%;
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    text-shadow: -1px -1px 0px;
+  } 
+
+  #boardtop {
+      width: 100vw;
+      position: absolute;
+      height: 100vh;
+      top: 1vw;
+      left: 0%;
+      background: rgb(20, 20, 20);
+      clip-path: polygon(50vw 0vw, 0vw 30vh, 100vw 30vh);
+      z-index:0;
+      background-image:url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/wood.jpg");
+    }
+
+    #boardtopborder_left {
+      width: 55vw;
+      position: absolute;
+      height: 1vw;
+      top: 8.5vw;
+      left: -4vw;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      transform: rotate(-17deg);
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 5;
+    }
+
+    #boardtitleborder_left {
+      width: 1vw;
+      position: absolute;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      /* transform: rotate(90deg); */
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 4;
+    }
+    #mainborder_left {
+      width: 1vw;
+      position: absolute;
+      height: 562vh;
+      top: 34%;
+      left: 0%;
+      /* background: rgb(0, 0, 0); */
+      background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      /* transform: rotate(90deg); */
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 30;
+      overflow: hidden;
+    }
+
+    #boardtopborder_right {
+      width: 55vw;
+      position: absolute;
+      height: 1vw;
+      top: 8.5vw;
+      right: -4vw;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      transform: rotate(17deg);
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 5;
+    }
+
+    #boardtitleborder_right {
+      width: 1vw;
+      position: absolute;
+      height: 100%;
+      top: 0%;
+      right: 0%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      /* transform: rotate(90deg); */
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 4;
+    }
+    #mainborder_right {
+      width: 1vw;
+      position: absolute;
+      height: 562vh;
+      top: 34%;
+      right: 0%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      /* transform: rotate(90deg); */
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 30;
+    }
+
+    #boardtitleborder_top {
+      width: 100vw;
+      position: absolute;
+      height: 1vw;
+      top: 21%;
+      left: 0;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 4;
+    }
+
+    #boardtitleborder_bottom {
+      width: 100vw;
+      position: absolute;
+      height: 1vw;
+      top: 0%;
+      left: 0;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 9%, rgb(0, 0, 0) 18%, rgb(23, 23, 23) 27%, rgb(0, 0, 0) 36%, rgb(23, 23, 23) 40%, rgb(23, 23, 23) 60%, rgb(0, 0, 0) 64%, rgb(23, 23, 23) 73%, rgb(0, 0, 0) 82%, rgb(23, 23, 23) 91%, rgb(0, 0, 0) 100%);
+      box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
+      z-index: 3;
+    }
+
+
+    #boardtopborder_boss {
+      width:2vw;
+      height:1vw;
+      position: absolute;
+      top: 1vw;
+      left: 49vw;
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(23,23,23,1) 9%, rgba(0,0,0,1) 18%, rgba(23,23,23,1) 27%, rgba(0,0,0,1) 36%, rgba(23,23,23,1) 40%, rgba(23,23,23,1) 60%, rgba(0,0,0,1) 64%, rgba(23,23,23,1) 73%, rgba(0,0,0,1) 82%, rgba(23,23,23,1) 91%, rgba(0,0,0,1) 100%);
+      -webkit-box-shadow: 0px 10px 38px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 38px 8px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 38px 8px rgba(0,0,0,0.75);
+transform:rotate(90deg);
+z-index:6;
+    }
+
+
+    #boardtop_scratch {
+      width:100vw;
+      height:100vh;
+      background-size:20vw;
+      clip-path: polygon(50% 0%, -100% 100%, 200% 100%);
+      background-image:url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/scratch.png");
+      
+    } 
+
+    #boardtitle {
+      width: 100vw;
+      background-color: rgb(20, 20, 20);
+      height: 73vh;
+      position: absolute;
+      left: 0;
+      z-index: 2;
+      top: 31vh;
+      text-align: center;
+      background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/wood.jpg");
+    }
+  
+    #boardtitle_scratch {
+      width:100%;
+      height:100%;
+      background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/scratch.png");
+  background-size: 20vw;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  z-index:1;
+  position:absolute;
+  pointer-events:none;
+  top:0%;
+    }
+
+    #boardtitle_scratch h2 {
+      opacity:1;
+    }
+
+    .date {
+      font-family: "IM Fell Double Pica SC", serif;
+      letter-spacing: 0.3vw;
+      font-size: 1vw;
+      font-weight: bold;
+      background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+      color: transparent;
+      -webkit-background-clip: text;
+      border: none;
+      left: 0vw;
+      width: 15vw;
+      height: 4vw;
+      top: 6vw;
+      opacity: 0.8;
+      position: absolute;
+      text-align: center;
+      display: block;
+      z-index: 0;
+    } 
+
+    #cta_button {
+      font-family: "IM Fell Double Pica SC", serif;
+      letter-spacing: 0.2vw;
+      font-size: 3vw;
+      font-weight: bold;
+      background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+      color: transparent;
+      -webkit-background-clip: text;
+      border: none;
+      left: 42.5%;
+      width: 15vw;
+      height: 4vw;
+      top: 77%;
+      opacity: 0.8;
+      position: absolute;
+      text-align: center;
+      z-index: 0;
+    }
+
+
+   #cta_button_border {
+    background: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+    width: 15vw;
+    height: 4vw;
+    /* height: max-content; */
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 2% 98%, 2% 3%, 98% 3%, 98% 97%, 2% 97%, 0 100%, 100% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 2% 98%, 2% 3%, 98% 3%, 98% 97%, 2% 97%, 0 100%, 100% 100%, 100% 0%);
+    border: 1px solid #cb9b51;
+    position: absolute;
+    top: 77%;
+    left: 42.5vw;
+    opacity: 0.8;
+    z-index:0;
+  }
+
+
+#mondroit {
+    width: 20%;
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    opacity: 0.8;
+    z-index:4;
+  }
+
+  #mondroit img {
+    width:100%;
+    height:auto;
+    display:block;
+  }
+
+
+#boardgraffiti {
+    position: absolute;
+    width:100%;
+    height:200vh;
+    z-index: 18;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+  .rect_body { 
+    position:relative;
+    height:100%;
+    min-height:300vh;
+    overflow:hidden;
+  }
+
+.paper {
+    position:absolute;
+
+}
+
+.onboard_paper{
+  width: inherit;
+  height: inherit;
+
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+transform-style: flat;
+transition: all 500ms ease-out;
+box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.6);
+border-color: #dedede;
+transform-origin: 50% 0%;
+border: 10px double rgb(20, 20, 20);
+}
+
+.p_map {
+  width:23vw;
+  height:auto;
+}
+
+.p_pod, .p_melly, .p_kate, .p_jesse, .p_markenham, .p_penhell {
+  width:12vw;
+  height:auto;
+}
+
+.p_about {
+  width:15vw;
+  height:auto;
+}
+
+.p_front {
+  width: 12vw;
+  height: auto;
+  padding: 0%;
+}
+
+.p_wife {
+  width:11vw;
+  height:auto;
+  padding:0%;
+}
+
+.p_souvenir {
+	width: 22vw;
+	height: auto;
+	padding: 0%;
+}
+.p_cartoon {
+	width: 28vw;
+	height: auto;
+	padding: 0%;
+}
+
+.p_bill {
+	width: 15vw;
+	height: auto;
+	padding: 0%;
+}
+
+.p_weave {
+	width: 15vw;
+	height: auto;
+	padding: 0%;
+}
+
+.p_statement {
+	width: 40vw;
+	height: auto;
+	padding: 0%;
+}
+
+.p_defoe {
+  width: 12vw;
+  height: auto;
+  padding: 0%;
+}
+
+
+
+
+.p_pod_onboard, .p_melly_onboard, .p_kate_onboard, .p_jesse_onboard, .p_markenham_onboard, .p_penhell_onboard {
+background-color: rgb(252, 220, 178);
+}
+
+.p_front_onboard {
+  background-color: white;
+  padding:8%;
+  }
+
+  .p_wife_onboard {
+    background: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/paperwife.jpg");
+    padding:8%;
+    border:none;
+    }
+
+    .p_souvenir_onboard {
+      border:none;
+      }
+
+    .p_cartoon_onboard {
+
+      border: none;
+      box-shadow:none;
+    }
+
+    .p_defoe_onboard {
+      background:none;
+      border:none;
+      box-shadow:none;
+    }
+
+
+
+
+    .p_bill_onboard {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-top: -28px;
+    }
+
+    .p_statement_onboard {
+      background: none;
+      border: none;
+      box-shadow: none;
+      margin-top: -28px;
+      }
+
+
+.papershadow {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+    border-color: #dedede;
+}
+
+.c9_comeUp img {
+  width:100%;
+  height:auto;
+}
+
+.onboard_paper:hover {
+transform: perspective(400px) rotateX(3deg);
+box-shadow: 9px 9px 9px 9px rgba(0,0,0,0.3);
+}
+
+.p_statement_onboard:hover {
+  transform:rotateX(3deg);
+}
+
+.p_defoe_onboard:hover {
+  box-shadow:none;
+}
+
+.onboard_front{
+  width: inherit;
+  height: inherit;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+transform-style: flat;
+transition: all 500ms ease-out;
+box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.6);
+border-color: #dedede;
+transform-origin: 50% 0%;
+}
+
+.onboard_front:hover {
+transform: perspective(400px) rotateX(3deg);
+box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.6);
+}
+
+#wdyt:hover{
+transform: perspective(400px) rotateX(3deg);
+box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.6);
+}
+
+.paperoutline {
+    position:absolute;
+    top: 0;
+    left: 0;
+  border-radius:3%;
+    width: 100%;
+    display: none;
+}
+
+.paperoutline rect {
+  width: 100%;
+height: 100%;
+}
+
+#boardbackground {
+	width: 100%;
+	position: absolute;
+	background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/wood.jpg");
+	height: 100%;
+	z-index: 1;
+	top: 0%;
+}
+
+#boardbackgroundscratch {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/scratch.png");
+    background-size: 20vw;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+    top: 0%;
+}
+
+#p2 {
+	top: 30.4%;
+	left: 81%;
+	transform: rotate(5deg);
+}
+
+#p2a {
+	top: 40.6%;
+	left: 58.5%;
+	transform: rotate(1deg);
+}
+
+
+#p2b {
+	top: 33%;
+	left: 6%;
+	transform: rotate(-7deg);
+}
+
+#p2c {
+	top: 28.9%;
+	left: 2%;
+	transform: rotate(7deg);
+}
+
+#p2d {
+	top: 23.7%;
+	left: 84%;
+	transform: rotate(-2deg);
+}
+
+#p2e {
+	top: 39%;
+	left: 35%;
+	transform: rotate(1deg);
+}
+
+#p1 {
+  top:55%;
+  left: 0%;
+  transform: rotate(38deg);
+  z-index:1;
+}
+
+#p4 {
+  top:1.8%;
+  left: 5%;
+  transform: rotate(3deg);
+}
+
+#p7 {
+  top:3%;
+  left: 22%;
+  transform: rotate(-1deg);
+}
+
+#p15 {
+	top: 50.6%;
+	left: 76%;
+	transform: rotate(26deg);
+}
+
+#p16 {
+	top: 45%;
+	left: 15%;
+	transform: rotate(0deg);
+	z-index: 50;
+}
+
+#frag1 {
+	width: 82%;
+	font-size: 1.4vw;
+	top: 6%;
+	left: 6%;
+	/* transform: skew(38deg) rotate(4deg); */
+	/* font-weight: bold; */
+}
+
+#rabbitbottom {
+	position: absolute;
+	top: -19.5%;
+	left: 67%;
+	z-index: 2;
+	width: 47%;
+	opacity: 0.9;
+	pointer-events: none;
+	height: 50%;
+	transform: rotate(10deg);
+}
+
+#frag2 {
+	width: 25%;
+	font-size: 1.4vw;
+	top: 15%;
+	left: 6%;
+	transform: skew(30deg) rotate(-2deg);
+	/* font-weight: bold; */
+}
+#frag3 {
+	width: 36%;
+	font-size: 1.4vw;
+	top: 34%;
+	left: 6%;
+	transform: skew(10deg) rotate(1deg);
+}
+
+#frag3a {
+	width: 47%;
+	font-size: 1.4vw;
+	top: 35%;
+	left: 70%;
+	transform: skew(10deg) rotate(98deg);
+}
+
+#thankyou h1 {
+margin-top:51%;
+}
+
+#frag4 {
+	width: 35%;
+	font-size: 1.4vw;
+	top: 12%;
+	left: 33%;
+	transform: skew(23deg) rotate(-4deg);
+}
+
+#frag5 {
+	width: 40%;
+	font-size: 1.4vw;
+	top: 39%;
+	left: 66%;
+	transform: skew(17deg) rotate(102deg);
+}
+
+#frag6 {
+	width: 49%;
+	font-size: 1.4vw;
+	top: 43%;
+	left: 13%;
+	transform: skew(38deg) rotate(0deg);
+}
+
+#frag7 {
+	width: 30%;
+	font-size: 1.4vw;
+	top: 59%;
+	left: 6%;
+	transform: skew(-4deg) rotate(10deg);
+}
+
+#frag8 {
+	width: 35%;
+	font-size: 1.5vw;
+	top: 77%;
+	left: 6%;
+	transform: skew(-13deg) rotate(-4deg);
+}
+
+#frag9 {
+	width: 39%;
+	font-size: 1.6vw;
+	top: 66%;
+	left: 38%;
+	transform: skew(10deg) rotate(3deg);
+}
+
+#frag10 {
+	width: 30%;
+	font-size: 1.6vw;
+	top: 77%;
+	left: 67%;
+	transform: skew(-27deg) rotate(0deg);
+}
+#frag11 {
+	width: 24%;
+	font-size: 1.5vw;
+	top: 43%;
+	left: 63%;
+	transform: skew(30deg) rotate(4deg);
+}
+#frag12 {
+	width: 39%;
+	font-size: 1.4vw;
+	top: 25%;
+	left: 42%;
+	transform: skew(14deg) rotate(-7deg);
+}
+
+#p8 {
+	top: 3%;
+	left: 42%;
+	transform: rotate(0deg);
+}
+
+#p9 {
+	top: 1.8%;
+	left: 75%;
+	transform: rotate(7deg);
+}
+
+#p10 {
+	top: 12.5%;
+	left: 16%;
+	transform: rotate(-3deg);
+  z-index:2;
+}
+
+  #p12 {
+    top: 16.9%;
+    left: 9%;
+    transform: rotate(-6deg);
+    z-index:3;
+}
+
+#p3 {
+	top: 11.5%;
+	left: 64%;
+	transform: rotate(-8deg);
+}
+
+.nail {
+	border-radius: 50%;
+	background-color: darkgoldenrod;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	left: 50%;
+	top: 2%;
+	z-index: 50;
+	box-shadow: 4px 3px rgba(0,0,0,0.5);
+}
+
+.nailinner {
+	border-radius: 50%;
+	background-color: #caac63;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	left: 48%;
+	top: 12%;
+	z-index: 7;
+}
+
+.tri_header {
+  width: 100%;
+  height: 50vh;
+  background-color: red;
+}
+
+.flyOff {
+  top:200vh;
+}
+
+.ev_hand {
+  font-family: 'Allison', cursive;
+}
+
+
+//========================================================
+//========================================================
+//======================================================== MAP CONTENT
+
+
+.captionbox {
+	top: 500vh;
+	transition: top 1s, left, 1s, transform 1s, font-size 0.5s, opacity 0.5s;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgb(221, 191, 153);
+	position: absolute;
+  z-index:250;
+  color:rgb(20, 20, 20);
+  border: double 10px rgb(20, 20, 20);
+  font-size:1.8vw;
+  font-weight:normal;
+  padding:1%;
+  font-family:'Allison', cursive;
+}
+
+#morval_caption {
+  width:15vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+  
+}
+
+.morvalcaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.morvalcaptionon {
+	top: 31vw;
+	left: 15vw;
+	transform: rotate(10deg);
+}
+
+#wenna_caption {
+  width:19vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.wennacaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:4000px;
+}
+
+.wennacaptionon {
+	top: 36vw;
+	left: -20vw;
+	transform: rotate(-13deg);
+}
+
+#cove_caption {
+  width:16vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.covecaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.covecaptionon {
+	top: -5vw;
+	left: -21vw;
+	transform: rotate(-6deg);
+}
+
+#torpoint_caption {
+  width:14vw;
+  height:auto;  
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.torpointcaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.torpointcaptionon {
+	top: 24vw;
+	left: -23vw;
+	transform: rotate(-2deg);
+}
+
+#cliffs_caption {
+  width:15vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.cliffscaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.cliffscaptionon {
+	top: 13vw;
+	left: -1vw;
+	transform: rotate(5deg);
+}
+
+#house_caption {
+  width:14vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.housecaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.housecaptionon {
+	top: 10vw;
+	left: -24vw;
+	transform: rotate(14deg);
+}
+
+#pub_caption {
+  width:15vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.pubcaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.pubcaptionon {
+	top: 27vw;
+	left: -4vw;
+	transform: rotate(12deg);
+}
+
+#duloe_caption {
+  width:17vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.duloecaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.duloecaptionon {
+	top: 37vw;
+	left: 3vw;
+	transform: rotate(-14deg);
+}
+
+#well_caption {
+  width:22vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.wellcaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.wellcaptionon {
+	top: -2vw;
+	left: 2vw;
+	transform: rotate(-10deg);
+}
+
+#shutta_caption {
+  width:11vw;
+  height:auto;
+  transition:top 1.2s, left 1,2s, transform 1.2s;
+}
+
+.shuttacaptionoff {
+  transform:rotate(300deg);
+  top:-4000px;
+  left:-4000px;
+}
+
+.shuttacaptionon {
+	top: 24vw;
+	left: 27vw;
+	transform: rotate(5deg);
+}
+
+.comeup_map {
+  width:59vw;
+  height:max-content;
+  left:25vw;
+  top:500vh;
+  transition: top 250ms, transform 500ms;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeup_map img {
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  transition: transform 0.15s ease-in-out;
+}
+
+.clickmap {
+  transform:scale(120%);
+}
+
+.comeupcap_map {
+	width: 17vw;
+	height: 10vw;
+	top: 500vh;
+	left: 61vw;
+	transform: rotate(20deg);
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+	
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeupcap_cartoon {
+	width: 27vw;
+	height: 10vw;
+	top: 500vh;
+	left: 61vw;
+	transform: rotate(20deg);
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border: 16px double rgb(20, 20, 20);
+	background-color: rgb(221, 191, 153);
+}
+
+.comeupcap_bill {
+	width: 27vw;
+	height: 10vw;
+	top: 500vh;
+	left: 61vw;
+	transform: rotate(20deg);
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border: 16px double rgb(20, 20, 20);
+	background-color: rgb(221, 191, 153);
+}
+
+.comeupcap_souvenir{
+	width: 27vw;
+	height: 10vw;
+	top: 500vh;
+	left: 61vw;
+	transform: rotate(20deg);
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border: 16px double rgb(20, 20, 20);
+	background-color: rgb(221, 191, 153);
+}
+
+.comeupcap_weave{
+	width: 27vw;
+	height: 10vw;
+	top: 500vh;
+	left: 61vw;
+	transform: rotate(20deg);
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border: 16px double rgb(20, 20, 20);
+	background-color: rgb(221, 191, 153);
+}
+
+.comeupcap_statement {
+	width: 32vw;
+	height: 10vw;
+	top: 500vh;
+	left: 61vw;
+	transform: rotate(20deg);
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border: 16px double rgb(20, 20, 20);
+	background-color: rgb(221, 191, 153);
+}
+
+.statement_frag {
+  position:absolute;
+  top:0;
+  left:0;
+  font-family: "Allison", cursive;
+  font-weight: bold;
+}
+
+
+.c3_comeUp {
+    top:6vh;
+    transform: rotate(-5deg);
+    border:none;
+}
+
+.comeup_front {
+  width:39vw;
+  height:90vh;
+  left:25vw;
+  top:500vh;
+  }
+
+  .comeup_cartoon {
+    left: 13vw;
+    top: 500vh;
+  }
+
+  .comeup_bill {
+    top: 500vh;
+    transform: rotate(3deg);
+    border: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    width: 67vw;
+    height: 57vw;
+    left: 7vw;
+  }
+
+  .comeup_defoe {
+    top:500vh;
+    left:7vw;
+    transform:rotate(100deg);
+  }
+
+  .comeup_souvenir {
+    top:500vh;
+    left:7vw;
+    transform:rotate(-5deg);
+  }
+
+  
+  .comeup_weave {
+    top:500vh;
+    left:7vw;
+    transform:rotate(-5deg);
+  }
+
+
+  .comeup_defoe img {
+    width:100%;
+  }
+
+  .comeup_bill img {
+    width:100%;
+    height:auto;
+  }
+
+  .comeup_statement {
+    top: 500vh;
+    transform: rotate(3deg);
+    border: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    width: 67vw;
+    height: 57vw;
+    left: 7vw;
+  }
+
+  .comeup_statement img {
+    width:100%;
+    height:auto;
+  }
+
+  .comeup_wife {
+    width: 31vw;
+    height: 82vh;
+    left: 30vw;
+    top: 500vh;
+    font-family: "Ruthie", cursive;
+    line-height: 137%;
+    font-size: 1.8vh;
+    word-spacing: 0rem;
+    color: #3a3535;
+    font-weight: normal;
+    transition: font-size 0.75s, font-family 0.75s, opacity 0.5s;
+  }
+
+  .comeup_souvenir {
+    width: 31vw;
+    height: 82vh;
+    left: 30vw;
+    top: 500vh;
+    font-family: "Ruthie", cursive;
+    line-height: 100%;
+    font-size: 1.4rem;
+    word-spacing: 0rem;
+    color: #3a3535;
+    font-weight: normal;
+    transition:font-size 0.75s, font-family 0.75s, opacity 0.5s;
+  }
+
+
+  .wifeline {
+    transition: opacity 0.5s;
+  }
+
+  .right {
+    text-align:right;
+    display:block;
+  }
+
+  .fm_top {
+    width: 100%;
+      border: 1vw double rgb(20, 20, 20);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      margin: -30px;
+  background-image:url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/paperblurb.png");
+  padding:18%;
+  padding-top:0%;
+  padding-bottom:0%;
+  }
+
+  #ul {
+      display: inline-block;
+      text-decoration-color: #b40d36;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-thickness: 6%;
+
+  }
+
+.c4_comeUp {
+  top:6vh;
+  transform: rotate(3deg);
+  border:none;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.c8_comeUp {
+	top: 4vh;
+	transform: rotate(3deg);
+	border: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: auto;
+	height: 81vh;
+	left: 4vw;
+}
+.comeup_caption h2 {
+  margin:0 auto;
+  font-size:2.3vw;
+  transition: font-size 0.5s, opacity 0.5s;
+  font-weight:normal;
+}
+
+.comeup_caption h3 {
+  font-weight:normal;
+}
+
+.comeup_caption ul {
+  transition: font-size 0.5s,opacity 0.5s;
+  font-size:1.8vw;
+}
+
+.comeup_caption p {
+  font-size:1.8vw;
+  transition: font-size 0.5s,opacity 0.5s;
+}
+
+.magnify{
+  border-radius: 50%;
+  border: 2px solid rgb(20, 20, 20);
+  position: absolute;
+  z-index: 20;
+  background-repeat: no-repeat;
+  background-color: white;
+  box-shadow: inset 0 0 20px rgba(0,0,0,.5);
+  display: none;
+}
+
+.c9_comeUp {
+	top: 18vh;
+	transform: rotate(3deg);
+	border: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 67vw;
+	height: 57vw;
+	left: 7vw;
+}
+
+.c10_comeUp {
+	top: 9vh;
+	transform: rotate(-10deg);
+	border: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 67vw;
+	height: 43vw;
+	left: 17vw;
+}
+
+#c10 {
+  transition: all 0.5s;
+}
+
+.c12_comeUp {
+	top: 0vh;
+	transform: rotate(-10deg);
+	border: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 40vw;
+	height: auto;
+	left: 3vw;
+}
+
+.c15_comeUp {
+	top: 9vh;
+	transform: rotate(-10deg);
+	border: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 67vw;
+	height: auto;
+	left: 3vw;
+}
+
+.c16_comeUp {
+	top: -7vh;
+	transform: rotate(3deg);
+	border: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 44vw;
+	height: auto;
+	left: 15vw;
+}
+
+.c16_comeUp img {
+  width:100%;
+}
+
+#p16 .nail {
+  left:43%;
+}
+
+.cc16_comeUp {
+	top: 48vh;
+	transform: rotate(3deg);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 31vw;
+	height: auto;
+	left: 59vw;
+}
+
+.markfront {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition:transform ease-out 1s;
+  width:100%;
+}
+
+.markback {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	transition: transform ease-out 1s;
+  width:100%;
+}
+
+.markflip {
+  transform: rotateY(-360deg) !important;
+}
+
+.markflipback {
+  transform: rotateY(-180deg) !important;
+}
+
+.cc12_comeUp {
+	top: 5vh;
+	transform: rotate(13deg);
+	border: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 40vw;
+	height: auto;
+	left: 52vw;
+}
+
+.cc15_comeUp {
+	top: 20vh;
+	transform: rotate(13deg);
+	border: double 1vw rgb(20, 20, 20);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	width: 28vw;
+	height: auto;
+	left: 62vw;
+	font-weight: lighter;
+}
+
+#cc12 img {
+  width:100%;
+}
+
+.statementouter {
+    width: 100%;
+    margin-left: 35%;
+}
+
+.statementinner {
+  width:100%;
+  height:100%;
+}
+
+.c8_comeUp img {
+  height:100%;
+}
+
+.c7_comeUp {
+  top:8vh;
+  transform: rotate(-1deg);
+}
+
+.fm_top h1 {
+	font-family: 'IM Fell DW Pica';
+	font-weight: normal;
+  width:100%;
+  text-align:center;
+  font-size: 3.5vw;
+  padding-top: 2vw;
+}
+
+.fm_top h4 {
+  font-family: 'IM Fell DW Pica';
+	font-weight: normal;
+
+  width:100%;
+  text-align:center;
+  font-size: 1.7vw;
+  margin:0 auto;
+}
+
+
+.cc3_comeUp {
+  top:42vh;
+  transform:rotate(5deg);
+  left:74vw;
+  border: double 1vw rgb(20, 20, 20);
+  background-color: rgb(221, 191, 153);
+  color:rgb(20, 20, 20);
+  font-weight:lighter;
+}
+
+
+.p_map_onboard {
+  background-color: rgb(252, 220, 178);
+}
+
+figure.folded {
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:
+    0.2em 0.2em 0.8em 0.2em
+    rgba(76, 53, 73, 0.4);
+}
+
+img.fold-me-please {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:
+    hue-rotate(0deg)
+    saturate(1)
+    brightness(1)
+    contrast(1)
+    opacity(1);
+  mix-blend-mode:normal;
+  image-rendering:high-quality;
+  transform:scale(1);
+  visibility:visible;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+span.folds {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  display:grid;
+  grid-template-columns:auto auto auto auto auto;
+}
+
+span.cell {
+  border:0px solid rgba(30, 10, 60, 0.4);
+  font-size:1em;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+.fold-me-please {
+  background-color:rgb(252, 220, 178)
+}
+
+/* MAIN */
+span.main {
+  visibility:visible;
+  filter:opacity(1);
+}
+
+span.main-1 {
+  background-image: 
+    linear-gradient(
+     to right,
+      rgba(76, 53, 73, 0.20) 0%,
+      rgba(76, 53, 73, 0.10) 100%
+    );
+  }
+
+span.main-2 {
+  background-image: 
+    linear-gradient(
+      to right,
+      rgba(76, 53, 73, 0.04) 0%,
+      rgba(76, 53, 73, 0.00) 100%
+    );
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+/* VERTICAL */
+span.vertical {
+  visibility:visible;
+  filter:opacity(1);
+}
+
+span.vertical-1 {
+  background-image: 
+    linear-gradient(
+     to right,
+      rgba(76, 53, 73, 0.08) 0%,
+      rgba(76, 53, 73, 0.02) 20%,
+      rgba(76, 53, 73, 0.00) 60%,
+      rgba(76, 53, 73, 0.16) 94%,
+      rgba(76, 53, 73, 0.10) 98%,
+      rgba(76, 53, 73, 0.06) 100%
+    );
+}
+
+span.vertical-2 {
+  background-image: 
+    linear-gradient(
+     to right,
+      rgba(76, 53, 73, 0.06) 0%,
+      rgba(76, 53, 73, 0.10) 2%,
+      rgba(76, 53, 73, 0.16) 6%,
+      rgba(76, 53, 73, 0.00) 40%,
+      rgba(76, 53, 73, 0.02) 100%
+    );
+}
+
+span.vertical-3 {
+  background-image: 
+    linear-gradient(
+     to right,
+      rgba(76, 53, 73, 0.30) 0%,
+      rgba(76, 53, 73, 0.24) 2%,
+      rgba(76, 53, 73, 0.15) 5%,
+      rgba(76, 53, 73, 0.00) 28%,
+      rgba(76, 53, 73, 0.00) 60%,
+      rgba(76, 53, 73, 0.16) 94%,
+      rgba(76, 53, 73, 0.10) 98%,
+      rgba(76, 53, 73, 0.06) 100%
+    );
+}
+
+span.vertical-4 {
+  background-image: 
+    linear-gradient(
+     to right,
+      rgba(76, 53, 73, 0.06) 0%,
+      rgba(76, 53, 73, 0.10) 2%,
+      rgba(76, 53, 73, 0.16) 6%,
+      rgba(76, 53, 73, 0.00) 40%,
+      rgba(76, 53, 73, 0.02) 100%
+    );
+}
+
+span.vertical-5 {
+  background-image: 
+    linear-gradient(
+     to right,    
+      rgba(76, 53, 73, 0.30) 0%,
+      rgba(76, 53, 73, 0.24) 2%,
+      rgba(76, 53, 73, 0.15) 5%,
+      rgba(76, 53, 73, 0.00) 28%,
+      rgba(76, 53, 73, 0.02) 100%      
+    );
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+
+/* HORIZONTAL */
+span.horizontal {
+  visibility:visible;
+  filter:opacity(1);
+}
+
+span.horizontal-1 {
+  background-image: 
+    linear-gradient(
+     to bottom,
+      rgba(76, 53, 73, 0.02) 0%,
+      rgba(76, 53, 73, 0.00) 72%,
+      rgba(76, 53, 73, 0.15) 95%,
+      rgba(76, 53, 73, 0.24) 100%
+    );
+}
+
+span.horizontal-2 {
+  background-image: 
+    linear-gradient(
+     to bottom,
+      rgba(76, 53, 73, 0.02) 0%,
+      rgba(76, 53, 73, 0.00) 60%,
+      rgba(76, 53, 73, 0.22) 96%,
+      rgba(76, 53, 73, 0.08) 100%
+    );
+}
+
+span.horizontal-3 {
+  background-image: 
+    linear-gradient(
+     to top,
+      rgba(76, 53, 73, 0.08) 0%,
+      rgba(76, 53, 73, 0.00) 40%,
+      rgba(76, 53, 73, 0.14) 100%
+    );
+}
+
+span.horizontal-4 {
+  background-image: 
+    linear-gradient(
+     to top,
+      rgba(76, 53, 73, 0.02) 0%,
+      rgba(76, 53, 73, 0.00) 60%,
+      rgba(76, 53, 73, 0.18) 94%,
+      rgba(76, 53, 73, 0.02) 100%
+    );
+}
+
+.maphs {
+	border-radius: 50%;
+  position:absolute;
+  z-index:200;
+}
+
+.maphs span {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: "Allison", serif;
+	color: #b40d36;
+	font-size: 2vw;
+  font-weight:bolder;
+}
+
+.red {
+  color:#b40d36;
+  font-weight:bold;
+}
+
+#morval {
+	top: 5%;
+	left: 62%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#wenna {
+	top: 16%;
+	left: 54%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#torpoint{
+	top: 11%;
+	left: 83%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#cove {
+	top: 28%;
+	left: 68%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#cliffs {
+	top: 33%;
+	left: 60%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#house {
+	top: 33%;
+	left: 52%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#pub {
+	top: 42%;
+	left: 33%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#duloe {
+	top: 6%;
+	left: 10%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#shutta {
+	top: 29%;
+	left: 34%;
+	width: 5vw;
+	height: 5vw;
+}
+
+#well {
+	top: 16%;
+	left: 61%;
+	width: 5vw;
+	height: 5vw;
+}
+
+//========================================================
+//========================================================
+//======================================================== 3D OBJECT CONTENT
+
+.p_threedee {
+    width: 30vw;
+    height: auto;
+  }
+
+  #p5 {
+    top: 25.4%;
+    left: 33%;
+    transform: rotate(-2deg);
+  }
+
+  #p5a {
+    top: 30.2%;
+    left: 26%;
+    transform: rotate(7deg);
+  }
+
+  #p5b {
+    top: 30.3%;
+    left: 47.8%;
+    transform: rotate(-8deg);
+  }
+
+  #p5c {
+    top: 23.2%;
+    left: 60%;
+    transform: rotate(12deg);
+    width: 20vw;
+    height: auto;
+  }
+
+  #p5d {
+    top: 22.3%;
+    left: 42.1%;
+    transform: rotate(7deg);
+    width: 20vw;
+    height: 12vw;
+  }
+  #p5e {
+    top: 24.7%;
+    left: 24.5%;
+    transform: rotate(-6deg);
+    width: 20vw;
+    height: 12vw;
+  }
+
+.p_threedee_onboard {
+	background-color: rgb(252, 220, 178);
+}
+
+.p_threedee_onboard iframe {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+.comeup_threedee {
+	width: 68vw;
+	height: 40vw;
+	left: 13vw;
+	top: 500vh;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgb(221, 191, 153);
+	border: 1vw double rgb(20, 20, 20);
+}
+
+.comeup_threedee iframe {
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+.comeupcap_threedee {
+	width: 25vw;
+	height: 16vw;
+	left: 13vw;
+	top: 500vh;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgb(221, 191, 153);
+	border: 1vw double rgb(20, 20, 20);
+	font-weight: lighter;
+}
+
+
+.comeupcap_threedee li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.comeupcap_threedee li:before {
+  padding-right: 5px;
+}
+
+.c5_comeUp, .c5a_comeUp, .c5b_comeUp, .c5c_comeUp, .c5d_comeUp, .c5e_comeUp {
+	top: 2vh;
+	transform: rotate(1deg);
+	left: 8vw;
+}
+
+.cc5_comeUp, .cc5a_comeUp, .cc5b_comeUp, .cc5c_comeUp, .cc5d_comeUp, .cc5e_comeUp  {
+	top: 59vh;
+	transform: rotate(-9deg);
+	left: 60vw;
+}
+
+.cc8_comeUp {
+	top: 5vh;
+	transform: rotate(-5deg);
+	left: 63vw;
+}
+
+.cc9_comeUp {
+	top: 5vh;
+	transform: rotate(-5deg);
+	left: 63vw;
+}
+
+.cc10_comeUp {
+	top: 42vh;
+	transform: rotate(-5deg);
+	left: 61vw;
+}
+
+
+
+//========================================================
+//========================================================
+//======================================================== CHARACTER CONTENT
+
+
+.comeup_pod, .comeup_melly, .comeup_kate, .comeup_jesse, .comeup_markenham, .comeup_penhell {
+  width:30vw;
+  height:44vw;
+  left:13vw;
+  top:500vh;
+}
+
+.comeup_markenham {
+  height:48vw;
+}
+
+.comeup_about1,
+.comeup_about2,
+.comeup_about3,
+.comeup_about4,
+.comeup_about5,
+.comeup_about6,
+.comeup_about7,
+.comeup_about8 {
+  transition: top 500ms, left 500ms, transform 500ms;
+}
+
+.comeup_about1 {
+  width:15vw;
+  left:13vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeup_about2 {
+  width:34vw;
+  left:55vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeup_about3 {
+  width: 17vw;
+  left:2vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.about_fallen {
+    width: 10vw;
+    height: 200px;
+    position: absolute;
+    left: 59%;
+    top: 10%;
+}
+
+
+.comeup_about4 {
+  width:21vw;
+  left:60vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeup_about5 {
+  width:35vw;
+  left:30vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeup_about6 {
+  width:40vw;
+  left:30vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeup_about7 {
+  width:50vw;
+  left:30vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeup_about8 {
+  width:24vw;
+  left:30vw;
+  top:500vh;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+
+
+
+
+
+.comeupcap_pod, .comeupcap_melly, .comeupcap_kate, .comeupcap_jesse, .comeupcap_markenham, .comeupcap_penhell {
+	width: 38vw;
+	height: 26vw;
+	top: 500vh;
+	left: 61vw;
+	transform: rotate(20deg);
+	left: 61vw;
+	transform: rotate(20deg);
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: rgb(221, 191, 153);
+  border: 1vw double rgb(20, 20, 20);
+}
+
+.comeupcap_markenham h2{
+  font-size:2.6vw;
+}
+
+.comeuptran_pod, .comeuptran_melly, .comeuptran_kate, .comeuptran_jesse, .comeuptran_markenham, .comeuptran_penhell {
+	width: 25vw;
+	height: 18vw;
+	top: 500vh;
+	left: 11vw;
+	transform: rotate(20deg);
+	left: 61vw;
+	transition: top ease-out 750ms, transform ease-out 1000ms;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.comeupcap_pod h2, .comeupcap_melly h2 {
+  font-size: 2.5rem;
+  color: #b40d36;
+margin: 0 auto; 
+}
+
+.comeupcap_pod h3, .comeupcap_melly h3 {
+  font-size: 2rem;
+  margin:0 auto;
+}
+
+.comeup_caption hr {
+	height: 2px;
+	background-color: #b40d36;
+	border: none;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.comeup_caption h3 {
+  transition: font-size 0.5s, opacity 0.5s;
+}
+
+.comeup_cartoon {
+
+}
+
+.c1_comeUp {
+	top: 2vh;
+	transform: rotate(-5deg);
+	left: 1vw;
+}
+
+.c2_comeUp, .c2a_comeUp, .c2b_comeUp, .c2c_comeUp, .c2d_comeUp, .c2e_comeUp {
+  top:5vh;
+}
+
+.c2d_comeUp {
+  top:2vh;
+}
+
+.cc1_comeUp {
+	top: 61vh;
+	transform: rotate(8deg);
+	left: 56vw;
+}
+
+.cc2_comeUp, .cc2a_comeUp, .cc2b_comeUp, .cc2c_comeUp, .cc2d_comeUp, .cc2e_comeUp {
+  top: 48vh;
+  transform:rotate(8deg);
+  left:49vw;
+  }
+
+  .ccc1_comeUp {
+    top: 7vh;
+    transform: rotate(37deg);
+    left: 35vw;
+  }
+
+  .ccc12_comeUp {
+    top: 61vh;
+    transform: rotate(-5deg);
+    left: 68vw;
+  }
+
+
+  .p_about_onboard {
+    border:none;
+    box-shadow:none;
+  }
+
+  .p_about_onboard:hover {
+    border:none;
+    box-shadow:none;
+    transform: none;
+  }
+
+
+  .cccc1_comeUp {
+    top: 46vh;
+    transform: rotate(8deg);
+    left: 13vw;
+  }
+
+      .ccccc1_comeUp {
+        top: 0vh;
+        transform:rotate(8deg);
+        left:50vw;
+        }
+
+        .cccccc1_comeUp {
+          top: 47vh;
+          transform:rotate(-10deg);
+          left:21vw;
+          }
+
+          .ccccccc1_comeUp {
+            top: 10vh;
+            transform:rotate(15deg);
+            left:5vw;
+            }
+
+            .cccccccc1_comeUp {
+              top: 60vh;
+              transform:rotate(2deg);
+              left:70vw;
+              }
+
+
+.transflip {
+	width: 70%;
+	height: 100%;
+	background-color: red;
+	z-index: 3;
+	position: absolute;
+	left: 30%;
+	background-color: rgb(221, 191, 153);
+	transform: scaleX(-1);
+}
+
+.ccc2_comeUp,.ccc2a_comeUp, .ccc2b_comeUp, .ccc2c_comeUp, .ccc2d_comeUp, .ccc2e_comeUp {
+	top: 42vh;
+	transform: rotate(-9deg);
+	left: 54vw;
+}
+
+.ff1_comeUp {
+    top:5vh;
+    transform: rotate(0deg);
+}
+
+.fm_top h4 {
+  font-family: "chapbook", serif;
+  font-size:1.7vw;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+  line-height:168%;
+  font-weight:normal;
+}
+
+.fm_top h5 {
+	font-family: "IM Fell DW Pica", serif;
+	font-size: 1.5vw;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 168%;
+	font-weight: normal;
+	letter-spacing: 0vw;
+}
+
+#p5a, #p5b {
+  z-index:1;
+}
+
+#details_title {
+  width: 70%;
+  text-align: center;
+  font-size: 1.7vw;
+  margin-bottom:2vw;
+  line-height:121%;
+}
+
+.hrlittle {
+width:30%;
+height:auto;
+margin: 0 auto;
+display:block;
+margin-top:1vw;
+margin-bottom:1vw;
+}
+
+
+
+.details {
+width: 70%;
+text-align: center;
+font-size: 1.4vw;
+font-family: "chapbook", serif;
+line-height:121%;
+}
+
+h6 {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.4vw;
+	font-family: "chapbook", serif;
+	font-weight: lighter;
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+}
+
+.datefm {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.threedeeloadingsign {
+	font-family: "chapbookitalic", serif;
+	font-size: 4rem;
+	color: #b40d36;
+	width: 100%;
+	position: absolute;
+	left: 0%;
+	top: 46%;
+	z-index: 50;
+	text-align: center;
+}
+
+.h7 {
+  width: 37%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "chapbook", serif;
+}
+
+.eml {
+  font-family: "chapbookitalic", serif;
+}
+
+.foldhr {
+    width: 66%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.underline {
+    display: inline;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-family:"chapbookitalic", serif;
+}
+
+#fmimgbox {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: max-content;
+	gap: 2vw;
+}
+
+#fmimgbox .img1 {
+width:22%;
+}
+
+#fmimgbox .img2 {
+  width:40%;
+}
+
+.ff1_comeUp img {
+	width: 92%;
+	position: absolute;
+	left: 4%;
+	top: 4%;
+}
+
+.char_comeup_pic {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position:relative;
+    z-index:29;
+}
+
+.char_comeup_legend {
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  height: 20%;
+}
+
+.audiocontainer {
+	width: 76%;
+	position: absolute;
+	bottom: 5%;
+	left: 10%;
+	height: 100%;
+	transform: rotate(-3deg);
+}
+
+.playbutton {
+	width: 3.6vw;
+	height: 3.6vw;
+	font-family: "chapbookitalic", serif;
+	color: #b40d36;
+	font-weight: bold;
+	font-size: 7vw;
+	position: absolute;
+	top: 25%;
+	left: 11%;
+	border: 6px double;
+	border-radius: 50%;
+	padding: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  box-shadow: 2px 2px 2px;
+  transition: box-shadow 0.5s;
+}
+
+.playbutton span {   
+    position: absolute;
+    top: -73%;
+}
+.playbutton img {
+	width: 84%;
+	height: auto;
+}
+
+.pausebutton {
+	width: 3.6vw;
+	height: 3.6vw;
+	font-family: "IM Fell Double Pica SC", serif;
+	color: #b40d36;
+	font-weight: bold;
+	font-size: 2.2rem;
+	position: absolute;
+	top: 26%;
+	left: 41%;
+	border: 6px double;
+	border-radius: 50%;
+	padding-top: 1%;
+	/* font-style: italic; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  box-shadow: 2px 2px 2px;
+  transition: box-shadow 0.5s;
+}
+
+.restartbutton {
+	width: 3.6vw;
+	height: 3.6vw;
+	font-family: "IM Fell Double Pica SC", serif;
+	color: #b40d36;
+	font-weight: bold;
+	font-size: 2.2rem;
+	position: absolute;
+	top: 26%;
+	left: 70%;
+	border: 6px double;
+	border-radius: 50%;
+	padding-top: 1%;
+	/* font-style: italic; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  box-shadow: 2px 2px 2px;
+  transition: box-shadow 0.5s;
+}
+
+.restartbutton:hover, .playbutton:hover, .pausebutton:hover {
+  box-shadow: 0px 0px 0px;
+}
+
+.positionindicator {
+  width: 100%;
+  position:absolute;
+  top:19%;
+  left:0%;
+  height:20px;
+
+}
+
+#positionnub {
+	width: max-content;
+	font-family: "chapbookitalic", serif;
+	font-size: 3rem;
+	color: #b40d36;
+	height: max-content;
+}
+
+#positionnub img {
+  width:100%;
+}
+
+.positionline {
+  width:100%;
+  height:4px;
+  background-color:#b40d36;
+  position: absolute;
+  top:0.9vw;
+}
+
+.audiotranscript {
+  width:100%;
+  height:100%;
+  border: double 1vw rgb(20, 20, 20);
+  background-color: rgb(221, 191, 153);
+  }
+
+  .transpeek {
+    font-family: "georgia", serif;
+    font-size: 20px;
+    width: 40%;
+    height: 100%;
+    word-wrap: break-word;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-right: 2%;
+  }
+
+  .audiotranscript .papermottle {
+    z-index:4;
+  }
+
+  .transactual {
+    width: 86%;
+    font-family: "Georgia", serif;
+    position: absolute;
+    left: 4%;
+    top: 44%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    font-size: 1.6rem;
+    font-family: "Allison", cursive;
+    scrollbar-color: rgb(20, 20, 20) #ddbf99;
+    scrollbar-width: thin;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .trans {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+  }
+
+  .transbackground {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 266px;
+      z-index: -5;
+  }
+
+.threedee_preview {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.subtitles {
+
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: rgb(221, 191, 153);
+  border: 1vw double rgb(20, 20, 20);
+  backface-visibility: hidden;
+  transition: transform ease-out 1s;
+  position: absolute;
+	top: 0;
+	left: 0;
+    font-family: "chapbookregular", serif;
+    font-size: 1.5vw;
+
+    overflow-y: scroll;
+    scrollbar-width: 3rem;
+ scrollbar-color: rgb(20, 20, 20) #ddbf99;
+
+	font-style: italic;
+	padding: 6%;
+	width: 92%;
+	height: 92%;
+  }
+
+  .st_downarrow {
+    transform: rotate(90deg);
+    color: #b40d36;
+    font-size: 3vw;
+    position: absolute;
+    top: 92%;
+    left: 47%;
+    font-family: "chapbookregular", serif;
+    transition: opacity 0.5s;
+  }
+
+.player {
+	width: 100%;
+	height: 100%;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgb(221, 191, 153);
+	border: 1vw double rgb(20, 20, 20);
+	backface-visibility: hidden;
+	transition: transform ease-out 1s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.stflipforward {
+  transform:rotateY(-360deg);
+  pointer-events: all;
+}
+
+.stflipback {
+  transform:rotateY(-180deg);
+  pointer-events: none;
+}
+
+
+
+
+
+#ending_scratch {
+  width:100%;
+  height:100%;
+  background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/scratch.png");
+background-size: 20vw;
+background-repeat: repeat;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+z-index:0;
+position:absolute;
+}
+
+
+
+/*Come Up Generic*/
+
+.comeup_paper {
+  position:fixed;
+  z-index: 201;
+  transition: all 1s ease-in-out;
+  transform-style:flat;
+  transform-origin: 50% 0%;
+}
+
+.comeup_paper, .comeup_caption, .comeup_transcript, .comeup_about1, .comeup_about2, .comeup_about3, .comeup_about4, .comeup_about5 {
+}
+
+#cloudtop img {
+	position: absolute;
+	top: -13vw;
+	width: 100%;
+	left: -2%;
+	/* z-index: 100; */
+	overflow-x: hidden;
+}
+
+.nail img {
+  width:100%;
+  height:auto;
+}
+
+.cup_talk {
+  transition: all 500ms ease-in-out;
+  transition-delay:200ms;
+  transform: perspective(1000px) rotateX(1deg);
+}
+
+.papermottle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 1;
+}
+
+.comep_paper, .comeup_caption, .comeup_transcript {
+  transition: transform 500ms, left 500ms, top 500ms;
+} 
+
+.comeup_paper:hover, .comeup_caption:hover, .comeup_transcript:hover {
+  transition: transform 0s;
+}
+
+
+.comeup_caption {
+	position: fixed;
+	z-index: 201;
+	font-size: 1.6vw;
+	font-weight: normal;
+	padding: 1%;
+	transition: all 0.6s ease-in-out;
+	/* height: -moz-max-content; */
+	height: max-content;
+}
+
+.comeup_transcript{
+  position:fixed;
+  z-index:201;
+  font-size: 29px;
+  font-weight: bold;
+  padding: 1%;
+}
+
+#toolbar {
+	display: flex;
+	position: fixed;
+	top: 2vh;
+	right: 2vw;
+	z-index: 500;
+	flex-basis: content;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2vw;
+}
+
+.close {
+	font-size: 3vw;
+	color: rgb(180, 13, 54);
+	z-index: 280;
+	font-family: "chapbookitalic", serif;
+	display: block;
+	width: 3vw;
+	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reset {
+	z-index: 280;
+	color: #b40d36;
+	font-family: "chapbookitalic", serif;
+	font-size: 3.6vw;
+	display: block;
+	width: 3vw;
+	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 35%;
+}
+
+.read {
+	transform: rotate(180deg);
+	font-size: 4.4vw;
+	z-index: 280;
+	color: #b40d36;
+	font-family: "chapbookitalic", serif;
+	display: block;
+	width: 3vw;
+	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-right: 23%;
+	margin-top: 14%;
+}
+
+.flip {
+	transform: rotate(180deg);
+	font-size: 4.8vw;
+	z-index: 280;
+	color: #b40d36;
+	font-family: "chapbookitalic", serif;
+	display: block;
+	width: 3vw;
+	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-right: 10%;
+}
+
+.closed {
+  display:none;
+}
+
+
+.loadingscreen {
+	width: 100vw;
+	height: 100vh;
+	z-index: 20000;
+	position: fixed;
+	top: 0;
+  overflow: hidden;
+	left: 0;
+	background-color: black;
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* flex-direction: row; */
+	/* gap: 8%; */
+}
+
+.rabbitload {
+	width: 6vw;
+	margin-left: auto;
+	margin-right: auto;
+	animation-name: rabbitspin;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	margin-top: 20vh;
+}
+
+@keyframes rabbitspin {
+  0% {
+    transform:rotate(0deg);
+  }
+
+  50% {
+    transform:rotate(180deg);
+  }
+
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+.rabbitload img {
+  width:100%;
+}
+
+#thankyou {
+	font-family: "IM Fell Double Pica SC", serif;
+	letter-spacing: 0.7vw;
+	font-size: 4vw;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	border: none;
+	/* left: 0%; */
+	width: 65vw;
+	height: 100%;
+	/* top: 0%; */
+	opacity: 0.9;
+	position: absolute;
+	text-align: center;
+	text-shadow: -1px -1px 0px;
+	/* left: 15vw; */
+	z-index: 1;
+	/* position: absolute; */
+	top: 11%;
+	left: 17.5%;
+	margin-top: 11%;
+}
+
+.thankyou {
+	font-family: "IM Fell Double Pica SC", serif;
+	letter-spacing: 10px;
+	font-size: 3rem;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	border: none;
+	width: 80vw;
+	height: -moz-max-content;
+	height: max-content;
+	margin: 0 auto;
+  margin-top:10vw;
+	opacity: 0.9;
+	text-align: center;
+	text-shadow: -1px -1px 0px;
+}
+
+.papercontainer {
+  width:100%;
+  height:100vh;
+  opacity:0;
+  pointer-events:none;
+  transition: opacity 1s;
+  z-index: 201;
+position: relative;
+}
+
+
+.appear {
+  opacity:1;
+  pointer-events: all;
+  transition: opacity 0.5s;
+}
+
+
+
+.disappear {
+  opacity:0;
+  pointer-events:none;
+  transition: opacity 0.5s;
+}
+
+#shadow {
+	width: 100vw;
+	pointer-events: none;
+	z-index: 200;
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition: background-color 0.5s;
+	height: 100vh;
+}
+
+.shadow_normal {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.shadow_focus {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#endletter {
+  width:100vw;
+  height:100vh;
+  background-color:black;
+  overflow:hidden;
+  cursor: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/cursor.png"), auto;
+}
+
+.textred {
+  color:#b40d36;
+}
+
+.comeup_caption h2, .comeup_caption ul, .comeup_caption p {
+  transform:skew(-4deg);
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index:400;
+  pointer-events:none;
+}
+
+
+
+.flicker {
+	width: 100%;
+	height: calc(100vh + 169vw + 87vw);
+	overflow: hidden;
+	z-index: 199;
+	position: absolute;
+	/* transition: all 500ms; */
+	top: 0;
+	left: 0;
+	background: radial-gradient(circle at left 20vw top 1.8713vh, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 10%);
+	pointer-events: none;
+	transition: mask-image 5s, -webkit-mask-image 5s;
+}
+
+#chalklines {
+  width:100%;
+  height:100%;
+}
+
+#shadowinitial { 
+width: 100%;
+height: 100vh;
+pointer-events: none;
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.5) 41%, rgba(0,0,0,0) 100%, rgba(140,140,140,0) 100%, rgba(252,252,252,0) 100%);
+z-index: 200;
+position: absolute;
+left: 0;
+top: 0;
+}
+
+#titlebackground {
+	width: 105%;
+	height: 100%;
+	position: absolute;
+	top: 24px;
+	left: -2.5%;
+	transform: perspective(200px) rotateX(-1deg);
+  pointer-events: none;
+}
+
+.wdyt {
+	position: fixed;
+	
+	background-color: #ddbf99;
+	z-index: 201;
+	padding: 1%;
+  transition: all 500ms ease-in-out;
+  font-size:2.1rem;
+  font-family:"Allison", cursive;
+  color: #b40d36;
+font-weight:normal;
+    border: 0.6vw double rgb(20, 20, 20);
+    transform:rotate(2deg);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.6);
+}
+
+.wdytappear {
+  pointer-events: all;
+  bottom: 2%;
+	right: 1%;
+  transform:rotate(2deg);
+  transition: all 1.5s ease-in-out;
+}
+
+.wdytdisappear {
+  pointer-events: none;
+  bottom: -30%;
+	right: -30%;
+  transform:rotate(-70deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.onboard_paper img {
+  width:100%;
+  height:100%;
+  margin: 0 auto;
+}
+
+.onboard_front img {
+  width:100%;
+  height:100%;
+  margin: 0 auto;
+}
+#more {
+	position: fixed;
+	bottom: 1%;
+	width: 100vw;
+	pointer-events: none;
+	text-align: center;
+	font-family: "IM Fell Double Pica SC", serif;
+	font-size: 2rem;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	border: none;
+	/* height: 8vw; */
+
+	text-align: center;
+	text-shadow: -1px -1px 0px;
+	transform: rotate(90deg);
+	z-index: 201;
+}
+.ending {
+	background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/wood.jpg");
+	height: -moz-max-content;
+	height: 104vw;
+	margin: 0 auto;
+	min-height: 1000px;
+	position: relative;
+  overflow:hidden;
+  z-index:1;
+}
+
+#moretonletter {
+	position: absolute;
+	transition: all ease-out 0.8s;
+	z-index: 499;
+	width: 28vw;
+	padding: 2%;
+	border-radius: 355px 5px 355px 5px/15px 225px 15px 255px;
+	color: rgb(41, 23, 0);
+	font-size: 1.3vw;
+	font-family: "Monsieur La Doulaise", cursive;
+	background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/moretonpaper.jpg");
+	background-blend-mode: color-burn;
+	background-repeat: repeat;
+	background-size: contain;
+}
+
+
+
+#moretonletter p {
+    transform: skew(6deg) rotate(1deg);
+}
+
+#chesterletter {
+	position: absolute;
+	transition: all ease-out 0.8s;
+	z-index: 498;
+	width: 46vw;
+	padding: 1%;
+  height:71vh;
+  padding:3%;
+}
+
+#hanging {
+	width: 24%;
+	margin-top: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cl_back h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+
+#rednumber {
+  color:#b40d36;
+}
+
+.folded {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#cl_front {
+background-color:white;
+width:100%;
+height:100%;
+position:absolute;
+background-image:url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/chesterpaper.jpg");
+background-repeat: repeat;
+top:0;
+left:0;
+}
+
+#cl_back p {
+	width: 100%;
+	text-align: center;
+	margin-top: 3%;
+	font-size: 1.5rem;
+	font-family: 'IM Fell DW Pica', serif;
+	font-style: italic;
+}
+
+
+#cl_back {
+background-color:white;
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+background-image:url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/chesterpaper.jpg");
+background-repeat: repeat;
+left:0;
+}
+
+.comeoffboardchester {
+left: -500%;
+ top: 500%; 
+ transform:rotate(300deg);
+}
+
+.comeonboardchester {
+	left: 7%;
+	top: 9%;
+	transform: rotate(-4deg);
+}
+.comeoffboard {
+   left: 500%;
+	top: 500%; 
+  transform:rotate(500deg);
+}
+
+.comeonboard {
+	left: 61%;
+	top: 18%;
+	transform: rotate(10deg);
+}
+
+#cloudtop {
+	width: 100vw;
+	height: 20%;
+	position: absolute;
+	left: 0;
+	top: 4%;
+}
+
+.topsection {
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  left:0%;
+  top:0%;
+}
+
+.dg .ac {
+  display:none;
+}
+
+#submissionpaper {
+	width: 98%;
+	background-color: white;
+	/* height: -moz-max-content; */
+	height: 74%;
+	z-index: 20;
+	position: absolute;
+	top: -26%;
+	left: 1%;
+	min-height: 300px;
+	transition: top ease-in-out 1s;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#submissionpaper textarea::placeholder {
+  opacity:1;
+  color:#b40d36;
+}
+
+#envelopelid {
+	-webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+	clip-path: polygon(50% 0, 0 100%, 100% 100%);
+	position: absolute;
+	background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/envelopepaper.jpg");
+	height: 30%;
+	width: 100%;
+	/* left: 10vw; */
+	transform: rotateX(0deg);
+	top: 0%;
+	z-index: 19;
+	transition: transform ease-in-out 1s, top ease-in-out 1s;
+	transform-origin: bottom;
+}
+
+
+#envelopeaddress {
+	color: black;
+	width: 60%;
+	position: absolute;
+	top: 42%;
+	left: 20%;
+	font-size: 4vw;
+	text-align: center;
+}
+
+input::-webkit-input-placeholder {
+opacity:1;
+}
+
+#envelopebaseupper {
+	width: 100%;
+	height: 75%;
+	background-color: blue;
+	position: absolute;
+	/* left: 10vw; */
+	top: 30%;
+	-webkit-clip-path: polygon(50% 40%, 100% 0, 100% 100%, 0 100%, 0 0);
+	clip-path: polygon(50% 40%, 100% 0, 100% 100%, 0 100%, 0 0);
+	z-index: 21;
+	background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/envelopepaper.jpg");
+}
+
+#envelopebaseupperunder {
+  width: 80vw;
+  height: 68%;
+  background-color: blue;
+  position: absolute;
+  left: 10vw;
+  top: 50%;
+  clip-path: polygon(50% 40%, 100% 0, 100% 100%, 0 100%, 0 0);
+  z-index:21;
+  background-color:#b40d36;
+}
+
+#envelopebase {
+	position: absolute;
+	background-color: yellow;
+	width: 100%;
+	height: 75%;
+	top: 30%;
+	/* left: 10vw; */
+	z-index: 19;
+	box-shadow: 7px 7px 2px black;
+	background-image: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/envelopepaper.jpg");
+}
+
+#wholeenvelope {
+	position: absolute;
+	top: 0%;
+	/* left: 0; */
+	width: 70vw;
+	height: 67%;
+	transition: top 1s, left 1s, transform 1s;
+	transform: rotate(2deg);
+	z-index: 2;
+	/* margin-left: 27%; */
+	left: 15vw;
+}
+
+.toolbar {
+  margin-bottom: 12px;
+ }
+ .toolbar button {
+  padding: 10px;
+  margin-right: 7px;
+  background: white;
+  color: black;
+  border: none;
+ }
+ .color-palette {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+ }
+ .color-palette .color-swatch {
+  width: 32px;
+  height: 32px;
+  border: 3px solid white;
+  margin-right: 6px;
+ }
+ .status-bar {
+  padding: 7px;
+  background: white;
+  color: black;
+ }
+
+ #myCanvas {
+    border-bottom: 3px dotted black;
+    position: absolute;
+    height:13%;
+    width:58%;
+    top: 39%;
+    left: 58%;
+    border-radius: 2px 2px 2px;
+    /* border-top: 3px solid lightgray; */
+ }
+
+ .toolbar {
+  display:none;
+ }
+
+
+#thankyou h2 {
+  font-size:2rem;
+}
+
+.thankyou h3 {
+  font-size:1.5rem;
+  font-style:italic;
+}
+
+#againbutton {
+	font-family: "IM Fell Double Pica SC", serif;
+	letter-spacing: 5px;
+	font-size: 2vw;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	border: none;
+	width: 36%;
+	opacity: 0.8;
+	text-align: center;
+	z-index: 0;
+	overflow: visible;
+	margin-top: 3%;
+	border: 0.1vw solid #cb9b51;
+	margin: 0 auto;
+	margin-top: 3%;
+	/* height: 2%; */
+	padding: 1%;
+}
+
+#againbutton2 {
+	font-family: "IM Fell Double Pica SC", serif;
+	letter-spacing: 5px;
+	font-size: 2vw;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	border: none;
+	width: 36%;
+	opacity: 0.8;
+	text-align: center;
+	z-index: 0;
+	overflow: visible;
+	margin-top: 3%;
+	border: 0.1vw solid #cb9b51;
+	margin: 0 auto;
+	margin-top: 3%;
+	padding: 1%;
+}
+
+#volumecontrol {
+    width: 2%;
+    position: absolute;
+    z-index: 5000;
+    top: 1%;
+    left: 0.5%;
+}
+
+.rotateicon {
+    width: 6%;
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#accusationsbox {
+    width: 80%;
+    height: 54%;
+    margin: 0 auto;
+    font-family: 'chapbookitalic', serif;
+    color: #b40d36;
+    font-size: 2.1vw;
+    position: relative;
+}
+
+#accusationsbox span {
+  position:absolute;
+  text-align:center;
+}
+
+.popup {
+	color: #b40d36;
+	font-family: "chapbookitalic", serif;
+	position: absolute;
+	top: 0%;
+	font-size: 2.5vw;
+	transition: right 0.3s, opacity 0.3s;
+}
+
+.popupr {
+	color: #b40d36;
+	font-family: "chapbookitalic", serif;
+	position: absolute;
+	top: -29%;
+	font-size: 2.5vw;
+  transition: left 0.3s, opacity 0.3s;
+}
+
+.hidden {
+  opacity: 0;
+  right:0vw;
+  transition: right 0.3s, opacity 0.3s;
+}
+
+.shown {
+  opacity: 1;
+  right:5vw;
+  transition: right 0.3s, opacity 0.3s;
+}
+
+.hiddenr {
+  opacity: 0;
+  left:0vw;
+  transition: left 0.3s, opacity 0.3s;
+}
+
+.shownr {
+  opacity: 1;
+  left:5vw;
+  transition: left 0.3s, opacity 0.3s;
+}
+
+
+.close, .reset, .read, .flip {
+  position:relative;
+}
+
+#again_button_border2 {
+	background: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+	width: 46%;
+	height: 4%;
+	/* height: max-content; */
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 2% 98%, 2% 3%, 98% 3%, 98% 97%, 2% 97%, 0 100%, 100% 100%, 100% 0%);
+	clip-path: polygon(0% 0%, 0% 100%, 2% 98%, 2% 3%, 98% 3%, 98% 97%, 2% 97%, 0 100%, 100% 100%, 100% 0%);
+	border: 0.1vw solid #cb9b51;
+	position: absolute;
+	top: 37%;
+	left: 26%;
+	opacity: 0.8;
+	z-index: 0;
+}
+
+#p10 .onboard_paper:hover, #p9 .onboard_paper:hover {
+  box-shadow:none;
+}
+
+.mobilenote {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: black;
+	pointer-events: all;
+	height: 100vh;
+	width: 100vw;
+	z-index: 200001;
+	display: none;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.browsernote {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: black;
+	pointer-events: all;
+	height: 100vh;
+	width: 100vw;
+	z-index: 200002;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobilenoteinner {
+	width: 80vw;
+	/* height: -moz-max-content; */
+	height: 40vh;
+	background-color: #dbbf99;
+	transform: rotate(10deg);
+	position: absolute;
+	top: 30vh;
+	left: 10vw;
+	color: black;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border: 1vw double black;
+	box-sizing: border-box;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: bold;
+	/* padding-left: 10%; */
+	/* padding-right: 10%; */
+	/* padding-top: 15%; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5%;
+}
+
+  .mobilenoteinner .hr {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 2%;
+  }
+
+.p_cartoon_onboard:hover {
+  box-shadow:none;
+}
+
+.cardcontainer {
+  perspective: 1000px;
+            width: 100%;
+            height: 100%;
+}
+
+.card {
+  width:100%;
+  height: max-content;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
+
+.comeup_wife .cardcontainer .card {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/paperwife.jpg");
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 3vw;
+  padding-right: 2vw;
+}
+
+#wifelettercircle1 {
+  position: absolute;
+  height: 20px;
+  width: 44%;
+  top: 18%;
+  left: 16%;
+}
+#wifelettercircle2 {
+position: absolute;
+  height: 20px;
+  width: 48%;
+  top: 33%;
+  left: 16%;
+}
+
+.p_statement_onboard .oridomi-active {
+  pointer-events:none;
+}
+
+#wifelettercircle3 {
+  position: absolute;
+  height: 35px;
+  width: 23%;
+  top: 50.5%;
+  left: 7%;
+
+}
+
+#wifelettercircle4 {
+    position: absolute;
+    position: absolute;
+    height: 35px;
+    width: 45%;
+    top: 32.5%;
+    left: 18%;
+}
+
+#wifelettercircle5 {
+  position: absolute;
+  height: 35px;
+  width: 24%;
+  top: 47.5%;
+  left: 68%;
+
+}
+
+#endingwrapper {
+	position: absolute;
+  top:calc(100vh + 169vw);
+	left: 0;
+	width: 100%;
+  height:87vw;
+  z-index: 198;
+}
+
+
+#submissionpaper h2 {
+	font-size: 3vw;
+	font-weight: normal;
+	margin-top: 3%;
+	margin-left: 3%;
+}
+#submissionpaper p {
+	font-size: 2vw;
+	font-weight: normal;
+	margin: 2%;
+}
+
+#drawingCanvas {
+	border: 0.2vw dotted #b40d36;
+	margin-left: 58%;
+	margin-right: 0%;
+	width: 40%;
+	height: 14%;
+	transition: border 1s;
+	cursor: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/cursorclick.png"), auto;
+	margin-right: 20px;
+	display: block;
+}
+
+
+#instruction {
+	z-index: 1000;
+	font-family: "chapbookregular", serif;
+	transition: opacity 0.5s;
+	font-size: 1.2vw;
+	color: #b40d36;
+	pointer-events: none;
+	width: 40%;
+	display: block;
+	text-align: left;
+	position: absolute;
+	right: 2%;
+	font-weight: bold;
+}
+.endright {
+  text-align:right;
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+#submit {
+	position: absolute;
+	bottom: 11%;
+	left: 38%;
+	background: none;
+	font-family: "chapbookregular", serif;
+	color: #b40d36;
+	border: 0.5vw double #b40d36;
+	font-size: 2vw;
+	text-align: center;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	width: 30%;
+	z-index: 200000;
+}
+
+
+#submissionpaper textarea {
+	resize: none;
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 3px dotted #b40d36;
+	width: 27%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	height: 2vw;
+	cursor: url("https://bonfiredog.co.uk/resources/amasterbetrayed/media/cursorclick.png"), auto;
+	font-family: "chapbookregular", cursive;
+	font-size: 1.4vw;
+	text-align: center;
+	font-weight: bold;
+	overflow-y: hidden;
+  color: #b40d36;
+}
+
+.markleft {
+	position: absolute;
+	top: 3%;
+	left: 2.5%;
+	width: 45%;
+	font-family: "Ruthie", serif;
+	color: #030382;
+	height: 95%;
+	font-size: 1.4vw;
+}
+
+.markleft h2 {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	transform: skewX(-25deg);
+	font-size: 1.8vw;
+}
+
+.markleft h4 {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	transform: skewX(-25deg);
+	font-size: 1.6vw;
+}
+
+.markleft p, .markright p {
+  margin:1vw;
+  line-height:100%;
+}
+
+.skew1 {
+  transform:rotate(-5deg) skewX(-25deg);
+ }
+
+.skew2 {
+  transform:skewX(-25deg);
+}
+
+.skew3 {
+  transform:rotate(5deg) skewX(-25deg); 
+}
+
+.skew4 {
+  transform:rotate(-8deg) skewX(-25deg);
+}
+
+.markright {
+	position: absolute;
+	top: 3%;
+	left: 53.5%;
+	width: 45%;
+	font-family: "Ruthie", serif;
+	color: #030382;
+	height: 95%;
+	font-size: 1.4vw;
+}
+
+#endletter {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.crossout1 {
+	width: 44%;
+	position: absolute;
+	top: 33%;
+	left: 60%;
+	transform: rotate(10deg);
+}
+.crossout2 {
+	width: 36%;
+	position: absolute;
+	top: 41%;
+	left: 0%;
+}
+
+#chesterletter p {
+	padding: 1vw;
+	font-size: 1vw;
+	font-family: "Allura";
+	color: black;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	transform: skew(-7deg);
+}
+#stats {
+  font-family:"chapbookitalic";
+  color:black;
+  width:80%;
+  text-align:center;
+  margin:0 auto;
+  font-size:1.3vw;
+}
+
+s {
+   text-decoration: line-through;
+    text-decoration-thickness: 4px;
+  }
+
+#cc2d h2, #cc2b h2, #cc2c h2, #cc2a h2, #cc2 h2, #cc2e h2 {
+  color:#b40d36;
+}
+.p_weave_onboard {
+  box-shadow:none;
+  border:none;
+}
+
+.p_weave_onboard:hover {
+  transform:none;
+  box-shadow:none;
+}
+
+.lastsignoff {
+	margin-top: 20%;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width:1023px)  { 
+.mobilenote {
+  display:flex;
+} }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Chrome-specific styles */
+  #boardtitle h1, #boardtitle h2, .date, #ctabutton, .captionbox, .comeup_wife, .comeup_souvenir, .comeup_caption h2, .comeupcaption h3, .fm_top h1, .fm_top h4, .fm_top h5, .comeup_caption, .wdyt, #submissionpaper h2, #submissionpaper p, .statement_frag {
+    font-weight:normal;
+  }
+
+}
+
+
+@-moz-document url-prefix() {
+  /* Firefox-specific styles */
+  #boardtitle h1, #boardtitle h2, .date, #ctabutton, .captionbox, .comeup_wife, .comeup_souvenir, .comeup_caption h2, .comeupcaption h3, .fm_top h1, .fm_top h4, .fm_top h5, .comeup_caption, .wdyt, #submissionpaper h2, #submissionpaper p, .statement_frag {
+    font-weight:bold;
+  }
+
+}
+
+

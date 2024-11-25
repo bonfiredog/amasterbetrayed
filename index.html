@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- =HEAD======================================================================================================================================================================== -->
+    <head>
+        <!-- META ATTRIBUTES-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+        
+        <title>A Master Betrayed!</title>
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="styles/amb.css">
+
+
+        <!-- MISC -->
+        <meta name="application-name" content="A Master Betrayed!">
+        <meta name="description" content="A who-never-dunnit set in eighteenth-century Cornwall.">
+        <meta name="robots" content="index,follow"><!-- All Search Engines -->
+        <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+        <meta name="google" content="notranslate">
+        <link rel="me" href="https://bonfiredog.co.uk" type="text/html">
+        <link rel="me" href="mailto:rob@bonfiredog.co.uk">
+
+        <meta property="og:title" content="A Master Betrayed! - An Interative Who-Never-Dunnit" />
+<meta property="og:description" content="Immerse yourself in a site-specific storytelling project set in East Looe's Old Gaol Museum, developed by Rob Sherman in collaboration with public artist Hugh McCann." />
+<meta property="og:url" content="https://bonfiredog.co.uk/resources/amasterbetrayed/" />
+<meta property="og:image" content="https://bonfiredog.co.uk/resources/amasterbetrayed/rabbitloading.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Bonfire Dog" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="A Master Betrayed! - An Interactive Who-Never-Dunnit" />
+<meta name="twitter:description" content="Explore a fictional murder mystery set in East Looe's Old Gaol Museum, crafted by Bonfire Dog and Hugh McCann." />
+<meta name="twitter:image" content="https://bonfiredog.co.uk/resources/amasterbetrayed/rabbitloading.png" />
+<meta name="twitter:site" content="@BonfireDog" />
+
+    </head>
+
+<!-- =BODY======================================================================================================================================================================== -->
+    <body>
+
+<!-- =LOADING SCREENS======================================================================================================================================================================== -->
+ <div class="appear loadingscreen">
+
+    <div class="rabbitload">
+        <img src="media/rabbitloading.png" alt="a stylised rabbit in profile">
+    </div>
+    <div class="thankyou">
+        <h1>LOADING</h1>
+        <h3>This experience uses sound, and works best with headphones.</h3>
+        </div>
+ </div>
+
+
+<!-- =MOBILE NOTIFICATION======================================================================================================================================================================== -->
+        <div class="mobilenote">
+        <div class="mobilenoteinner ev_hand">
+            <img src="media/tiledpaper.png" class="papermottle">
+            This experience is designed for desktop and laptop computers, and some larger tablets.
+        </div>
+        </div>
+
+        <div id="browsernote" class="browsernote">
+            <div class="mobilenoteinner ev_hand">
+                <img src="media/tiledpaper.png" class="papermottle">
+                This experience is designed for the Firefox or Chrome browsers.
+            </div>
+            </div>
+      
+
+
+ <!-- =SHADOWS & FLICKER======================================================================================================================================================================== -->
+ <div class="flicker"></div>
+
+ <!-- =UI======================================================================================================================================================================== -->
+        
+<div id="wdyt" class="wdyt wdytdisappear cursorclick"><img src="media/tiledpaper.png" class="papermottle">Make Your Report...</div>
+<div id="more" class="disappear">>></div>   
+
+
+
+<!-- OVERLAY==============================================================================================================================================================================-->
+<section class="overlay">
+    <div id="toolbar" class="disappear">
+        <span class="close  cursorclick">X <span class="popup hidden">Close</span></span>
+        <span class="flip closed cursorclick">&#8634;<span class="popupr hiddenr" style="transform:rotate(180deg);">Flip</span></span>
+        <span class="read closed cursorclick">&#9740; <span class="popupr hiddenr" style="transform: rotate(180deg);">Read</span></span>
+        <span class="reset disappear cursorclick">R <span class="popup hidden">Reset</span></span>
+        </div>
+        
+        <canvas id="shadow" class="shadow_normal"></canvas>
+
+        <!-- ABOUT-->
+        <img loading="lazy" src="media/piece1.png" alt="a piece of torn paper with writing on it" class="comeup_paper aboutup comeup_about1 cursorgrab" id="c1" >
+
+        <img loading="lazy" src="media/piece2.png" alt="a piece of torn paper with writing on it" class="comeup_paper aboutup comeup_about2 cursorgrab" id="cc1" >
+        
+        <img loading="lazy" src="media/piece3.png" alt="a piece of torn paper with writing on it" class="comeup_paper aboutup comeup_about3 cursorgrab" id="ccc1" >
+        
+        <img loading="lazy" src="media/piece4.png" alt="a piece of torn paper with writing on it" class="comeup_paper aboutup comeup_about4 cursorgrab" id="cccc1" >
+         
+        <img loading="lazy" src="media/piece5.png" alt="a piece of torn paper with writing on it"  class="comeup_paper aboutup comeup_about5 cursorgrab" id="ccccc1" >
+        
+        <img loading="lazy" src="media/paper6.png"  alt="a piece of torn paper with writing on it"class="comeup_paper aboutup comeup_about6 cursorgrab" id="cccccc1" >
+         
+        <img loading="lazy" src="media/paper7.png" alt="a piece of torn paper with writing on it"  class="comeup_paper aboutup comeup_about7 cursorgrab" id="ccccccc1" >
+        
+        <img loading="lazy" src="media/paper8.png"  alt="a piece of torn paper with writing on it" class="comeup_paper aboutup comeup_about8 cursorgrab" id="cccccccc1" >
+
+<!-- MAP -->
+
+<div class="comeup_paper comeup_map" id="c3">
+
+    <!-- Map Annotations-->
+
+    <div class="maphs cursorclick" id="morval"><span>1</span><img alt="a crudely-drawn circle" src="media/circle1.png" ></div>
+    <div class="captionbox cursorgrab" id="morval_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">1 -- Morval House</red> -- seat of the Podrugans who own most of Looe, its harbour & its coastline -:  
+    </div>
+
+    <div class="maphs cursorclick" id="wenna"><span>2</span><img alt="a crudely-drawn circle" src="media/circle2.png" ></div>
+    <div class="captionbox cursorgrab" id="wenna_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">2 --  St. Wenna's Church</red> -- kept by the Reverend Penhell -- lying close by Wenna's Brook, which follows the road to the coast where it empties into Millendreath Cove -:
+    </div>
+
+    <div class="maphs cursorclick" id="torpoint"><span>3</span><img alt="a crudely-drawn circle" src="media/circle3.png" ></div>
+    <div class="captionbox cursorgrab" id="torpoint_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">3 -- The main road to the east & London</red> -- passing through Torpoint and its inns before reaching Plymouth harbour -:
+    </div>
+
+    <div class="maphs cursorclick" id="cove"><span>4</span><img alt="a crudely-drawn circle" src="media/circle4.png" ></div>
+    <div class="captionbox cursorgrab" id="cove_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">4 --  Millendreath Cove</red> -- owned by the Podrugans, with Millendreath Lodge -- where Chester lived -- almost standing on the sand -- high cliffs surrounding with only one road (the cliff road) in or out -:
+    </div>
+
+    <div class="maphs cursorclick" id="cliffs"><span>5</span><img alt="a crudely-drawn circle" src="media/circle5.png" ></div>
+    <div class="captionbox cursorgrab" id="cliffs_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">5 --The Cliff Road</red> -- passing between Millendreath & Looe -- very few walk it after dark for Fear of falling -- none when the weather is Blowing -:
+    </div>
+
+    <div class="maphs cursorclick" id="house"><span>6</span><img alt="a crudely-drawn circle" src="media/circle6.png" ></div>
+    <div class="captionbox cursorgrab" id="house_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">6 -- St. Martins Warren</red> -- Margaret Thomas' parents keep the Rabbits here for Fur & Meat -:
+    </div>
+
+    <div class="maphs cursorclick" id="pub"><span>7</span><img alt="a crudely-drawn circle" src="media/circle7.png" ></div>
+    <div class="captionbox cursorgrab" id="pub_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">7 -- The Jolly Sailor</red> -- the largest Inn in East Looe -:
+    </div>
+
+    <div class="maphs cursorclick" id="duloe"><span>8</span><img alt="a crudely-drawn circle" src="media/circle8.png" ></div>
+    <div class="captionbox cursorgrab" id="duloe_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">8 -- The Giant's Circle at Duloe</red> -- a Ruin of Stones -- many folk shan't Walk there for the Spirits -:
+    </div>
+
+    <div class="maphs cursorclick" id="shutta"><span>9</span><img alt="a crudely-drawn circle" src="media/circle9.png" ></div>
+    <div class="captionbox cursorgrab" id="shutta_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">9 -- The hamlet of Shutta</red> -- above Looe, bordering Wenna -:
+    </div>
+
+    <div class="maphs cursorclick" id="well"><span>10</span><img alt="a crudely-drawn circle" src="media/circle4.png" ></div>
+    <div class="captionbox cursorgrab" id="well_caption"><img src="media/tiledpaper.png" class="papermottle" >
+    <span class="red">10 -- St. Wennas Well</red> -- a place of Womanish superstitions hidden someplace in the Gullies of the Brook -:
+    </div>
+
+
+
+
+    <figure class="folded">
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <!-- Replace the src attribute of the img element below -->
+        <img class="fold-me-please" src="media/map_final.png" alt="a handdrawn map of Looe">
+          
+          <span class="folds main">
+            <span class="cell main-1"></span>
+            <span class="cell main-2"></span>
+            <span class="cell main-1"></span>
+            <span class="cell main-2"></span>
+            <span class="cell main-1"></span>
+          </span>
+          
+          <span class="folds vertical">
+            <span class="cell vertical-1"></span>
+            <span class="cell vertical-2"></span>
+            <span class="cell vertical-3"></span>
+            <span class="cell vertical-4"></span>
+            <span class="cell vertical-5"></span>
+          </span> 
+          
+          <span class="folds horizontal">
+            <span class="cell horizontal-1"></span>
+            <span class="cell horizontal-2"></span>
+            <span class="cell horizontal-1"></span>
+            <span class="cell horizontal-2"></span>
+            <span class="cell horizontal-1"></span>
+            <span class="cell horizontal-3"></span>
+            <span class="cell horizontal-4"></span>
+            <span class="cell horizontal-3"></span>
+            <span class="cell horizontal-4"></span>
+            <span class="cell horizontal-3"></span>
+          </span>
+        </figure>
+</div>
+
+<!-- TESTIMONIES-->
+
+<div class="comeup_paper comeup_pod audiopaper " id="c2">
+    <div class="subtitles stflipback">
+                        <p>
+        Speak up! I always tell Penhell: in a room like this, you need to at least pretend to have something worthwhile to say! Now, who are you schwatzing on about?... Chestnut? What?... Chess Set? Who is…Chester… that Chester. The little one, from London.... The dead one. Yah, I heard. That is precisely why I took a whole year’s rent from him. Up front. Dead men… tend to… eh… how do you say? They tend…</p>
+            
+        <p>Anyway, I’ve always thought men like that should be in a… ... what’s the word? A, a… yes! A cage. Well-watered, of course. A meal a day but… I just wanted to look at him. Wasn’t he a curious exhibit? Not quite a servant - he came in through the front door, after all - but he still couldn’t… eh… couldn’t quite meet my eye, when he came in. Bowed a little too deeply. It must be exhausting, not knowing where you stand in this world.  I’ve always thought that of Penhell, you know. My husband invited him for supper once - he was my husband’s creature, really - and I swear I saw him try and bite one of the dessert spoons. He was… what’s the word in Eng-? Mm… y-yes… curious exhibits… curious exhibits…</p>       
+               
+        <p>I see more and more of these… these middling sorts, every year. Low born, stumbling about the country, in furs and velvet that just makes them sweat… always at their little deals. They are obsessed with… with money. Chester stood right where you are, in that ridiculous white cloak of his, like a dog in a ballgown - and within two moments he was talking to me about renting a house… and mentioning actual figures! Penhell hated the man, but it was too funny. I couldn’t even be angry when he sat in my husband’s chair! In the end I gave him… oh, which one was it? The rectory at Tredinnick, or the shooting lodge at Sandplace? We have so many I… Penhell was not happy, though, I remember that! Curious exhibit!</p>
+            
+           <p>And then, as soon as we had concluded that business, he started asking about the harbour down in East Looe. How much of the frontage do the Podrugans own, he said? We’ve been here since the Flood, I told him. ‘Own’ is not the right word. He asked me again and again if I would consider selling it to him… ugh… talking about his bank in London… and then, not a week ago, he comes again and tells me that he no longer wants the harbour! That he plans to leave soon, and cannot take on more assets! The delicious cheek of him! As if I was a barmaid, come to take his order!</p>
+            
+           <p> I suppose I should send something to his wife. It was my house he died in, after all. What do you send the wife of a dead merchant?And of course I won’t send her the bill. For the damage. ... They’re all wrong, of course. I know how they’re all talking, down in the town. The girl didn’t do it. A maid, slaying her master? It might make a good… what’s the word? A good novel, but… </p>
+            
+        <p> What was it she was supposed to have taken? His wife’s necklace? That I can believe. Make no mistake, and live by it: servants serve the house, not us. Like woodworm. They are there for the furnishings, and nothing else. I see them sometimes, stopping on the stairs, looking up at the paintings and imagining their pockmarked little ancestors hanging there… looking at the silverware, and imagine putting it to their lips. Looking at husbands, and imagining putting them… If you let them - if you keep them too long - they start to burrow into the walls. You’ll never get rid of them. My husband once found that a footman had moved his entire family - three generations - into one of the linen cupboards in the east wing. Made a sort of nest. It took two days to hook them all out of there.</p>
+            
+           <p> And the grub in her belly… I can believe that too. They can’t help it, the lower sorts. It’s one of God’s little jokes, that the great families of this country seem to struggle to produce a single heir, while most fishwives only seem to need to sneeze and a child falls out of them. Maybe it is Chester’s child. Why not? A man like him, keeping a maid… already an unnatural state of affairs. Like a bull being pulled by a mule. Who’s to say they didn’t fall in love? They’re not so different, after all. Now there’s your novel! The maid, trying to breed her way up in the world! </p>
+            
+            <p>Now, I think that will be all. Lanyon will show you the way out. And tell her that I will take my…my… breakfast? Dinner? Whatever comes next...LANYON! Where is that girl? Forty servants in this house, and never… Maybe she’s looking for my husband’s ghost… trying to get herself written into the will!</p>
+
+         
+    </div>
+    <div class="st_downarrow">>></div>
+    <div class="player stflipforward">
+    <img src="media/tiledpaper.png" class="papermottle" >
+    <img loading="lazy" class="char_comeup_pic" alt="a portrait of an imperious, high class woman" src="media/pod.png">
+    <img class="speechbubble" src="media/speechbubble.png" style="width: 91%; position: absolute; top: 46%; left: 5%;" >
+    <div class="char_comeup_legend">
+    <div id="audio_podrugan" class="audiocontainer">
+    <audio preload="none" src="https://bonfiredog.co.uk/resources/amasterbetrayed/media/audio/podrugan.mp3" id="podaud"></audio>
+    </audio>
+    <div title="play" class="playbutton cursorclick"><span>&#8227;</span></div>
+    <div title="pause" class="pausebutton cursorclick">II</div>
+    <div title="restart" class="restartbutton cursorclick">&#8617;</div>
+
+ </div>
+    </div>
+</div>
+</div>
+
+<div class="comeup_caption comeupcap_pod ev_hand cursorgrab" id="cc2">
+<img src="media/tiledpaper.png" class="papermottle" >
+<h2>The Testimony of Lady Wilhelmina Podrugan</h2>
+<h3>(82 Years)</h3>
+<ul>
+<li>Widow of the Marquis Podrugan and Lady of Morval House -:</li>
+<li>Owner of much Land and coastline around Looe -:</li>
+<li>Rented Robert Chester a house (Millendreath Lodge) on the outskirts of the Town -:</li>
+</ul>
+</div>
+
+
+
+
+
+<div class="comeup_paper comeup_melly audiopaper" id="c2a">
+    <div class="subtitles stflipback">
+    <p>That foolish blagannie! What
+mess has she flown herself into this time? I
+can’t... I can’t fathom it. Oh, but God that look
+on her face this morn... when they took her to
+the magistrate’s... I don’t think I’ve e’er seen
+Margaret Thomas look scared afore. No,
+no it weren’t fear... ‘stonishment, that’s what it
+were. Like she couldn’t believe that summin
+might not go rightly for ‘er. For once.
+</p>
+
+<p>I don’t unnerstan’... they only let me at the cell
+for a moment, but she wouldn’t say nort to me then. Can’t shut her up, elsewise...
+E’er since we were girls we’ve tol’ each other everything, things we’d not e’en tell
+God hisself... Why didn’t she tell me about the baby? It can’t be real, she’d have...
+And why didn’t she hide the lo- No, Melly. No. “long legs, loose lugs, locked
+lips”.
+</p>
+
+<p>It’s my fault. All of it. If I hadn’t got ‘er that job with Robert
+Chester, none of this... When she asked me to put in a word for ‘er, I laughed I tell
+you. I’ve been a maid since I were ‘leven years. I was with the Podrugans first, up
+at Morval House, for two years... it were two years and six days. Dr. Carthew took
+me on after that... a good house to work fer. Close to us, up the hill in Shutta. But
+Margaret... she’s ne’er shown no interest in it... I doubt she’d
+empty a chamber pot with a smile on ‘er face! A good maid, see... a good maid’s
+got to always be busy, but ne’er noticed... like a fire cracklin’ away in a grate. And
+you can’t not notice Margaret Thomas. She’s... well, she’s Margaret. Still, I put in
+the word. Maybe she was sick of skinning rabbits all day for her Father.
+</p>
+
+<p>Look... I can’t say else, but everyone must trust that Margaret did not do this.
+There’s plenty who would, though, round ‘ere. If I were the constable, I’d be
+talking with Jesse Couch first of all. I’ve known ‘im since he was a boy... the way
+he’s at the beck and call of that witch Katherine Renshaw... always after a few
+more coins, where he can get ‘em. And Chester had money in that house. And
+that’s not all - Jesse has been soft on Margaret since we were all out of swaddling.
+And he’s never liked to share ‘er... stop it, Melly! You promised! “Long legs, loose
+lugs, locked lips”. “Long legs, loose lugs, locked lips”!
+</p>
+
+<p>In honesty, I’d look to almost anyone in Looe, first, afore Margaret. There was a lot
+of folk wondering what busyness a man from London was making ‘ere, so far from
+‘ome... and from his wife. I ‘member Father saying, “see ‘ere if that man don’t
+buy up half the harbour, and rent it back to us, brick by brick!” A greedy little
+worm, God forgive me... and plenty ‘round ‘ere who hated ‘im for it.
+<p>
+
+<p>It’s cold today. She must be shiverin’ in that cell. We always said the
+wind was the worst thing about living ‘ere... apart from the men (laughs) I
+‘member when we were girls, and I’d just started maiding, we’d get my broom
+down and try and sweep the wind right back out under the door. ... What was
+it that we used to sing?
+</p>
+
+<p>Bring us breezes warm and dry,<br >
+Carry us off into the sky.<br >
+Carry me quickly, carry me far,<br >
+Carry me off to America!
+</p>
+
+<p>We always said we’d go together, one day. Walk to Plymouth, and then a boat, over
+the sea. “Just us, Melly”, she used to say. Then she’d pretend to throw me out the
+door, an all... she’d pick me up like I was her pet... they was our best times, in
+truth. Afore we got older, and the men started to... notice ‘er. ‘S like I said, you
+can’t not notice ‘er. And she liked to be noticed. And she were never good at
+paying notice herself, to more’n one folk at a time... Why doesn’t she just tell
+them the truth? It would be better than this. I could tell them. She’s clear not told
+me everything. So I could... and they’d, they’d have to then... NO, MELLY!
+“Locked lips!” We always said. We’d keep each other’s secrets. She... she kept
+mine, and I’ll keep ‘ers. Until she tells me otherwise.
+</p>
+
+<p>But what if she ne’er tells me? If she ne’er says anything, she’ll hang. And what
+then? What will I do? I can’t... I can’t go without ‘er. I just wish I knew what
+happened! I was only at ‘er cell door for a second, and she said nought... but she
+put this in my hands, when the constable weren’t looking. I can’t make sense of it.
+Oh Margaret... what does it mean? What are you trying to tell me? I heard
+someone say she was packing her things, when they ‘rested ‘er... were you coming
+to get me? Were we finally gonna do it? 
+</p>
+Just us, Margaret. Not him. Just us.</p>
+</div>
+
+<div class="st_downarrow">>></div>
+<div class="player stflipforward">
+    <img src="media/tiledpaper.png" class="papermottle" >
+    <img loading="lazy" class="char_comeup_pic" alt="a scared young girl of 16" src="media/melly.png">
+    <img class="speechbubble" src="media/speechbubble.png" style="width: 91%; position: absolute; top: 46%; left: 5%;transform:scaleX(-1);" >
+    <div class="char_comeup_legend">
+    <div id="audio_melly" class="audiocontainer" style="transform:rotate(3deg);">
+    <audio preload="none" src="https://bonfiredog.co.uk/resources/amasterbetrayed/media/audio/solomon.mp3" id="mellyaud"></audio>
+    <div title="play" class="playbutton cursorclick"><span>&#8227;</span></div>
+    <div title="pause" class="pausebutton cursorclick">II</div>
+    <div title="restart" class="restartbutton cursorclick">&#8617;</div>
+
+ </div>
+    </div>
+</div>
+</div>
+
+<div class="comeup_caption comeupcap_melly ev_hand cursorgrab" id="cc2a">
+<img src="media/tiledpaper.png" class="papermottle" >
+<h2>The Testimony of Melly Solomon </h2>
+<h3>(16 Years)</h3>
+<ul>
+<li>Life-long of Shutta, in East Looe -:</li>
+<li>Maid-of-all-work to Dr. Carthew (the town's Doctor & Chirurgeon) -:</li>
+<li>Childhood friend of Margaret Thomas (the Accused) -:</li>
+</ul>
+</div>
+
+
+
+
+
+
+<div class="comeup_paper comeup_jesse audiopaper" id="c2c">
+
+
+    <div class="subtitles stflipback">
+    <p>Go on. Out with it. I can see it all coiled up in yer.
+        I’m not afraid of people tattling. You wear a new
+        pair of shoes in this place, and people will... Go on.
+        Are they saying that I made her do it? Or that she
+        entranced me, and bade me murder Mr. Chester for
+        ‘er? What are they saying I killed him
+        with? An axe? A boat-hook? 
+    </p>
+<p> I bet it was Melly Solomon, what told you. Ever since
+        we were all little, she’s ne’er liked me.
+        It won’t matter what I say against it. It won’t matter that I was
+        drinking with John Meverell that night - that’s right, John Meverell the constable,
+        ask him yourself! But tattlings like a dog after a hare: once it’s loosed, it’s hard to
+        bring it back to heel.
+    </p>
+<p>  Ayes, Mags and I were going on together, for a while. I’m not ashamed of it. I may
+        have a few years on her, but… she’s beautiful. In her manner. But it’s no lie that
+        she has scarce glanced at me for near two month! I’ve bare seen her. I’d say she’d
+        found another lad, but.... Ayes, I shouldn’t be surprised, though… she’s always
+        been itching, that one… aiming to course off, somewhere. Up country, or over the
+        sea… and I ne’er had the coin to keep ‘er here. Always liked to be treated, that
+        maid - and a jug of beer at the Jolly weren’t ever going to be enough.
+    </p>
+<p>   Look, Mags never killed nobody. For all their tattling, folks don’t think. If she cut
+        Mr. Chester up, with that thumping great knife they found, what did she do with
+        the body? And why’s there no blood nowhere in that house? John Meverell told me
+        hisself… not a drop! Course, I’ve seen her skin hundreds of rabbits with that knife,
+        up at her father’s farm. And a rabbit bleeds as red as a man does…
+    </p>
+<p>   I’ll tell you what I think. No tattling. It weren’t Mags, and it weren’t a robbin’,
+        neither. Who kills a man to rob him, and then leaves most of the booty behind?
+        John said there was leather books, fine cloths, silverware that weren’t touched…
+        only a candlestick, a few rings, a cloak or coat gone, I think. And that Markenham
+        fool… he’s too much of a dolt to have anything to do with it. I mean, who comes
+        halfway across England to look at some old stones in a field? Doesn’t he have
+        stones in Ockford, or wherever he said he was from?
+    </p>
+<p>  No, I don’t think Chester’s dead. I think he’s still here. In Looe.
+        You see, that house he were renting, at Millendreath Cove… right by the water,
+        high cliffs, dark as caulk, even when the moon’s up… if you walk that cliff road
+        any night, you’ll see men up and down that beach. Barrels and boxes under their
+        arms. Gin. Brandy. Smoking-weed. It comes across from France, onto Looe Island,
+        and then they bring it ashore when it’s dark. And where do you think they put it,
+        before they move it up-country? That house has got girt cellars ‘neath it… doors
+        open right onto the sand. Melly and Mags and me used to play in ‘em, when we
+        were children.
+    </p>
+<p>  Maybe Chester found out. He seemed a righteous sort. Tried to put a stop to it. And
+        maybe… I think they’ve got him locked in some loft, right here in town. No-folk
+        would say. Only thing they won’t tattle about. It could’ve been any of them.
+        Melly’s daddy’s in on it, and the Mayor turns his eye away… even that old drunk
+        of a priest up at St. Wenna’s knows more than he lets on. All this talk of the Devil
+        walking the cliffs at night banging and whistling… he’s trying to stop people
+        nosing about. ‘Specially outsiders. They were already suspecting of Chester.
+        Wanted to know what he was doing ‘ere. What his busy-ness was.
+    </p>
+<p> He stopped by my workshop once. Mr. Chester. I liked him. Little fella, looked
+        younger than his years. Dressed up all in black, but for this white cloak, cut down
+        to ‘ere. Solid sort. Didn’t talk to me like he was ordering a dog about.
+        Talked to me about boats. He asked me all sorts: ‘bout what it was like to cross an
+        ocean. ‘bout what the best type of boat was, for the open sea. The best phase of the
+        moon to sail on. I told him I didn’t know, that I’d only e’er sailed in little boats,
+        close to shore. Goodly man though. Trying to be goodly, at least. And now he’s
+        gone, and an innocent girl is going to hang for it.
+    </p>
+<p>  She could be a vain thing, Mags, but she’s a goodly girl. I’d have married her, if
+        she’d let me. They’s talking about a baby in her belly. It’s not mine! Maybe
+        there isn’t one at all. Kate would have helped her with it, and she was always
+        careful. I think she’s just scared. You’d say anything, wouldn’t you, if you were
+        scared?
+    </p>
+
+        </div>
+        <div class="st_downarrow">>></div>
+        <div class="player stflipforward">    
+    <img src="media/tiledpaper.png" class="papermottle" >
+    <img loading="lazy" class="char_comeup_pic" alt="a cautious young man with dark hair and stubble" src="media/jesse.png">
+    <img class="speechbubble" src="media/speechbubble.png" style="width: 91%; position: absolute; top: 46%; left: 5%;transform:scaleX(1);" >
+    <div class="char_comeup_legend">
+    <div id="audio_jesse" class="audiocontainer">
+    <audio preload="none" src="https://bonfiredog.co.uk/resources/amasterbetrayed/media/audio/couch.mp3" id="jesseaud">
+    </audio>
+    <div title="play" class="playbutton cursorclick"><span>&#8227;</span></div>
+    <div title="pause" class="pausebutton cursorclick">II</div>
+    <div title="restart" class="restartbutton cursorclick">&#8617;</div>
+</div>
+ </div>
+    </div>
+</div>
+
+<div class="comeup_caption comeupcap_jesse ev_hand cursorgrab" id="cc2c">
+<img src="media/tiledpaper.png" class="papermottle" >
+<h2>The Testimony of Jesse Couch</h2>
+<h3>(20 Years)</h3>
+<ul>
+<li>Former fisherman (now boatwright) in East Looe Harbour -:</li>
+<li>Friend of Kate Renshaw; also known as 'Mistress Orion' -:</li>
+<li>Sweetheart of Margaret Thomas (the Accused) -:</li>
+</ul>
+</div>
+
+
+
+<div class="comeup_paper comeup_kate audiopaper" id="c2b">
+
+    <div class="subtitles stflipback">
+
+       <p> I’d say there are two… no, no, three things you need, to do what I do. To be a
+woman of… wisdom. People seem to think that just any soul can wear a special
+‘at, light a few candles, put on an airy voice and they’ll have folk lining up to ‘ave
+their futures told. They think you can just… make it all up as you go about it. But
+there’s reason why folk will come from Liskeard - as far as Liskeard, mark you - to
+pay for the skills of Mistress Orion of Fish Street.</p>
+
+<p>The first thing you need… well, truth
+be told you do need a special ‘at. Folk
+won’t take you serious, with no hat.
+Don’t ask me why. Mine’s got ten
+stars sewn into it. Lovely piece.
+Trimmed here… look, rabbit fur, that
+is.</p>
+
+<p>And well, the second thing… you’ve
+got to do a bit of everything. No good
+these days setting up as just a hand-
+reader, or just a potion-maker. What
+with the wars and the harvests, times
+is too tough to be so weamish. So…
+you name it, Mistress Orion ‘ere does
+it. This morning I had a lost cow to find, and then a girl that wanted to see her
+future husband’s face in a scratched mirror… and after mi croust I’ll be knitting up
+a new scarf for old Tom Polmear. I tell him that I’ve knotted up all the next
+season’s storms into it… and if ‘e wears that each time he sails, e’ll have calm seas
+until Easter.
+</p>
+
+<p>You’ve got take what you can get. Thas’ the only way to survive. Take that young
+duffer what was staying with Robert Chester, over at Millendreath Cove.
+Markenham. The one with the Adam’s Apple you could cut a loaf with. As soon as
+I ‘erd he was one of them poem makers, mooning over tumbledown churches and
+piles of old stones, I sent Jesse straight off to pick him up. Oh, Jesse hated
+him. And Jesse hates most folks. But he likes the money more than ‘e
+hates the man, so he played the country fool, all bowing and scraping, just like I
+</p>
+<p>Offered to show that boy the sights… the old abbey at Lammana, and the Giant’s
+Hedge… anything with a whiff of fairies or ghosts about it. Really got the lad
+poared up! And then… well, it’s an old trick. An easy one. Jesse slips a
+bit of old cloth into the boy’s coat, and then tells ‘im it’s the mark of some ghost or
+goblin or other - that e’s been touched by the spirit world, and that he’s got to come
+and see me, to have the curse lifted. I tell you, by the time Jesse got ‘im to my
+door, he was half-addled with fear.
+</p>
+<p>On goes my ‘at, little sprig of rosemary burning, a dab of Old Cornish - ‘dew boz
+geno, eze muna thewh’ - and ‘e was spending coin quicker than thinkin’. Sold ‘im
+all manner of things - a spell to cure his spots, and a curse against his father,
+written on a crab shell - I e’en sold ‘im a bottle with a stone in it… told ‘im that
+it’ll keep ‘im safe from any spectre that should cross his path… So it
+should, for ten crowns! And, just for good measure, I told him it’d help him meet
+his true love. All boys his age are looking for their true love, trust me. I tol’ ‘im
+that she’d come in a form he wouldn’t recognise: but that ‘er name was written
+inside that stone, inside that bottle, and then when she met ‘is gaze, ‘e would know.
+</p>
+<p>It don’t always work, though… that Robert Chester, he wouldn’t have looked twice
+at me. Godly sort. Very sure of himselfs. E’s weren’t bad to look at, though. Short,
+and he’ll be fat in ten year, but now… hmm. No, you’d never have caught him
+coming up Fish Street. Men like that… reputation is everything, eh, Mr.
+Eavesdrop?
+</p>
+<p>Now, where…? Oh ayes! The third thing. Third thing is… you’ve got to really
+know folk. ‘Specially the ones you’ve ne’er met before. You’ve got to watch them,
+listen, remember everything… until you know their busyness better than they
+know it themselves. You can’t tell someone something they already know, and
+expect them to cross your palm for it.
+</p><p>
+I’ve lived ‘ere in Looe my life long, and e’en as a bearn, I watched folk about
+me… talking, shouting, boasting… and I started to notice queer things. I noticed
+that Mark Solomon always has food on the table, e’en though he hasn’t fished a
+day in the year. I noticed how nobody ever seems to catch smugglers on the
+Podrugan’s land, e’en though this coast’s swarming with gov’ment men elsewise. I
+noticed how that little Melly Solomon followed Margaret Thomas about, mooning
+over ‘er more than any man would… and Margaret… well, I noticed a lot ‘bout
+Margaret Thomas. I know ‘er family well. They sell me meat, furs… sold me Mr.
+Eavesdrop, too, when he was too tough and too threadbare to sell elsewise. I know
+Margaret Thomas’ busyness. And I tell you she didn’t hurt nobody. Not e’en if she
+wanted to. Not in ‘er state.
+</p><p>
+She were always wanting more for herself. Couldn’t read, couldn’t write, lazy as a
+housecat but she wanted, alright. Always coming to me for little tokens for good
+fortune. E’en more, these last few months. All sorts of charms… for kept secrets.
+For safe travels. For love. Then, a month ago she came, asking me to take ‘er to
+Wenna’s Well. I’m the only one who knows where it is. And there’s only one thing
+a young girl wants with the waters of that well… a very certain kind of luck. Well,
+looks like she got what she wanted. Jesse says the baby ain’t his, but who’s else
+could it be?
+</p><p>
+Oh! Ayes, I forgot! There is a fourth thing. I know what old Rector Penhell says
+about me every Sunday… to an empty church. I know ‘e says I’m a
+swindling wench, that’s it’s all tricks… but you do have to have a bit of the
+cunning about you. Just a sliver of it. With me, see, it’s the dreams. Every single
+night. I can’t stop ‘em. Only last night they were… like a whirlpool, round and
+round… white sheets flapping on the sands. Tall ships on stormy seas. Dogs
+slavering after rabbits. Iron teeth snapping shut. A sign above a door, banging in a
+gale. And a man… the ghost of a man. All in white cloth… tapping at a table.
+Tapping… tapping… waiting…
+</p><p>
+At least you can sell them, six for a sixpence!</p>
+
+        </div>
+        <div class="st_downarrow">>></div>
+        <div class="player stflipforward">
+
+
+    <img src="media/tiledpaper.png" class="papermottle" >
+    <img loading="lazy" class="char_comeup_pic" alt="a mischevous young woman with freckles in a lace cap, holding a scared-looking rabbit" src="media/kate.png">
+    <img class="speechbubble" src="media/speechbubble.png" style="width: 91%; position: absolute; top: 46%; left: 5%;transform:scaleX(1);" >
+    <div class="char_comeup_legend">
+    <div id="audio_kate" class="audiocontainer">
+    <audio preload="none" src="https://bonfiredog.co.uk/resources/amasterbetrayed/media/audio/renshaw.mp3" id="kateaud">
+    </audio>
+    <div title="play" class="playbutton cursorclick"><span>&#8227;</span></div>
+    <div title="pause" class="pausebutton cursorclick">II</div>
+    <div title="restart" class="restartbutton cursorclick">&#8617;</div>
+
+ </div>
+    </div>
+</div>
+</div>
+
+<div class="comeup_caption comeupcap_kate ev_hand cursorgrab" id="cc2b">
+<img src="media/tiledpaper.png" class="papermottle" >
+<h2>The Testimony of Kate Renshaw; Or 'Mistress Orion'</h2>
+<h3>(24 Years)</h3>
+
+<ul>
+<li>Local 'pellar'; being a Healer and Wise Wench -:</li>
+<li>Teller of fortunes and solver of Womanly Issue -:</li>
+<li>Knows the family of Margaret Thomas (the Accused) -:</li>
+</ul>
+</div>
+
+
+
+
+<div class="comeup_paper comeup_markenham audiopaper" id="c2d">
+    <div class="subtitles stflipback">
+       <p> Nay… I said nay! I shall not speak to one
+        more… fiend from this soggy, benighted little
+        province. As soon as the coach to Exeter
+        appears on that road, I will be aboard it, and
+        back into Christendom!
+        </p>
+        <p>Ugh… when Pater said it was still too
+        dangerous to travel to France - “your Tour shall
+        have to wait, boy” - I thought he just didn’t
+        want to pay for it. When I told him that George
+        Poffley had been to Athens not a year ago, and
+        was having his first book of verse published out of it, not a year finished at Eton…
+        Pater got that look in his eyes. “There’s much to inspire in Cornwall, boy”, he said.
+        And what else was it? Yes… “It’s not even really part of England, besides”. Well,
+        he was right about that! I’m very far from King and country here!
+        </p>
+        <p>Frankly, it’s been an utter disaster since Oxford. First the infernal coach throws a
+        wheel, in the rain, and I’m crushed under some fat shopkeeper’s wife for half a day
+        while a spare is found… we completely missed Avebury and Stonehenge… and
+        when I finally get here, I learn that Lady Podrugan… that… that old rattle! Not
+        only will she not have me as a guest at Morval House, she won’t even see me. ME!
+        The heir of Charlbury! She acts like I’m not worth the oil on the hinges, just
+        because she’s a marchioness…You know, they’re not even English, the Podrugans.
+        I remember my grandfather told me… new money, come over from Germany, to
+        build little machines for the mines. Their real name is…
+        Pudergoss!
+        </p>
+        <p>In the end, her creature, Penhell or whatever he answered to, took me down to that
+        little shack by the water… to stay with one of her tenants! You know, I could tell
+        there was something queer about the place… odd smells, damp sheets and…
+        noises, coming up through the floorboards at night. Penhell told me to stay indoors
+        after dark, but I wouldn’t have stepped outside for the Prince of Wales! The whole
+        place has this… awful sense about it. I’ve heard things, you know. Strange music,
+        echoing off the water. Green lights flickering in and out on the cliffs… there are
+        shades of the dead here, and no mistake… and not noble Greek shades,
+        philosophers and poets and warriors… grubby little Cornish ones.
+        </p>
+        <p> And then… Ugh! Trying to find somebody with both a working brain and pair of
+        legs to help me with my itinerary… in the end I managed to recruit this…
+        specimen who could barely bring himself to address his betters properly… Well, he
+        may have been uncouth, but we did tour some excellent sites. The ancient barrow
+        at Rillaton, and that utterly grotesque church at Lammana… in complete ruins.
+        Yes… yes, I enjoyed that. Got a few good couplets out of that.
+        </p>
+        <p> But then, at the stone circle in Duloe, he stops me dead - a hand on my arm, dare
+        he! - and he shows me… caught in the hem of my coat, a dirty piece of white cloth,
+        and he splutters, “My Lord, ‘ave you been touched by the White Ghoul of Duloe! There,
+        look, a piece of ‘is ghostly cloak! Oh, but ‘tis an omen! We must go to the wise
+        woman, for she shall sure wish to speak with ye!” Of course, at first I was ready to
+        strike the man, but he was quite insistent and... so I let him take me… to her… to
+        Mistress Orion… hmm…
+        </p>
+        <p>   Nay, enough! If you must, I will tell you what I told that oaf of a constable: it was a
+        frightful business, but I saw and heard almost nothing. At dusk I dined with Mr.
+        Chester, as I had done every night. I can’t recall what we spoke of: we didn’t have
+        much to talk about, in honesty. Face like a gravestone, when I read him my poetry.
+        That… girl served us at table, with all the attentiveness of a horse that’s got into
+        the wine cellar - she seemed a thousand miles away. Got soup on my cuff! I
+        suppose I got off lightly, all things considered…
+        </p>
+        <p>   I retired to my chamber to write, when Mr. Chester said that he would read a little.
+        Some time later I hear an almighty crashing-about, as if furniture was being
+        toppled, and glass smashed… Mr. Chester screaming… Of course I thought
+        nothing of myself, but rushed to the door to find that I had been locked within! I
+        saw nothing until the morning when the constable found me… nothing…
+        </p>
+        <p>  There! Is that it? The coach - finally! I shall be in Torpoint by nightfall. I don’t care
+        what Pater says: he’ll have to write to the Rashleighs and tell them I’m not
+        crawling any further into this godforsaken county! No more scuttle-browed
+        savages, no more ghosts, no more witches, no more murders… and no more ocean.
+        Ugh! The smell of it! That stinking rot all along the shoreline. And how cluttered
+        they keep that dingy little harbour! Boats strewn here and there like toys… why
+        can’t they be a bit more tidy? If we can manage to keep the boating lake at
+        Charlbury neat… oh, to be landlocked again! I cannot wait.
+        </p>
+        <p>  Now I… Well. Maybe… maybe you… Yes, you’ll do. Before I… Take a message
+        for me. To Mistress Orion. On Fish Street, I think it was. The wise woman… yes…
+        she was the only one who… hmm… tell her this, and her only. I didn’t see
+        anything in the house. My door was locked, as I told them. But… tell her… only
+        her… I did go to the window, to try and find some way out… after I heard the
+        scream, you see… and then… then tell her I saw it! The White Ghoul of Duloe! He
+        was there! Out in the darkness! Floating away, across the stones! In his white
+        sheet! She was right! She was right!
+        </p>
+        <p>   Wait, is that… is that… a rabbit, just there, going into that hedge? Didn’t you see
+        it? It looked straight at me! I could have sworn… Mistress! Mistress Orion! Is that
+        you? Oh where did I put that blasted thing… Mistress!
+        </p>
+    </div>
+    <div class="st_downarrow">>></div>
+    
+    <div class="player stflipforwards">
+        <img src="media/tiledpaper.png" class="papermottle" style="z-index:0;" >
+        <img loading="lazy" class="char_comeup_pic" alt="a wan, feeble-looking young man in a periwig and frock coat" src="media/markenham.png">
+        <img class="speechbubble" src="media/speechbubble.png" style="width: 91%; position: absolute; top: 46%; left: 5%;transform:scaleX(1);" >
+        <div class="char_comeup_legend">
+        <div id="audio_markenham" class="audiocontainer">
+        <audio preload="none" src="https://bonfiredog.co.uk/resources/amasterbetrayed/media/audio/markenham.mp3" id="markenhamaud">  
+        </audio>
+        <div title="play" class="playbutton cursorclick"><span>&#8227;</span></div>
+        <div title="pause" class="pausebutton cursorclick">II</div>
+        <div title="restart" class="restartbutton cursorclick">&#8617;</div>
+    
+     </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="comeup_caption comeupcap_markenham ev_hand cursorgrab" id="cc2d">
+    <img src="media/tiledpaper.png" class="papermottle" >
+    <h2>The Testimony of The Hon. William Markenham</h2>
+    <h3>(17 Years)</h3>
+    
+    <ul>
+    <li>Son of Sir John Markenham, Baronet of Charlbury -:</li>
+    <li>Visitor to Cornwall; touring its Antick Ruins -:</li>
+    <li>Lodged with Robert Chester at his rented house at Millendreath Cove -:</li>
+    </ul>
+    </div>
+    
+    
+    
+<div class="comeup_paper comeup_penhell audiopaper" id="c2e">
+
+    <div class="subtitles stflipback">
+    
+       <p> I know Margaret Thomas. It were these
+        two hands what baptised her. I’ve had the crowns
+        of most of the girls of this parish in my palms…
+        but I do remember her. Slippery. ‘Er whole face
+        crimped up and brushed brown, like a pie crust.
+        Monstrous size for a maid, e’en then. Always
+        crying hungry…
+        </p>
+        <p>  Every folk’s so blowed by what that Jezebel’s done.
+        If only they’d pried their eyes open. They’d have seen it all coming, sure as a
+        sunset. “I do not permit a woman to exercise authority… she is to remain quiet.”
+        So spake the apostle: but come you here, Saul, and listen to these maids of Looe
+        screeching like stuck gulls! Heads uncovered, eyes raised in defiance, drinking
+        liquids… my pews empty most Sundays… I ain’t christened a child since All
+        Saint’s Day last. The Devil walks atween ‘em, these maids: I see that forked tail
+        whippin’ under every skirt! They’ve beckoned in Hell and its legions to Looe, no
+        mistake! At night I hear the hooting of demons on the air!
+        
+        </p>
+    
+    
+        <p>   I’ve heard some folk say that she’s lying, about the babe in her belly… but you can
+        tell by the heft of her. Another child lost from God. More swollen bellies in Looe
+        than there are weddings, that’s certain. ‘Course, it matters not, to these maids. All
+        they need do is waddle over to Mistress Orion, buy a draught of poison, cheap as a
+        glass of beer, and… Mistress Orion… you may hide behind your
+        heathen tricks… but I know you, Katherine Renshaw. With these two hands I
+        baptised you too! And how you cried… I should have dashed you against the font!
+        
+        </p>
+        <p>  No, some sin was always coming, on the breeze. It could have been any of them…
+        when any woman gets notions, she gets greedy. She turn vicious. But that Thomas
+        girl… you could always see it, in her eye… starving for anything she could
+        swallow. When Mr. Chester took her as his maid, into that house… you’d see her,
+        oozing about the market, at his chores, with his coin in her hand… fingering the
+        fine cloth, the best cuts of meat… as if she were the lady of the house!
+        
+        </p>
+        <p>  Well, seems she got hungry enough, at last… every folk is wonderin’ what
+        happened that night, inside those walls… none was there to see, apart from that…
+        trickle of a boy from up-country. Maybe she did try to make herself the lady of the
+        house… to stray Chester from his wife, and scarce liked the answer a strong,
+        Christian man gave her? Maybe he found her with that locket she took, and in her
+        shame she fell upon him…
+        
+        </p>
+        <p>  None saw… because none went looking. I’m the only one who e’er thinks to look.
+        I was about that night, at my… well, my rounds, in the parish; keeping a watch, o-
+        on the cliff path, then down by Millendreath Cove, coming close to that house; and
+        I heard those ungodly noises… the smashing, the splintering, and a cry, from a
+        man’s lips, I’d stake my soul upon it… And then I saw... Margaret Thomas.
+        Stooping out the back door, sifting herself into the night… but I saw it! I saw it
+        there… a smile, proud on that brushed-brown face! The smile of a murderess!
+        Painted there by the Devil!
+        
+        </p>
+        <p>  Poor Lady Podrugan… she leased that house to Robert Chester, in her charity. I
+        was against it from the start… an outsider, a mere merchant, in the house of a… a
+        marchess… she forgets sometimes, since Lord Podrugan left us… she does not…
+        she is too kind for this world. And now… now the Devil is her lodger. Now he’s
+        got another nest for his imps and spirits to whistle their foul tunes. No… no, I
+        counsel no good Christian man to walk that place… especial after dark. His soul
+        shall be forfeit! I shall keep lookout. By these eyes, these hands… I hold the soul
+        of this place, as thin as a babe’s crown… What is it Isaiah says? No rest for
+        the righteous…</p>
+    
+    </div>
+    <div class="st_downarrow">>></div>
+    <div class="player stflipforward">
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <img loading="lazy" class="char_comeup_pic" alt="a vicious-looking priest with a periwig and stubble" src="media/penhell.png">
+        <img class="speechbubble" src="media/speechbubble.png" style="width: 91%; position: absolute; top: 46%; left: 5%;transform:scaleX(1);" >
+        <div class="char_comeup_legend">
+        <div id="audio_penhell" class="audiocontainer">
+        <audio preload="none" src="https://bonfiredog.co.uk/resources/amasterbetrayed/media/audio/penhell.mp3" id="penhellaud">
+        </audio>
+        <div title="play" class="playbutton cursorclick"><span>&#8227;</span></div>
+        <div title="pause" class="pausebutton cursorclick">II</div>
+        <div title="restart" class="restartbutton cursorclick">&#8617;</div>
+    
+     </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="comeup_caption comeupcap_penhell ev_hand cursorgrab" id="cc2e">
+    <img src="media/tiledpaper.png" class="papermottle" >
+    <h2>The Testimony of Rector Mephiboseth Penhell</h2>
+    <h3>(46 Years)</h3>
+    
+    <ul>
+    <li>Parish priest of St. Wenna's Church in Morval -:</li>
+    <li>Advisor Spiritual to Lady Podrugan -:</li>
+    <li>Protects the town from demons, witches and other Supernatural Dangers (in his Estimation) -:</li>
+    </ul>
+    </div>
+    
+
+    
+    <!-- WIFE LETTER -->
+
+
+
+    <div class="comeup_paper comeup_wife cursorgrab" id="c7">
+        <div class="cardcontainer">
+            <div class="card">
+                Dear Sir 
+                <br >
+                <p>I shall trust this Meets you at your Lodging in West Looe; a Note to Thank you and your Esteem'd Master for your help in this Matter; I have had no Report of Looe's Constable him-Self as the Man <span id="ul">seems Inconstant Enough</span>; so I shall Crave some Report of your Thoughts.</p>
+        
+                <p>I promised to give you some Account of what I know, which is Little; Robert had written me in September to meet him on the fourth of October at Torpoint in some coachhouse; and for us to stay there two Nights on our way to Looe and his Lodgings; but a Week later did Write again & <span id="ul">told me not to Come</span> - & that he would Write once More - yet now I am writing to you in his Stead.</p>
+                
+                <p>In May, just after he had Arrived in Cornwall, Robert wrote to tell me he felt some of the townsfolk had meant Menace to him; & did give me the names of <span id="ul">Mssrs. Solomon, Penhell & Drewson</span>; though he would not Write Further on it. My husband was a man of Christian Scruple & made few Friends amongst Men with-out them; & in my Heart <span id="ul">I cannot think that this wretched Girl did the Deed</span>; & that if she did she was put to it by Others for their Purpose; for Greed or Venging Spite.</p>
+        
+                <br >
+                Your Faithful & Endebted Servant, 
+                <br >
+        
+                <span class="right">Mrs Mary Chester</span>
+                <span class="right">Hamilton Place, London</span>
+                <span class="right">7 Nov 1763</span>
+                <br >
+                <p>P.S. When you have finished with it I should be further Endebted that you send on the Locket to me in London; it was Rare to have an Indulgense of Robert aside from his very Fine Words.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SOUVENIR -->
+
+
+    <div class="comeup_paper comeup_souvenir cursorclick" id="c15">
+        <img class="markfront markflip" alt="a print of restormel castle in cornwall, with strange letters daubed over the front and a symbol that looks like a rabbit." src="media/markfront.png" >
+        <div class="markback markflipback">
+        <img src="media/markback.png" style="width:100%;" >
+        <div class="markleft">
+            <h2><s>A Poet</s> The New Man Of Albion</h2>
+            <h4>or,</h4>
+            <h4><s>World's End</s> <s>Markenham's Inferno</s> A New Thule</h4>
+            <h4>An Elegy in <s>12</s> 42 Verses</h4>
+
+            <p class="skew2">
+                Fie <s>Parnassus High!</s> Foul Rome! Within your <s>Streets</s> Lanes<br >
+                No <s>Heroes</s> Remus living, no Deeds Fair-Lain,<br >
+                Only Hordes of wan young Swains<br >
+                Erode your Glory, Thieve your Fame!
+            </p>
+
+            <p class="skew2">None of Europe yet Surfices<br >
+            For a Man so worthy of the Brand,<br >
+            There are Lands closer yet whose Prizes<br >
+            Seam more Fantastic yet than <s>Sarmar</s>Samakand's!
+            </p>
+
+            <img loading="lazy" class="crossout1" src="media/crossout1.png" >
+
+            <p class="skew1">England does Ceaze past Bristol Town,<br >
+                Few Coaches brave those Tempest'ous Rides,<br >
+                At Plymouth sail benighted Crowds<br >
+                Seeking some more Civil Clime!
+            </p>
+
+            <p class="skew1">Yet there I went in Search of <s>Reason</s> Truth<br >
+            In Antick Pits, Adder-wracked<br >
+            I saw the Mark of Arthur Smooth'd<br >
+            And all the Dragons he <s>Attack'd</s>
+            </p>
+
+            <p class="skew1">My tales of Seas as high as Steeples<br >
+                In London, Reader, will you Doubt;<br >
+                Of Noble, Savage Races Peopl'd<br >
+                And Rul'd by a <s>Pulchritude</s> Sorceress Who Flouts
+                </p>
+
+        </div>
+        <div class="markright">
+            <p class="skew2">The Laws of God, in Voice most Sweet,<br >
+            As pure as any Siren's <s>Rasp</s>Keen<br >
+            Before her my Resolve Depletes<br >
+            And I fell I for this Dark <s>Asp</s> Aethene
+            </p>
+
+            <p class="skew3">
+                Awoke I to a Land <s>Mad</s> Unsane,<br >
+                Full of Demons, Boggarts Roaming<br >
+                In Fields Hare stand like Men Profane<br >
+                Dancing 'neath my <s>Privy</s> Window Moaning
+                
+            </p>
+
+            <img loading="lazy" class="crossout2" src="media/crossout2.png" >
+
+            <p class="skew3">I 'member the Night that Murder Wrought,<br >
+                Now I journey back to <s>Father</s> Reason,<br >
+                As I heard the Screams fall Short<br >
+                The Night took on Peculiar Season
+            </p>
+
+            <p class="skew4">In the Yard outside my Room<br >
+                As I went to <s>Chester's</s>my Host's Aid<br >
+                A crawling Ghoast, a Spiriting Doom<br >
+                White in Cloths went 'cross the Glade!
+            </p>
+
+            <p class="skew4">Just as the Sorceress had Spake,<br >
+                Should I meet the Dead that Night <br >
+                And there I won my last Keepsake;<br >
+                She was right! She was right! She was right! She was right!
+            </p>
+
+
+        </div>
+        </div>
+        </div>
+
+ 
+
+
+<div class="comeup_caption comeupcap_souvenir ev_hand cursorgrab" id="cc15">
+    <img src="media/tiledpaper.png" class="papermottle" >
+     <h2><span class="textred">My Lord,</span></h2>
+    <p>I found this beneath the Dreser in the quarters of Master Markenham at the Millendreath Lodge -- on the Rear it is Markenhams Hand but I know nott the Words nor the Hand on the Front - nor what the Drawing means -:
+    <p>This paper was alongside some other Items I cannot send ahead of Me -:</p>
+    <ul>
+        <li>A Snuff-Box carv'd with Scenes of the Moorland at Bodmin -:</li>
+        <li>A fan painted Poorly with Fal-mouth Harbour -:</li>
+        <li>A Receipt for a Painting -- 'Of a Gentleman in Rayment(?) about the Ruins of Restormel Abbay' -:</li>
+        <li>Some other Gimcracks & Sundries -:</li>
+    </ul>
+    <p>It does seem Master Markenham wishd to be Away from Cornwal in some Haste -:</p> 
+    </div>
+
+
+    <!-- CARTOON -->
+
+    <div class="comeup_paper comeup_cartoon" id="c8">
+        <img loading="lazy" alt="a satirical cartoon showing Robert Chester as an irate dwarf, angry at his wife for allowing his child's excrement to stain his white coast" src="media/cartoon.png">
+    </div>
+
+    <div class="comeup_caption comeupcap_cartoon ev_hand cursorgrab" id="cc8">
+        <img src="media/tiledpaper.png" class="papermottle" >
+         <h2><span class="textred">My Lord,</span></h2>
+        <p>Some sauntry Reading taken from 'The Strand Intelligencer', for the Coach down Country -- it seems Chester already had a Reputation as a Pious bore in London -- wary of any Vice about Him -:</p>
+        <p>His Wife tells me the Drawing is quite unkind to Life -- but that the White Coat they have quite Faithfull-- he wears it Everywhere she Says -:</p>
+    </div>
+
+
+    <!-- BILL -->
+
+    
+    <div class="comeup_paper comeup_bill cursorgrab" id="c9">
+        <div class="cardcontainer">
+            <div class="card">
+    <img loading="lazy" src="media/bill.png" alt="a scrap of paper with a bill for a room for a night at an inn in Torpoint called the Trap and Hound" >
+            </div>
+        </div>
+    </div>
+
+    <div class="comeup_caption comeupcap_bill ev_hand cursorgrab" id="cc9">
+        <img src="media/tiledpaper.png" class="papermottle" >
+         <h2><span class="textred">My Lord,</span></h2>
+        <p>This was found in the midden pit behind Millendreath Lodge -- I have ask't Chester's Wife of this Mr. Warren -- but she says that they know no Soul by this Name -:</p>
+    </div>
+
+
+    <!-- DEFOE -->
+
+    <div class="comeup_paper comeup_defoe cursorgrab" id="c12">
+        <img loading="lazy" src="media/defoe1.png" alt="a page from Daniel Defoes Travels in England" >
+        </div>
+    
+        <div class="comeup_paper comeup_defoe cursorgrab" alt="a page from Daniel Defoes Travels in England" id="cc12">
+            <img loading="lazy" src="media/defoe2.png" >
+            </div>
+    
+        <div class="comeup_caption comeupcap_bill ev_hand cursorgrab" id="ccc12">
+            <img src="media/tiledpaper.png" class="papermottle" >
+             <h2><span class="textred">My Lord,</span></h2>
+            <p>My thanks for these Pages you sent me for the Coach from London -- & that you did not bid me take all Three Volumes -:</p>
+    
+            <p>I share this Defoe fellow's Estimation of this Place -- and is it Little changed in the two Score years since he Writ this-:</p> 
+                
+            </div>
+
+            <!-- STATEMENT -->
+
+            <div class="comeup_paper comeup_statement cursorgrab" id="c10">
+                <div class="statementinner">
+                <img src="media/testimonypaper.png" class="statementbg">
+                <div class="statement_frag" id="frag1">Meverell at his Rest in the Jolly Sailor from about 6 o'Clock ---- there met w/ Jago Solomon &amp; Hugh Drewson ---- each Stood him 1 Glass of Beer -:</div>
+            
+                <div class="statement_frag" id="frag2">Solomon & Drewson Remain'd at the Inn until (at least) Meverell was call'd Away ---- no Boats put out that Night owing the fullest Moon & rain & Wind -:</div>
+            
+                <div class="statement_frag" id="frag3">Since Weather broke a Week gone Solomon & Drewson at Sea ---- not back until another Week -:</div>
+
+                <div class="statement_frag" id="frag3a">Professes Miss Thomas to be a dull Girl - no good at her Reading nor Writing yet only handy with her Sewing and her Talking (he Said)</div>
+            
+                <div class="statement_frag" id="frag4">Jesse Couch there also at the Inn from 6 untill 8 or 9 ---- went to speak with a Man at Hannafore about some Tools (he Said) -- & did return an Hour or so Later -:</div>
+            
+                <div class="statement_frag" id="frag5">Jesse & Margaret known to be sweet-hearts ---- made no Hiding of Talking or Laughing about Town -:</div>
+            
+                <div class="statement_frag" id="frag6">A Month or more gone saw Jesse at Mr. Chester's lodgings on his Rounds ---- about the Kitchin door speaking with Margaret ---- both very Grave until they spyed him Coming -:</div>
+                
+                <div class="statement_frag" id="frag7">At 9 o'Clock on the night at Query ---- Abel Johnson who lives at Plaidy above Millendreath Cove come to Fetch him ---- speaking of Lights & much Comotion at Millendreath Lodge -:</div>
+            
+                <div class="statement_frag" id="frag8">Owing the Weather he took inland road up through Shutta &amp; Plaidy with Johnson -- & came down into the Cove closer to 10 -:</div>
+            
+                <div class="statement_frag" id="frag9">Lodge found Open & in a great Dis-order ---- chairs Flung about ---- a Pickture of Violense (he Says) -:</div>
+            
+                <div class="statement_frag" id="frag10">Upon Searching found none about but Master Markenham the house-Guest ---- hidden Lock'd in his Room a-Crying of Demons & Fiends -:</div>
+            
+                <div class="statement_frag" id="frag11">Then Meverell went about to the Thomas' Farm to seek Margaret Thomas ----  & the rest you Know Sir what I found there (he Says) -:</div>
+            
+                <div class="statement_frag" id="frag12">He said that he & Reverend Penhell had spoke with Mr. Chester some Month ago to not Abide at the Lodge --- for it is Lonesome apart from the Town & unproteckted from Felons -:</div>
+            
+                </div></div>
+            
+                <div class="comeup_caption comeupcap_statement ev_hand cursorgrab" id="cc10">
+                    <img src="media/tiledpaper.png" class="papermottle" >
+                     <h2><span class="textred">My Lord,</span></h2>
+                    <p>The Testimonie of John Meverell -- Constable at East Looe Gaol & the first to come to the Lodge on the night of the Murder-:
+                    <br ><br >
+                    I have heard it said that Meverell was very Drunk on the Night he Subscribes here -- he scarce seem'd better Sober when I spoke with Him. Could not Keep his Hands still & made many Foul Jokes about his fellows -- Ms. Renshaw & Mr. Couch especial -:
+                    <br ><br >
+                    Forgive me the State of the Page - we met in the Jolly Sailor & I had nought to rest upon but my Knee -:</p> 
+                </div>
+
+                <!-- BLURB-->
+
+                
+        <div class="comeup_paper comeup_front cursorgrab" id="c4">
+
+            <div class="fm_top">
+                <h1><em>A Master</em>&nbsp;&nbsp;&nbsp;B&nbsp;E&nbsp;T&nbsp;R&nbsp;AY&nbsp;E&nbsp;D<em>!</em></h1>
+                <h4>or,</h4>
+     
+    
+            <h4><em>An Evill Murder & Theft, Commited in the Town-ship of</em></h4>
+            <h5><em><span class="underline">EAST LOOE</span>, in the Province of Corn-wall</em></h5>
+    
+            <img src="media/hr1.png" class="foldhr" >
+    
+            <h4>Concerning the Vile KILLING of one <em><span class="underline">Robert Chester</span></em></h4>
+            <h5><span class="eml">(A Busyness-man of London, & A Visitor to Looe)</span></h5>
+    
+            <h5><span class="eml">:- by -:</span></h5>
+    
+            <h4>One <em><span class="underline">Margaret Thomas</span></em>, aged but SEVENTEEN YEARS</h4>
+            <h5><span class="eml">( His House-Maid)</span></h5>
+    
+            <div id="fmimgbox">
+                <img  loading="lazy" class="img1" src="media/chester.png" alt="a stylised woodcut of Robert Chester" >
+                <img  loading="lazy" class="img2" src="media/murder.png" alt="a stylised woodcut of Chester's murder by Margaret Thomas" >
+            </div>
+    
+            <img src="media/hr1.png" class="foldhr" >
+    
+            <h4 id="details_title">The Terrifick & Most Awe-full Particulars of the CRIME, as Related by an Honest & Godly Resident of that Place -:</h4>
+            
+            <h5 class="details">How <span class="underline">ROBERT CHESTER</span> did take a house near Millendreath Cove, to conduct some busy-ness in Looe, & these past eight Months did employ <span class="underline">MARGARET&nbsp;&nbsp;THOMAS</span>, a local girl of no previous Comment, as his Maid-of-all-Work;</h5>
+            <img src="media/hr_little.png" class="hrlittle" >
+    
+            
+            <h5 class="details">Upon the night of Saturday last (being All Hallow Eve) was a great Shout & Comotion heard there, & the house Ran-sacked, some small Matters taken; & neither Chester nor the Girl in any Place Found;</h5>
+            <img src="media/hr_little.png" class="hrlittle" >
+    
+            
+            <h5 class="details">When the Constable did come to the house of Margaret Thomas's father (to en-quire of her) was she found there with -:</h5>
+            <img src="media/hr_little.png" class="hrlittle" >
+    
+            
+            <h5 class="details">A <span class="underline">LOCKET</span>, of silver & great Worth, bearing Chester's name;</h5>
+            <h5 class="details">A <span class="underline">BLOODIED KNIFE</span>, kept within a cup-board;</h5>
+            <img src="media/hr_little.png" class="hrlittle" >
+    
+            
+            <h5 class="details">Now does the Girl stand in the Gaol at Looe, awaiting transport to Bodmin Assize: charged with the theft of the locket; & the cutting unto <span class="underline">DEATH</span> of its owner;</h5>
+            <img src="media/hr_little.png" class="hrlittle" >
+    
+            <h5 class="details">Speaking she Nought but to claim that she is with <span class="underline">CHILD</span> - sure hope-full for the Courts Mercy for with-out it - shall she sure <span class="underline">HANG</span>; </h5>
+            <img src="media/hr_little.png" class="hrlittle" >
+    
+            <h5 class="details">Though Many in that Place do Suspeckt her <span class="underline">TRUE LOVER</span> to have Compelled her to such a Deed;- in Pursuit of Chester's <span class="underline">RICHES</span> - & does now Disvow her Faithfullness by his Cowardly <span class="underline">SILENCE</span>-:</h5>
+            
+            <img src="media/hr_little.png" class="hrlittle" >
+            <img src="media/hr_little.png" class="hrlittle" >
+    
+            <h6>Printed at <span class="eml">FALMOUTH</span>&nbsp; by Matthew Allinson in the Market Strand, opposite Bell's Court</h6>
+            <span class="h7">[<span class="eml">6d where Sold</span>]</span>
+            <h6 class="datefm">M D C C L X I I I </h6>
+    
+            </div>
+        </div>
+
+<!-- WEAVE -->
+
+<div class="comeup_paper comeup_weave cursorgrab" id="c16">
+    <img loading="lazy" src="media/weave.png" alt="a woven sampler with a number of words and symbols on it">
+</div>
+
+<div class="comeup_caption comeupcap_weave ev_hand cursorgrab" id="cc16">
+    <img src="media/tiledpaper.png" class="papermottle" >
+    <h2><span class="textred">My Lord,</span></h2>
+    <p>This sampler was found Laid out upon the ropes beneath Mr. Chesters Mattress -- many of the Marks I do not Recogknise -- but it Seems that somebody stitched in some Breed of Spell -:</p>
+
+</div>
+
+<!-- 3D MODELS-->
+
+<div class="comeup_paper comeup_threedee cursorgrab" id="c5">
+    <iframe title="3D Model: Knife found under Margaret's bed." src=""></iframe>
+    <div class="threedeeloadingsign">Loading...</div>
+    <img class="rotateicon" src="media/rotate.png" >
+</div>
+
+    <div class="comeup_caption comeupcap_threedee ev_hand cursorgrab" id="cc5">
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <h2><span class="textred">My Lord,</span></h2>
+        <p>A good Likeness of the Knife found in the dresser in Margaret Thomas' room -:</p>
+
+        <ul>
+        <li>Very Dull along the edge but fresh Sharp at the tip -:</li>
+        <li>Blood is dry yet no more than two Weeks old -:</li>
+        </ul>
+    </div>
+    
+    
+    <div class="comeup_paper comeup_threedee cursorgrab" id="c5c">
+    <iframe title="3D Model: wooden icon with mysterious carvings" src=""></iframe>
+    <div class="threedeeloadingsign">Loading...</div>
+    <img class="rotateicon" src="media/rotate.png" >
+</div>
+
+    <div class="comeup_caption comeupcap_threedee ev_hand cursorgrab" id="cc5c">
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <h2><span class="textred">My Lord,</span></h2>
+        <p>This was found beneath Margaret Thomas' windowsill (naild there from the Outside) -:</p>
+        <ul>
+        <li>Note the crude carving at the Heart and the Sex Sir -:</li>
+        <li>And on the Reverse -- I think a present from her Lover Mr. Couch? -:</li>
+        </ul>
+    </div>
+    
+    
+    
+<div class="comeup_paper comeup_threedee cursorgrab" id="c5d">
+    <iframe title="3D model: the locket that was stolen" src=""></iframe>
+    <div class="threedeeloadingsign">Loading...</div>
+    <img class="rotateicon" src="media/rotate.png" >
+</div>
+
+    <div class="comeup_caption comeupcap_threedee ev_hand" id="cc5d">
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <h2><span class="textred">My Lord,</span></h2>
+        <p>A likeness of the Locket stolen by the Accused -- very Fine work in Silver Intended for Mr. Chesters Wife upon his Return to London -:</p>
+    </div>
+    
+    
+    <div class="comeup_paper comeup_threedee cursorgrab" id="c5e">
+    <iframe title="3D model: a grotesque charm made from a rabbit skull." src=""></iframe>
+    <div class="threedeeloadingsign">Loading...</div>
+    <img class="rotateicon" src="media/rotate.png" >
+</div>
+
+    <div class="comeup_caption comeupcap_threedee ev_hand cursorgrab" id="cc5e">
+        <img src="media/tiledpaper.png" class="papermottle" >
+         <h2><span class="textred">My Lord,</span></h2>
+        <p>Found beneath Robert Chester's bed, along with the Sampler -- a rabbit skull tied with Feathers (a duck's I believe) -- & old Coins in the eyes set with Glue -:</p>
+    </div>
+
+
+    <div class="comeup_paper comeup_threedee cursorgrab" id="c5a">
+        <iframe title="3D model: a mask with rabbit ears." src=""></iframe>
+        <div class="threedeeloadingsign">Loading...</div>
+        <img class="rotateicon" src="media/rotate.png" >
+    </div>
+    
+        <div class="comeup_caption comeupcap_threedee ev_hand cursorgrab" id="cc5a">
+            <img src="media/tiledpaper.png" class="papermottle" >
+             <h2><span class="textred">My Lord,</span></h2>
+            <p>A Curius object Found Hid in some Bushes near to Mr. Chester's Lodgings -- note that only Jesse Couch (the boat builder &amp; a sweet-Heart of Margaret Thomas) has any skill with Wood like to this in the whole Town -:</p>
+        </div>
+    
+    
+        <div class="comeup_paper comeup_threedee cursorgrab" id="c5b">
+        <iframe title="3D model: a lantern" src=""></iframe>
+        <div class="threedeeloadingsign">Loading...</div>
+        <img class="rotateicon" src="media/rotate.png" >
+    </div>
+    
+        <div class="comeup_caption comeupcap_threedee ev_hand cursorgrab" id="cc5b">
+            <img src="media/tiledpaper.png" class="papermottle" >
+             <h2><span class="textred">My Lord,</span></h2>
+            <p>This lantern was Found in the Cellars beneath Millendreath Lodge -- where Robert Chester took his Lodgings -- the Constable spoke that it was of no Consequence but note the Greenish paper to cast a Glow of a very Particuklar Sort -:</p>
+        </div>
+
+
+</section>
+
+
+
+
+
+
+<div class="topsection">
+<!-- =TOP SECTION======================================================================================================================================================================== -->
+<div id="cloudtop">
+<img src="media/moon.jpg" alt="A cloudy night sky with a full moon" >
+</div>
+
+<div id="boardtop"><div id="boardtop_scratch"></div></div>
+
+<div id="boardtopborder_boss"></div>
+
+<svg id="boardlines" width="100vw" height="100vh" style="display: block;z-index: 5;position: relative;pointer-events:none;">
+    <line stroke-linecap="round" stroke-linejoin="round" x1="50%" x2="0%" y2="31%" style="fill:black;fill-opacity:0;stroke:black;stroke-width:22;" y1="1.7%"></line>
+    <line stroke-linecap="round" stroke-linejoin="round" x1="50%" x2="100%" y2="31%" style="fill:black;fill-opacity:0;stroke:black;stroke-width:22;" y1="1.7%"></line>
+    </svg>
+
+<div id="mondroit" alt="a battered relief of the royal coat of arms"><img src="https://bonfiredog.co.uk/resources/amasterbetrayed/media/img/crown2.png"></div>
+
+<div id="boardtitle">
+<div id="boardtitle_scratch">
+<div id="boardtitleborder_top"></div>   
+<div id="boardtitleborder_left"></div>       
+<div id="boardtitleborder_right"></div>
+
+</div>
+<h1><span>A MASTER BETRAYED!</span></h1>
+<h2>Can you solve the murder of Robert Chester?</h2>
+<h3 class="date">MDCCLX</h3>
+<div id="cta_button_border">
+</div>
+<button id="cta_button" type="button" name="begin" class="cursorclick">Begin</button>
+</div>
+
+<div id="mainborder_left"></div>       
+<div id="mainborder_right"></div>
+
+</div>
+
+<div class="maincontent">
+<div id="boardtitleborder_bottom"></div>
+
+
+
+<!-- =BOARD CONTENT======================================================================================================================================================================== -->
+
+<div id="boardbackground"><div id="boardbackgroundscratch"></div>
+
+
+<!-- =ALL SVGS======================================================================================================================================================================== -->
+
+
+<svg id="svgcanvas" width="100%" height="100%">
+    <filter id="chalk"><feTurbulence result="T" numOctaves="3" seed="0" type="fractalNoise" baseFrequency=".4"></feTurbulence><feOffset dy="-2" dx="-2"></feOffset><feDisplacementMap in2="T" scale="5" xChannelSelector="R" yChannelSelector="G" in="SourceGraphic"></feDisplacementMap></filter>
+
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" x2="28%" y2="20.2%" y1="19.12%" x1="11.5%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" x2="28%" y2="20.2%" y1="20.12%" x1="56.5%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y1="20.12%" x1="56.5%" x2="83%" y2="19%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" x2="28%" y2="20.2%" y1="34.12%" x1="15.5%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" x2="28%" y2="20.2%" x1="36.5%" y1="29.7%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" x1="36.5%" y1="29.7%" x2="76%" y2="28.7%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y1="62.12%" x1="22%" y2="42.5%" x2="48.5%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" x1="36.5%" y1="29.7%" x2="48.5%" y2="42.5%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="53.5%" y1="39.5%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="70.5%" y1="40.4%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" y1="47.5%" x1="58.5%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="36.5%" y1="47.4%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" x2="48.5%" y1="41.9%" y2="42.5%" x1="34.4%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="90.5%" y1="40.8%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="87.5%" y1="47.6%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" y1="57.8%" x1="65%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="41.5%" y1="56.1%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="12.5%" y1="50.2%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y2="42.5%" x2="48.5%" x1="8.5%" y1="46.1%"></line>
+<line filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.7vw;" stroke-linecap="round" stroke-linejoin="round" y1="40.9%" x1="90.5%" x2="87.2%" y2="67.8%"></line>
+</svg>                                                             
+</div>
+
+<!-- #ABOUT #################################################################################-->
+ 
+  <div class="paper p_about cursorclick" id="p1">
+    <div class="onboard_paper p_about_onboard cursorclick" >
+    <img src="media/mistake.png" alt="a crumpled piece of paper">
+    </div>
+</div>
+
+
+
+
+<!--------------------------------------------------------------------------------------->
+<!-- MAP-->
+<!--------------------------------------------------------------------------------------->
+                
+         <div class="paper p_map" id="p3">
+            <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+             <svg class="paperoutline">
+                <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+             <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+            </svg>
+            <div class="onboard_paper p_map_onboard cursorclick readfont" >
+                <img src="media/map_final_2.png" alt="a map of Looe" >        
+            </div>
+        </div>
+
+       
+
+
+<!--------------------------------------------------------------------------------------->
+
+       <!-- EYEWITNESS TESTIMONIES-->
+
+<!--------------------------------------------------------------------------------------->
+
+<!-- PODRUGAN-->
+        <div class="paper p_pod" id="p2">
+            <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+            <svg class="paperoutline">
+            <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+            <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+            </svg>
+            <div class="onboard_paper p_pod_onboard cursorclick readfont flipper" >
+                <img src="media/tiledpaper.png" class="papermottle" >
+            <img src="media/pod.png" alt="a portrait of Wilhelmina Podrugan">
+            </div>
+        </div>
+
+   
+   
+
+
+
+
+    <!--------------------------------------------------------------------------------------->
+
+<!-- SOLOMON-->
+<div class="paper p_melly" id="p2a">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+    <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+    </svg>
+    <div class="onboard_paper p_melly_onboard cursorclick readfont flipper" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+    <img src="media/melly.png" alt="a portrait of melly solomon">
+    </div>
+</div>
+
+
+
+  <!--------------------------------------------------------------------------------------->
+
+<!-- JESSE-->
+<div class="paper p_jesse" id="p2c">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+    <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+    </svg>
+    <div class="onboard_paper p_jesse_onboard readfont cursorclick flipper" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+    <img src="media/jesse.png" alt="a portrait of jesse couch">
+    </div>
+</div>
+
+
+
+
+
+    <!--------------------------------------------------------------------------------------->
+
+<!-- RENSHAW-->
+<div class="paper p_kate" id="p2b">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+    <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+    </svg>
+    <div class="onboard_paper p_kate_onboard cursorclick readfont flipper" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+    <img src="media/kate.png" alt="a portrait of kate renshaw">
+    </div>
+</div>
+
+
+
+<!-- --------------------------------------------------------------------------- -->
+
+<!-- MARKENHAM-->
+<div class="paper p_markenham" id="p2d">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+    <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+    </svg>
+    <div class="onboard_paper p_markenham_onboard readfont cursorclick flipper" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+    <img src="media/markenham.png" alt="a portrait of william markenham">
+    </div>
+</div>
+
+
+<!-- --------------------------------------------------------------------------- -->
+
+<!-- PENHELL-->
+<div class="paper p_penhell" id="p2e">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+    <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+    </svg>
+    <div class="onboard_paper p_penhell_onboard readfont cursorclick flipper" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+    <img src="media/penhell.png" alt="a portrait of Mephiboseth penhell">
+    </div>
+</div>
+
+    
+<!--------------------------------------------------------------------------------------->
+
+       <!-- WIFE LETTER-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <!-- WIFE LETTER-->
+      <div class="paper p_wife" id="p7">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        <svg class="paperoutline">
+           <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+        <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+       </svg>
+
+        <div class="onboard_paper p_wife_onboard cursorclick readfont" >
+            <img src="media/wife_letter.png" alt="a handwritten letter">
+            </div>  
+        </div>
+
+    <!--------------------------------------------------------------------------------------->
+
+       <!-- MARKENHAM SOUVENIR-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <div class="paper p_souvenir" id="p15">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        <svg class="paperoutline">
+           <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+        <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+       </svg>
+
+        <div class="onboard_paper p_souvenir_onboard cursorclick readfont flipper" >
+            <img src="media/markfront.png" alt="a defaced print">
+            </div>  
+        </div>
+
+
+    
+<!--------------------------------------------------------------------------------------->
+
+       <!-- CARTOON-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <!-- CARTOON-->
+      <div class="paper p_cartoon" id="p8">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        <svg class="paperoutline" style="width:75%;left:12.5%;">
+           <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+        <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+       </svg>
+
+        <div class="onboard_paper p_cartoon_onboard cursorclick readfont" >
+            <img src="media/cartoon.png" alt="a satirical cartoon">
+            </div>  
+        </div>
+
+
+
+    
+<!--------------------------------------------------------------------------------------->
+
+       <!-- BILL-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <!-- BILL-->
+      <div class="paper p_bill" id="p9">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        
+        <div class="onboard_paper p_bill_onboard cursorclick readfont" >
+            <img src="media/bill.png" alt="a scrap of paper">
+            </div>  
+        </div>
+
+
+
+    <!--------------------------------------------------------------------------------------->
+
+       <!-- DEFOE PIECE-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <div class="paper p_defoe" id="p12">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        <svg class="paperoutline">
+           <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+        <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+       </svg>
+
+        <div class="onboard_paper p_defoe_onboard cursorclick readfont" >
+            <img src="media/defoe1.png" alt="a printed page">
+            </div>  
+        </div>
+
+
+
+
+
+    <!--------------------------------------------------------------------------------------->
+
+       <!-- MEVERELL STATEMENT-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <!-- MEVERELL STATEMENT-->
+      <div class="paper p_statement" id="p10">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+
+        <div class="onboard_paper p_statement_onboard readfont cursorclick" >
+            <div class="statementouter cursorclick">
+            <img src="media/interview.png" alt="a folded piece of stained paper covered in notes">
+        </div>
+            </div>  
+        </div>
+
+
+
+
+<!--------------------------------------------------------------------------------------->
+
+       <!-- MAIN BLURB-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <!-- MAIN BLURB-->
+      <div class="paper p_front" id="p4">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        <svg class="paperoutline">
+           <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+        <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+       </svg>
+
+        <div class="onboard_paper p_front_onboard cursorclick" >
+            <img src="media/paperblurb.png" class="papermottle" >
+            <img src="media/left panel.png" alt="a page from a broadside">
+            </div>  
+        </div>
+
+
+
+    
+<!--------------------------------------------------------------------------------------->
+
+       <!-- WEAVE-->
+
+<!--------------------------------------------------------------------------------------->
+
+      <!-- WEAVE-->
+      <div class="paper p_weave" id="p16">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    
+
+        <div class="onboard_paper p_weave_onboard cursorclick readfont" >
+            <img src="media/weavehang.png" alt="a hung piece of fabric woven with symbols">
+            </div>  
+
+        </div>
+ 
+
+
+
+
+<!--------------------------------------------------------------------------------------->
+
+       <!-- 3D Models-->
+
+<!--------------------------------------------------------------------------------------->
+
+
+<div class="paper p_threedee" id="p5">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+       <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+   </svg>
+
+    <div class="onboard_paper p_threedee_onboard cursorclick loadmodel readfont" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <img src="media/knifemodel.png" alt="a knife">
+    </div>
+</div>
+
+
+
+<!--------------------------------------------------------------------------------------->
+
+
+<div class="paper p_threedee" id="p5c">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+       <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+   </svg>
+
+    <div class="onboard_paper p_threedee_onboard cursorclick loadmodel readfont" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <img src="media/loveidolmodel.png" alt="a carved figure">
+    </div>
+</div>
+
+
+
+<!--------------------------------------------------------------------------------------->
+
+
+
+<div class="paper p_threedee" id="p5d">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+       <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+   </svg>
+
+    <div class="onboard_paper p_threedee_onboard cursorclick loadmodel readfont" style="overflow:hidden;" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <img src="media/locketshot.png" style="width:100%;height:auto;" alt="a locket">
+        </div>  
+    </div>
+
+
+<!--------------------------------------------------------------------------------------->
+
+
+<div class="paper p_threedee" id="p5e">
+    <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+    <svg class="paperoutline">
+       <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+    <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+   </svg>
+
+    <div class="onboard_paper p_threedee_onboard cursorclick loadmodel readfont" >
+        <img src="media/tiledpaper.png" class="papermottle" >
+        <img src="media/charmshot.png" alt="a mysterious talisman">
+        </div>  
+    </div>
+
+
+
+<!--------------------------------------------------------------------------------------->
+
+    <div class="paper p_threedee" style="width:20vw;" id="p5a">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        <svg class="paperoutline">
+           <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+        <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+       </svg>
+    
+        <div class="onboard_paper p_threedee_onboard cursorclick loadmodel readfont" >
+            <img src="media/tiledpaper.png" class="papermottle" >
+            <img src="media/maskmodel.png" alt="a wooden mask" >
+            </div>  
+        </div>
+    
+
+
+
+ <!--------------------------------------------------------------------------------------->
+
+    <div class="paper p_threedee" style="width:20vw" id="p5b">
+        <div class="nail"><img src="media/nailtex.png" ><div class="nailinner"></div></div>
+        <svg class="paperoutline">
+           <rect filter="url(#chalk)" style="fill:blue;fill-opacity:0;stroke:white;stroke-width:15;stroke-dasharray:8;"></rect>
+        <filter id=chalk><feTurbulence result=T numOctaves=3 seed=0 type=fractalNoise baseFrequency=.4 ><feOffset dy=-2 dx=-2 ><feDisplacementMap in2=T scale=5 xChannelSelector=R yChannelSelector=G in=SourceGraphic ></filter>
+       </svg>
+    
+        <div class="onboard_paper p_threedee_onboard cursorclick loadmodel readfont" >
+            <img src="media/tiledpaper.png" class="papermottle" >
+            <img src="media/lanternmodel.png" alt="a lantern" >
+            </div>  
+        </div>
+    
+
+    </div>
+
+
+
+
+        <!-- =ENDING SECTION======================================================================================================================================================================== -->
+
+<div id="endingwrapper">
+
+        <div id="thankyou">
+            <!--RABBIT-->
+<svg id="rabbitbottom" viewBox="0 0 800 400">
+
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="276.21298837661743,183.00000262260437 276.21298837661743,182.3506519794464 276.21298837661743,181.05195069313046 275.2389624118805,176.8311715126038 275.2389624118805,169.36363911628723 275.2389624118805,162.22078204154968 276.21298837661743,154.42857432365417 276.8623390197754,145.9870159626007 276.21298837661743,135.92208099365234 271.6675338745117,126.83117198944093 270.3688325881958,123.9090940952301 270.0441572666168,122.93506813049318 268.4207806587219,117.74026298522949 267.77143001556396,113.19480848312378 267.122079372406,107.35065269470215 266.14805340766907,100.2077956199646 264.84935212135315,91.11688661575317 263.8753261566162,84.29870486259462 263.55065083503723,80.40260100364685 263.55065083503723,78.77922439575195 263.55065083503723,69.36364006996155 264.2000014781952,68.06493878364563 265.8233780860901,60.27273106575012 267.446754693985,48.90909481048584 268.4207806587219,43.064939022064216 268.4207806587219,40.46753644943237 268.4207806587219,39.493510484695435 269.0701313018799,37.54545855522156 269.0701313018799,37.22078323364258 269.71948194503784,36.57143259048462 270.0441572666168,35.59740662574768 270.6935079097748,34.62338066101074 271.9922091960907,33.649354696273804 273.2909104824066,33.000004053115845 273.6155858039856,32.675328731536865 276.8623390197754,30.72727680206299 279.4597415924072,28.454549551010132 284.3298714160919,26.506497621536255 284.9792220592499,26.181822299957275 289.2000012397766,25.207796335220337 293.09610509872437,24.558445692062374 296.0181829929352,24.558445692062374 296.66753363609314,24.558445692062374 297.96623492240906,24.558445692062374 300.8883128166199,24.558445692062374 306.4077932834625,24.883121013641357 307.70649456977844,25.53247165679932 309.32987117767334,27.805198907852173 310.95324778556824,29.103900194168094 310.95324778556824,30.07792615890503 311.2779231071472,31.376627445220947 311.6025984287262,33.000004053115845 311.9272737503052,36.24675726890564 312.57662439346313,43.064939022064216 312.9012997150421,45.012990951538086 312.9012997150421,47.9350688457489 313.87532567977905,51.831172704696655 313.87532567977905,53.12987399101257 313.87532567977905,54.42857527732849 313.87532567977905,56.05195188522339 313.87532567977905,56.70130252838135 313.87532567977905,59.62338042259216 313.87532567977905,62.220782995224 313.87532567977905,64.81818556785583 313.87532567977905,66.44156217575073 313.87532567977905,68.06493878364563 313.87532567977905,69.36364006996155 313.5506503582001,70.98701667785645 313.5506503582001,71.6363673210144 313.5506503582001,75.53247117996216 313.5506503582001,80.07792568206787 313.5506503582001,82.35065293312073 313.5506503582001,83.97402954101562 313.5506503582001,85.59740614891052 313.5506503582001,87.5454580783844 313.5506503582001,90.14286065101624 313.5506503582001,92.09091258049011 313.5506503582001,93.71428918838501 313.5506503582001,95.98701643943787 313.5506503582001,98.25974369049072 313.5506503582001,100.5324709415436 312.57662439346313,104.10389947891235 312.57662439346313,105.72727608680725 311.9272737503052,108.64935398101808 311.2779231071472,113.19480848312378 311.2779231071472,114.81818509101869 311.2779231071472,116.1168863773346 311.2779231071472,117.09091234207152 311.2779231071472,120.98701620101927 311.2779231071472,123.9090940952301 311.2779231071472,127.80519795417786 311.2779231071472,131.7013018131256 311.2779231071472,134.62337970733643 311.6025984287262,135.92208099365234 311.6025984287262,136.89610695838928 311.6025984287262,140.46753549575806 311.9272737503052,142.41558742523193 311.9272737503052,145.66234064102173 311.9272737503052,147.93506789207458 311.2779231071472,151.18182110786438 311.2779231071472,152.80519771575928 311.2779231071472,153.45454835891724 311.2779231071472,154.1038990020752 311.2779231071472,155.07792496681213 311.2779231071472,156.37662625312805 311.2779231071472,159.62337946891785 311.2779231071472,161.8961067199707 311.2779231071472,163.19480800628662 311.2779231071472,164.16883397102356 311.2779231071472,164.49350929260254 311.9272737503052,166.44156122207642 311.9272737503052,168.0649378299713 312.9012997150421,172.93506765365598 312.9012997150421,173.58441829681396 312.9012997150421,173.90909361839294 313.2259750366211,173.90909361839294 313.2259750366211,173.90909361839294 313.2259750366211,174.23376893997192 313.2259750366211,174.5584442615509 313.5506503582001,175.85714554786682 314.20000100135803,177.1558468341827 314.524676322937,177.1558468341827 315.82337760925293,177.1558468341827 316.79740357398987,177.1558468341827 317.12207889556885,177.1558468341827 317.4467542171478,177.1558468341827 317.7714295387268,177.1558468341827 318.42078018188477,177.1558468341827 319.0701308250427,177.1558468341827 320.04415678977966,177.48052215576172 320.6935074329376,177.8051974773407 321.0181827545166,177.8051974773407 321.3428580760956,177.8051974773407 321.66753339767456,177.8051974773407 322.6415593624115,178.12987279891968 323.61558532714844,178.12987279891968 323.61558532714844,178.12987279891968 323.9402606487274,178.12987279891968 324.2649359703064,178.12987279891968 324.5896112918854,178.12987279891968 324.91428661346436,178.12987279891968 326.2129878997803,178.12987279891968 327.5116891860962,178.12987279891968 328.16103982925415,178.12987279891968 328.48571515083313,178.12987279891968 329.1350657939911,178.12987279891968 329.45974111557007,178.12987279891968 329.78441643714905,178.12987279891968 331.7324683666229,178.12987279891968 335.6285722255707,178.12987279891968 338.5506501197815,178.12987279891968 340.17402672767645,178.12987279891968 340.4987020492554,178.12987279891968 340.8233773708344,178.12987279891968 341.1480526924133,178.12987279891968 341.47272801399225,178.12987279891968 342.44675397872925,178.12987279891968 343.4207799434662,178.12987279891968 344.07013058662415,177.8051974773407 345.69350719451904,177.48052215576172 347.6415591239929,177.1558468341827 348.6155850887299,176.8311715126038 349.26493573188776,176.8311715126038 349.9142863750457,176.5064961910248 350.23896169662476,176.5064961910248 350.56363701820374,176.5064961910248 350.8883123397827,176.1818208694458 351.2129876613617,175.85714554786682 351.5376629829407,175.53247022628784 352.5116889476776,174.5584442615509 352.8363642692566,173.90909361839294 353.16103959083557,173.58441829681396 353.16103959083557,173.25974297523496 354.1350655555725,172.28571701049805 360.3038966655731,163.19480800628662 361.60259795188904,157.67532753944397 362.576623916626,155.4026002883911 362.90129923820496,154.42857432365417 363.22597455978394,153.45454835891724 363.8753252029419,151.50649642944336 364.5246758460999,150.53247046470642 365.49870181083674,148.90909385681152 366.1480524539947,145.66234064102173 366.47272777557373,142.7402627468109 366.47272777557373,142.09091210365295 366.47272777557373,141.76623678207397 367.77142906188965,138.51948356628418 367.77142906188965,135.59740567207336 368.7454550266266,131.7013018131256 370.0441563129425,127.80519795417786 371.01818227767944,126.50649666786194 371.3428575992584,124.55844473838806 371.3428575992584,123.25974345207214 371.6675329208374,122.61039280891418 372.31688356399536,113.84415912628174 372.31688356399536,110.92208123207091 372.31688356399536,108.64935398101808 372.31688356399536,104.10389947891235 372.6415588855744,100.5324709415436 372.6415588855744,98.25974369049072 372.9662342071534,96.31169176101686 372.9662342071534,94.03896450996399 372.9662342071534,89.1688346862793 372.9662342071534,88.19480872154237 372.9662342071534,86.89610743522644 372.9662342071534,84.62338018417358 372.9662342071534,82.35065293312073 372.9662342071534,80.40260100364685 372.9662342071534,77.48052310943604 372.9662342071534,73.2597439289093 373.9402601718902,70.98701667785645 374.2649354934692,66.11688685417175 374.9142861366272,63.19480895996094 374.9142861366272,57.02597784996033 375.56363677978516,54.10389995574951 376.2129874229431,52.15584802627564 376.2129874229431,50.207796096801765 376.2129874229431,49.23377013206481 376.2129874229431,48.58441948890686 376.2129874229431,47.285718202590935 376.2129874229431,46.96104288101196 376.2129874229431,45.337666273117065 376.8623380661011,44.688315629959106 376.8623380661011,43.38961434364319 376.8623380661011,41.76623773574829 377.51168870925903,39.493510484695435 378.485714673996,35.92208194732666 379.7844159603119,25.857146978378296 379.7844159603119,21.311692476272583 380.7584419250489,16.76623797416687 381.40779256820684,13.194809436798096 381.40779256820684,11.896108150482178 381.7324678897857,10.27273154258728 381.7324678897857,9.298705577850342 382.7064938545227,8.324679613113403 382.7064938545227,7.675328969955444 383.0311691761017,6.701303005218506 384.0051951408386,5.727277040481567 384.0051951408386,4.753251075744629 384.0051951408386,4.753251075744629 384.97922110557556,4.428575754165649 387.2519483566284,4.428575754165649 391.1480522155762,4.428575754165649 393.745454788208,3.7792251110076904 394.39480543136597,3.7792251110076904 395.3688313961029,4.428575754165649 396.34285736083984,4.428575754165649 399.26493525505066,6.051952362060546 401.5376625061035,7.675328969955444 405.4337663650513,9.298705577850342 406.0831170082092,9.9480562210083 406.73246765136713,10.27273154258728 407.38181829452515,10.59740686416626 409.329870223999,11.896108150482178 410.9532468318939,13.194809436798096 413.5506494045258,14.168835401535034 413.8753247261048,14.493510723114015 416.1480519771576,15.467536687850952 417.4467532634735,17.09091329574585 418.42077922821045,17.09091329574585 418.42077922821045,17.41558861732483 418.74545454978943,17.74026393890381 419.71948051452637,19.038965225219727 420.04415583610535,20.662341833114624 421.6675324440003,24.2337703704834 422.31688308715815,26.506497621536255 423.9402596950531,30.07792615890503 423.9402596950531,30.72727680206299 423.9402596950531,35.2727313041687 423.9402596950531,37.54545855522156 424.2649350166321,39.493510484695435 424.2649350166321,43.38961434364319 423.29090905189514,47.285718202590935 423.29090905189514,49.5584454536438 423.29090905189514,50.85714673995972 421.0181818008423,57.02597784996033 420.3688311576843,59.94805574417114 419.71948051452637,63.19480895996094 418.42077922821045,65.4675362110138 418.42077922821045,67.09091281890869 417.7714285850525,69.36364006996155 416.79740262031555,71.31169199943542 416.4727272987366,72.93506860733032 415.49870133399963,75.85714650154114 414.8493506908416,78.77922439575195 414.20000004768366,81.05195164680481 413.22597408294683,83.32467889785767 413.22597408294683,87.87013339996338 413.22597408294683,90.14286065101624 412.9012987613678,95.33766579627991 412.9012987613678,100.85714626312256 412.9012987613678,107.02597737312317 412.5766234397888,108.32467865943909 412.25194811820984,112.22078251838684 412.25194811820984,114.4935097694397 411.92727279663086,117.74026298522949 410.62857151031494,122.2857174873352 409.979220867157,125.532470703125 409.979220867157,128.45454859733582 409.329870223999,131.37662649154663 407.7064936161041,134.62337970733643 407.05714297294617,137.54545760154724 405.7584416866303,140.46753549575806 404.7844157218933,144.3636393547058 403.8103897571564,147.28571724891663 401.21298718452454,156.05195093154907 400.2389612197876,159.29870414733887 398.9402599334717,161.8961067199707 397.6415586471558,166.44156122207642 396.6675326824188,168.7142884731293 394.070130109787,180.07792472839355 393.420779466629,185.5974051952362 393.420779466629,189.16883373260495 393.420779466629,189.81818437576294 393.420779466629,190.14285969734192 393.420779466629,192.41558694839478 392.77142882347107,196.31169080734253 391.79740285873413,199.23376870155334 391.79740285873413,203.1298725605011 391.79740285873413,203.77922320365906 391.79740285873413,204.42857384681702 391.79740285873413,206.3766257762909 391.79740285873413,213.8441581726074 391.79740285873413,217.74026203155515 391.1480522155762,222.2857165336609 391.1480522155762,223.5844178199768 391.1480522155762,228.12987232208252 390.49870157241816,236.571430683136 388.22597432136536,244.03896307945251 386.60259771347046,251.50649547576904 385.9532470703125,257.67532658576965 384.97922110557556,259.9480538368225 384.3298704624176,263.5194823741913 384.3298704624176,263.84415769577026 382.7064938545227,272.6103913784027 382.0571432113647,278.45454716682434 381.40779256820684,286.8961055278778 381.40779256820684,295.98701453208923 381.08311724662786,298.2597417831421 381.08311724662786,300.53246903419495 381.08311724662786,303.45454692840576 381.08311724662786,308.0000014305115 381.08311724662786,313.19480657577515 381.08311724662786,316.11688446998596 380.10909128189087,320.6623389720917 379.4597406387329,324.55844283103943 379.4597406387329,326.8311700820923 379.13506531715393,328.4545466899872 379.13506531715393,333.3246765136719 378.81038999557495,334.2987024784088 378.161039352417,337.2207803726197 374.9142861366272,345.66233873367315 372.6415588855744,358.3246762752533 371.3428575992584,364.4935073852539 370.3688316345215,368.38961124420166 370.3688316345215,369.68831253051763 369.7194809913635,370.3376631736755 369.07013034820557,371.63636445999146 368.0961043834686,372.9350657463074 366.47272777557373,376.8311696052551 364.2000005245209,383.6493513584137 364.2000005245209,384.29870200157166 364.2000005245209,384.62337732315063 362.90129923820496,389.4935071468353 362.90129923820496,394.3636369705201 362.251948595047,401.1818187236786 361.927273273468,406.37662386894226 361.27792263031006,408.6493511199951 361.27792263031006,410.27272772789007 360.3038966655731,412.54545497894287 359.3298707008362,419.68831205368036 359.3298707008362,420.66233801841736 359.0051953792572,420.98701333999634 359.0051953792572,421.3116886615753 359.0051953792572,421.6363639831543 359.0051953792572,421.9610393047333 358.6805200576782,422.61038994789124 358.6805200576782,424.5584418773651 358.35584473609924,425.20779252052307 358.35584473609924,427.80519509315485 357.7064940929412,429.4285717010498 357.7064940929412,432.6753249168396 357.7064940929412,436.2467534542084 357.7064940929412,437.87013006210327 357.7064940929412,438.51948070526123 357.7064940929412,438.8441560268402 357.7064940929412,440.7922079563141 357.7064940929412,445.0129871368408 357.7064940929412,445.6623377799988 357.7064940929412,446.31168842315674 357.7064940929412,446.6363637447357 357.7064940929412,446.9610390663147 357.38181877136225,447.93506503105164 357.38181877136225,448.9090909957886 357.0571434497834,450.8571429252625 357.0571434497834,452.48051953315735 357.0571434497834,457.35064935684204 356.7324681282044,458.324675321579 356.4077928066254,460.9220778942108 355.4337668418884,467.74025964736944 355.4337668418884,470.6623375415802 " class=""/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="275.5636377334595,182.02597665786743 275.5636377334595,184.2987039089203 275.5636377334595,184.94805455207828 275.2389624118805,186.89610648155212 275.2389624118805,187.2207818031311 275.2389624118805,188.19480776786804 275.2389624118805,188.84415841102603 275.2389624118805,189.16883373260495 275.2389624118805,189.81818437576294 275.2389624118805,190.4675350189209 275.2389624118805,190.79221034049988 275.2389624118805,192.0909116268158 275.2389624118805,193.38961291313169 275.2389624118805,196.31169080734253 275.2389624118805,198.58441805839539 275.2389624118805,200.53246998786926 275.2389624118805,200.85714530944827 275.2389624118805,201.18182063102725 275.2389624118805,201.18182063102725 275.2389624118805,202.15584659576416 275.2389624118805,204.10389852523804 275.2389624118805,205.40259981155393 275.2389624118805,205.7272751331329 275.2389624118805,206.0519504547119 275.2389624118805,207.02597641944885 275.2389624118805,208.97402834892276 275.2389624118805,210.59740495681763 275.2389624118805,212.87013220787048 275.2389624118805,217.09091138839722 275.2389624118805,220.01298928260803 275.2389624118805,221.6363658905029 275.2389624118805,224.23376846313477 275.2389624118805,225.85714507102963 275.2389624118805,229.75324892997745 274.58961176872253,232.67532682418823 274.58961176872253,235.92208003997803 274.58961176872253,238.19480729103086 274.58961176872253,242.4155864715576 274.58961176872253,248.9090929031372 274.58961176872253,253.45454740524292 274.58961176872253,257.0259759426117 274.58961176872253,259.62337851524353 273.6155858039856,264.16883301734924 273.6155858039856,268.71428751945496 273.6155858039856,275.8571445941925 273.6155858039856,279.4285731315613 273.6155858039856,282.0259757041931 272.96623516082764,284.298702955246 272.64155983924866,286.8961055278778 272.64155983924866,291.11688470840454 272.64155983924866,296.6363651752472 271.6675338745117,302.8051962852478 271.6675338745117,313.5194818973541 271.6675338745117,314.49350786209106 271.6675338745117,317.74026107788086 271.6675338745117,320.0129883289337 271.6675338745117,323.90909218788147 271.6675338745117,326.1818194389343 271.6675338745117,330.72727394104004 271.6675338745117,337.54545569419867 271.6675338745117,338.5194816589355 271.6675338745117,339.4935076236725 271.01818323135376,341.44155955314636 267.77143001556396,348.5844166278839 267.77143001556396,349.23376727104187 266.797404050827,352.80519580841064 265.8233780860901,353.77922177314764 265.8233780860901,354.4285724163055 265.8233780860901,354.75324773788446 265.4987027645111,356.3766243457794 264.2000014781952,361.57142949104315 263.22597551345825,364.8181827068329 262.5766248703003,367.7402606010437 261.92727422714233,368.38961124420166 261.92727422714233,369.0389618873596 260.6285729408264,370.98701381683344 260.6285729408264,372.2857151031494 259.97922229766846,377.48052024841314 259.3298716545105,380.7272734642029 259.3298716545105,382.0259747505188 258.0311703681946,384.62337732315063 257.7064950466156,387.2207798957824 257.05714440345764,388.5194811820984 257.05714440345764,389.16883182525635 257.05714440345764,390.79220843315125 256.4077937602997,395.3376629352569 255.43376779556274,399.2337667942047 255.43376779556274,403.1298706531524 255.43376779556274,403.7792212963104 255.43376779556274,404.4285719394684 255.43376779556274,404.75324726104736 255.43376779556274,405.07792258262634 255.10909247398376,407.0259745121002 255.10909247398376,409.2987017631531 255.10909247398376,412.87013030052185 254.4597418308258,413.5194809436798 254.4597418308258,414.49350690841675 254.4597418308258,415.79220819473267 254.13506650924683,416.7662341594696 254.13506650924683,417.0909094810486 254.13506650924683,417.41558480262756 253.48571586608884,418.71428608894354 253.48571586608884,421.6363639831543 253.48571586608884,422.28571462631226 253.16104054450992,422.61038994789124 251.86233925819397,426.831169128418 251.212988615036,430.7272729873657 251.212988615036,434.62337684631353 250.56363797187805,437.5454547405243 250.56363797187805,440.4675326347351 250.56363797187805,442.09090924263 250.56363797187805,445.6623377799988 250.56363797187805,447.2857143878937 249.58961200714108,448.2597403526306 249.58961200714108,448.5844156742096 249.58961200714108,450.8571429252625 249.58961200714108,452.48051953315735 249.58961200714108,453.1298701763153 249.26493668556216,453.1298701763153 248.61558604240417,454.10389614105225 247.96623539924622,455.0779221057892 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="324.5896112918854,200.85714530944827 324.5896112918854,201.50649595260617 324.5896112918854,203.1298725605011 324.91428661346436,204.42857384681702 324.91428661346436,206.70130109786987 324.91428661346436,207.6753270626068 324.91428661346436,208.64935302734375 324.91428661346436,209.29870367050174 324.91428661346436,211.89610624313354 324.91428661346436,212.5454568862915 324.5896112918854,215.14285945892334 324.5896112918854,217.09091138839722 324.5896112918854,217.74026203155515 324.5896112918854,219.0389633178711 324.5896112918854,219.68831396102905 323.61558532714844,223.25974249839783 323.61558532714844,227.15584635734558 324.2649359703064,233.0000021457672 324.2649359703064,238.19480729103086 324.2649359703064,242.7402617931366 324.2649359703064,244.03896307945251 324.2649359703064,244.3636384010315 324.2649359703064,245.98701500892642 324.2649359703064,248.25974225997925 324.2649359703064,251.18182015419006 324.5896112918854,252.48052144050598 325.23896193504333,253.77922272682193 325.23896193504333,254.75324869155884 325.23896193504333,255.07792401313782 325.23896193504333,256.05194997787476 325.23896193504333,257.67532658576965 325.23896193504333,259.29870319366455 325.23896193504333,263.5194823741913 325.23896193504333,264.8181836605072 325.23896193504333,266.1168849468231 325.5636372566223,267.740261554718 325.5636372566223,269.03896284103394 325.5636372566223,274.2337679862976 325.5636372566223,281.37662506103516 325.5636372566223,283.974027633667 326.53766322135925,290.1428587436676 326.86233854293823,291.7662353515625 326.86233854293823,293.3896119594574 326.86233854293823,294.6883132457733 326.86233854293823,295.3376638889313 326.86233854293823,298.90909242630005 326.86233854293823,306.3766248226166 325.8883125782013,314.81818318367004 323.61558532714844,325.2077934741974 323.29091000556946,326.8311700820923 321.99220871925354,331.051949262619 321.3428580760956,333.3246765136719 320.36883211135864,334.9480531215668 320.36883211135864,336.57142972946167 320.36883211135864,338.8441569805145 318.74545550346375,344.3636374473572 317.4467542171478,346.63636469841 317.12207889556885,347.93506598472595 316.4727282524109,348.9090919494629 316.4727282524109,350.2077932357788 315.82337760925293,353.77922177314764 314.849351644516,357.67532563209534 314.849351644516,361.24675416946417 314.20000100135803,362.87013077735895 314.20000100135803,363.84415674209595 314.20000100135803,364.4935073852539 314.20000100135803,365.46753334999084 314.20000100135803,366.76623463630676 313.5506503582001,370.0129878520966 312.57662439346313,375.8571436405182 312.57662439346313,381.7012994289398 312.57662439346313,386.2467539310456 312.57662439346313,391.7662343978882 311.2779231071472,396.3116888999939 310.3038971424103,398.2597408294678 309.9792218208313,401.50649404525757 309.32987117767334,403.1298706531524 309.32987117767334,406.0519485473633 309.32987117767334,406.70129919052124 308.6805205345154,407.6753251552582 307.70649456977844,410.59740304946905 306.4077932834625,413.8441562652588 305.4337673187256,414.49350690841675 305.4337673187256,414.8181822299957 304.45974135398865,415.4675328731537 304.45974135398865,415.79220819473267 304.13506603240967,416.11688351631165 304.13506603240967,416.7662341594696 303.8103907108307,416.7662341594696 303.8103907108307,417.0909094810486 303.8103907108307,417.41558480262756 303.8103907108307,422.61038994789124 303.4857153892517,423.2597405910492 303.4857153892517,426.18181848526007 303.4857153892517,426.50649380683905 303.4857153892517,426.831169128418 303.4857153892517,427.1558444499969 303.4857153892517,428.45454573631287 302.83636474609375,429.4285717010498 302.51168942451477,430.40259766578674 302.51168942451477,430.7272729873657 302.1870141029358,430.7272729873657 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="299.58961153030396,219.0389633178711 298.940260887146,219.0389633178711 298.29091024398804,219.0389633178711 297.96623492240906,219.0389633178711 297.96623492240906,219.36363863945007 297.6415596008301,219.36363863945007 297.3168842792511,220.01298928260803 296.0181829929352,221.6363658905029 294.71948170661926,223.9090931415558 294.0701310634613,225.5324697494507 293.09610509872437,227.15584635734558 293.09610509872437,228.4545476436615 294.0701310634613,229.75324892997745 295.04415702819824,231.05195021629333 295.6935076713562,231.37662553787231 296.0181829929352,231.37662553787231 298.615585565567,231.37662553787231 299.58961153030396,231.05195021629333 300.5636374950409,229.10389828681946 300.5636374950409,222.93506717681885 300.5636374950409,222.2857165336609 300.5636374950409,220.662339925766 300.5636374950409,219.68831396102905 300.5636374950409,219.0389633178711 300.2389621734619,219.0389633178711 299.264936208725,219.0389633178711 297.96623492240906,219.0389633178711 295.04415702819824,220.662339925766 294.3948063850403,220.98701524734497 292.4467544555664,223.5844178199768 292.1220791339874,224.23376846313477 291.1480531692505,230.07792425155637 291.1480531692505,231.05195021629333 291.1480531692505,231.7013008594513 292.7714297771454,232.67532682418823 294.0701310634613,232.67532682418823 296.34285831451416,232.02597618103027 299.264936208725,228.12987232208252 299.58961153030396,227.80519700050354 300.5636374950409,225.2077944278717 300.5636374950409,223.25974249839783 300.5636374950409,219.36363863945007 299.91428685188293,217.74026203155515 298.615585565567,215.7922101020813 297.6415596008301,214.1688334941864 295.3688323497772,214.1688334941864 294.71948170661926,214.49350881576538 294.0701310634613,214.81818413734436 293.09610509872437,216.11688542366028 292.7714297771454,219.0389633178711 292.7714297771454,220.662339925766 292.7714297771454,222.61039185523987 292.7714297771454,224.23376846313477 292.7714297771454,226.18182039260864 293.42078042030334,227.15584635734558 294.71948170661926,229.75324892997745 296.66753363609314,231.37662553787231 297.6415596008301,232.35065150260925 298.940260887146,232.35065150260925 299.91428685188293,232.35065150260925 300.2389621734619,232.35065150260925 300.5636374950409,232.35065150260925 303.16104006767273,230.72727489471436 303.8103907108307,229.42857360839847 304.13506603240967,228.77922296524048 304.7844166755676,227.80519700050354 304.7844166755676,225.2077944278717 304.7844166755676,223.9090931415558 304.7844166755676,221.6363658905029 304.7844166755676,219.68831396102905 304.45974135398865,218.71428799629211 303.8103907108307,217.41558670997622 302.51168942451477,216.11688542366028 300.8883128166199,215.14285945892334 299.91428685188293,215.14285945892334 298.940260887146,215.14285945892334 298.29091024398804,215.14285945892334 296.9922089576721,216.11688542366028 295.04415702819824,217.41558670997622 294.0701310634613,218.06493735313416 292.4467544555664,220.01298928260803 290.8233778476715,221.96104121208188 289.2000012397766,225.2077944278717 288.55065059661865,225.85714507102963 288.55065059661865,228.12987232208252 288.55065059661865,231.05195021629333 288.55065059661865,234.9480540752411 288.55065059661865,236.246755361557 290.49870252609253,239.16883325576782 291.79740381240845,240.46753454208374 292.1220791339874,241.1168851852417 292.7714297771454,241.44156050682068 295.04415702819824,241.7662358283997 297.3168842792511,241.7662358283997 298.940260887146,241.7662358283997 299.264936208725,241.7662358283997 300.2389621734619,241.7662358283997 304.13506603240967,237.22078132629395 306.4077932834625,234.9480540752411 307.70649456977844,232.02597618103027 308.6805205345154,226.8311710357666 308.6805205345154,224.55844378471375 308.6805205345154,222.2857165336609 308.6805205345154,221.31169056892398 307.70649456977844,219.0389633178711 306.4077932834625,215.14285945892334 306.08311796188354,213.8441581726074 305.1090919971466,213.1948075294495 301.8623387813568,213.1948075294495 299.264936208725,213.1948075294495 298.615585565567,213.8441581726074 297.96623492240906,214.49350881576538 297.3168842792511,214.81818413734436 295.3688323497772,217.41558670997622 294.0701310634613,220.337664604187 292.4467544555664,224.88311910629272 291.79740381240845,227.15584635734558 291.79740381240845,227.80519700050354 291.79740381240845,228.12987232208252 291.79740381240845,228.4545476436615 291.79740381240845,233.0000021457672 292.1220791339874,233.3246774673462 292.7714297771454,234.2987034320831 294.0701310634613,234.6233787536621 295.6935076713562,234.6233787536621 296.66753363609314,234.6233787536621 297.3168842792511,234.6233787536621 299.264936208725,232.67532682418823 301.53766345977783,230.72727489471436 301.8623387813568,230.40259957313538 302.51168942451477,228.77922296524048 302.51168942451477,227.48052167892456 302.51168942451477,226.18182039260864 302.51168942451477,225.85714507102963 301.53766345977783,225.5324697494507 300.5636374950409,224.88311910629272 296.9922089576721,226.50649571418762 296.34285831451416,226.8311710357666 293.42078042030334,230.07792425155637 292.1220791339874,233.3246774673462 292.1220791339874,233.97402811050412 292.1220791339874,234.9480540752411 292.1220791339874,235.27272939682007 292.7714297771454,236.571430683136 294.0701310634613,236.89610600471497 296.0181829929352,237.54545664787295 296.9922089576721,237.54545664787295 297.96623492240906,237.54545664787295 299.264936208725,237.22078132629395 300.2389621734619,236.571430683136 300.8883128166199,235.59740471839905 302.1870141029358,233.0000021457672 302.83636474609375,232.35065150260925 302.83636474609375,231.37662553787231 303.4857153892517,230.40259957313538 303.4857153892517,228.77922296524048 302.83636474609375,226.50649571418762 302.83636474609375,225.85714507102963 302.51168942451477,225.85714507102963 302.51168942451477,225.5324697494507 299.264936208725,226.18182039260864 297.6415596008301,226.8311710357666 296.34285831451416,228.4545476436615 294.0701310634613,233.0000021457672 293.42078042030334,241.1168851852417 294.0701310634613,242.0909111499786 295.6935076713562,242.0909111499786 297.96623492240906,242.0909111499786 299.91428685188293,240.79220986366272 301.21298813819885,239.4935085773468 302.1870141029358,239.4935085773468 302.83636474609375,239.16883325576782 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round"points="351.5376629829407,218.06493735313416 351.2129876613617,218.06493735313416 349.9142863750457,218.71428799629211 348.29090976715094,219.68831396102905 346.667533159256,220.337664604187 345.36883187294006,220.98701524734497 343.74545526504517,223.9090931415558 339.20000076293945,232.35065150260925 338.5506501197815,233.3246774673462 338.5506501197815,233.6493527889252 339.20000076293945,233.97402811050412 341.1480526924133,235.27272939682007 344.07013058662415,236.89610600471497 345.0441565513611,236.89610600471497 345.36883187294006,237.22078132629395 345.69350719451904,237.22078132629395 346.667533159256,237.22078132629395 351.2129876613617,237.22078132629395 352.18701362609863,236.89610600471497 352.8363642692566,236.571430683136 353.81039023399353,235.59740471839905 355.10909152030945,233.3246774673462 356.0831174850464,229.42857360839847 356.0831174850464,228.77922296524048 356.4077928066254,225.85714507102963 356.4077928066254,224.23376846313477 356.4077928066254,221.31169056892398 356.4077928066254,220.662339925766 355.7584421634674,218.06493735313416 355.7584421634674,217.41558670997622 355.4337668418884,217.09091138839722 354.1350655555725,215.14285945892334 353.16103959083557,214.49350881576538 352.5116889476776,214.1688334941864 351.5376629829407,214.1688334941864 350.8883123397827,214.1688334941864 350.56363701820374,214.49350881576538 348.9402604103089,216.44156074523926 346.667533159256,219.36363863945007 345.69350719451904,221.96104121208188 344.3948059082031,225.2077944278717 343.74545526504517,228.4545476436615 343.74545526504517,230.07792425155637 344.3948059082031,232.02597618103027 346.667533159256,235.59740471839905 347.6415591239929,236.89610600471497 347.6415591239929,237.54545664787295 348.29090976715094,237.54545664787295 350.8883123397827,237.54545664787295 354.4597408771515,236.571430683136 355.4337668418884,236.571430683136 357.0571434497834,234.6233787536621 358.0311694145202,232.35065150260925 358.6805200576782,227.80519700050354 358.6805200576782,226.50649571418762 358.6805200576782,224.23376846313477 358.0311694145202,222.61039185523987 358.0311694145202,220.98701524734497 357.0571434497834,220.98701524734497 356.0831174850464,220.98701524734497 352.5116889476776,220.337664604187 346.99220848083496,220.337664604187 344.7194812297821,220.337664604187 343.74545526504517,223.25974249839783 343.4207799434662,226.50649571418762 343.4207799434662,227.15584635734558 343.4207799434662,228.4545476436615 343.4207799434662,230.72727489471436 345.69350719451904,233.97402811050412 347.31688380241394,234.6233787536621 348.9402604103089,235.27272939682007 353.48571491241455,233.97402811050412 355.7584421634674,231.37662553787231 356.7324681282044,230.72727489471436 357.7064940929412,228.4545476436615 358.35584473609924,225.5324697494507 359.3298707008362,221.6363658905029 359.3298707008362,220.337664604187 359.3298707008362,216.76623606681824 358.35584473609924,214.49350881576538 357.7064940929412,213.1948075294495 357.0571434497834,213.1948075294495 355.7584421634674,212.87013220787048 353.48571491241455,212.87013220787048 349.58961105346674,212.87013220787048 348.6155850887299,212.87013220787048 347.6415591239929,212.87013220787048 346.018182516098,214.1688334941864 345.36883187294006,215.46753478050232 344.7194812297821,217.09091138839722 343.0961046218872,220.337664604187 342.44675397872925,223.9090931415558 342.44675397872925,227.80519700050354 343.0961046218872,232.35065150260925 343.74545526504517,232.35065150260925 344.07013058662415,233.0000021457672 347.31688380241394,233.97402811050412 349.26493573188776,233.97402811050412 351.5376629829407,233.97402811050412 353.16103959083557,233.97402811050412 353.48571491241455,233.6493527889252 357.0571434497834,229.75324892997745 357.0571434497834,228.77922296524048 357.38181877136225,228.12987232208252 357.38181877136225,226.8311710357666 357.38181877136225,225.2077944278717 357.38181877136225,224.55844378471375 357.38181877136225,224.23376846313477 356.0831174850464,224.23376846313477 353.16103959083557,223.5844178199768 347.9662344455719,224.23376846313477 345.69350719451904,225.85714507102963 344.07013058662415,228.12987232208252 343.4207799434662,230.40259957313538 343.4207799434662,231.7013008594513 343.4207799434662,232.35065150260925 343.4207799434662,232.35065150260925 344.07013058662415,232.35065150260925 345.36883187294006,231.7013008594513 346.667533159256,229.42857360839847 347.6415591239929,225.5324697494507 348.6155850887299,224.55844378471375 348.6155850887299,222.93506717681885 348.6155850887299,222.2857165336609 348.6155850887299,222.61039185523987 348.6155850887299,224.88311910629272 350.23896169662476,228.4545476436615 350.56363701820374,229.10389828681946 350.8883123397827,229.10389828681946 352.8363642692566,229.10389828681946 355.4337668418884,227.48052167892456 357.0571434497834,224.23376846313477 358.6805200576782,221.31169056892398 359.3298707008362,219.0389633178711 359.3298707008362,216.44156074523926 359.3298707008362,215.7922101020813 358.6805200576782,214.1688334941864 357.7064940929412,212.5454568862915 356.0831174850464,211.57143092155457 353.81039023399353,211.57143092155457 351.2129876613617,212.5454568862915 349.9142863750457,213.8441581726074 347.9662344455719,215.14285945892334 346.667533159256,216.44156074523926 346.342857837677,219.0389633178711 345.36883187294006,220.662339925766 345.0441565513611,221.96104121208188 345.0441565513611,223.25974249839783 345.0441565513611,224.88311910629272 345.0441565513611,227.15584635734558 346.667533159256,230.07792425155637 348.29090976715094,231.7013008594513 348.9402604103089,231.7013008594513 350.23896169662476,232.02597618103027 351.2129876613617,232.02597618103027 352.18701362609863,232.35065150260925 355.10909152030945,232.35065150260925 357.38181877136225,232.35065150260925 359.3298707008362,232.35065150260925 359.97922134399414,231.37662553787231 361.27792263031006,230.72727489471436 364.2000005245209,225.5324697494507 364.2000005245209,222.2857165336609 364.2000005245209,219.36363863945007 364.2000005245209,217.09091138839722 362.576623916626,214.81818413734436 361.927273273468,213.1948075294495 360.9532473087311,212.22078156471252 358.35584473609924,210.27272963523865 356.0831174850464,209.62337899208066 350.8883123397827,208.97402834892276 347.6415591239929,209.62337899208066 346.342857837677,209.62337899208066 344.7194812297821,209.94805431365967 343.4207799434662,210.59740495681763 342.44675397872925,211.57143092155457 342.12207865715027,212.5454568862915 "/>
+    
+    <polyline fstyle="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="299.91428685188293,342.4155855178833 300.2389621734619,342.4155855178833 301.8623387813568,342.7402608394623 306.7324686050415,343.7142868041992 310.62857246398926,344.68831276893616 314.20000100135803,344.68831276893616 316.4727282524109,344.68831276893616 316.79740357398987,344.68831276893616 317.7714295387268,344.68831276893616 318.42078018188477,344.68831276893616 319.3948061466217,344.68831276893616 323.29091000556946,344.68831276893616 323.9402606487274,344.68831276893616 324.2649359703064,344.68831276893616 324.5896112918854,344.68831276893616 324.91428661346436,344.68831276893616 326.53766322135925,344.68831276893616 329.78441643714905,344.68831276893616 331.08311772346497,344.68831276893616 331.7324683666229,344.68831276893616 332.0571436882019,344.68831276893616 333.0311696529388,344.68831276893616 334.9792215824127,344.68831276893616 334.9792215824127,344.68831276893616 336.27792286872864,344.68831276893616 337.2519488334656,344.68831276893616 337.57662415504456,344.68831276893616 337.90129947662354,344.68831276893616 337.90129947662354,344.68831276893616 338.2259747982025,344.68831276893616 338.2259747982025,344.68831276893616 338.5506501197815,344.68831276893616 338.5506501197815,344.68831276893616 338.8753254413605,344.68831276893616 339.20000076293945,344.68831276893616 339.52467608451843,344.68831276893616 339.8493514060974,344.68831276893616 340.17402672767645,344.68831276893616 340.17402672767645,344.68831276893616 340.17402672767645,345.0129880905152 340.4987020492554,345.0129880905152 340.8233773708344,345.0129880905152 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="398.6155834197998,5.727270841598511 400.88831067085266,6.37662148475647 404.7844145298004,7.999998092651367 407.38181710243225,8.974024057388306 410.95324563980097,9.623374700546265 411.27792096137995,9.623374700546265 411.6025962829589,9.623374700546265 411.92727160453796,9.623374700546265 413.2259728908539,9.623374700546265 413.87532353401184,9.623374700546265 414.1999988555908,9.623374700546265 415.17402482032776,9.623374700546265 416.1480507850647,8.974024057388306 416.79740142822266,8.974024057388306 416.79740142822266,8.649348735809326 416.79740142822266,8.649348735809326 416.79740142822266,8.324673414230347 416.79740142822266,7.999998092651367 414.1999988555908,9.623374700546265 413.55064821243286,10.272725343704224 411.27792096137995,12.2207772731781 409.00519371032715,13.519478559494019 406.7324664592743,15.792205810546875 406.7324664592743,15.792205810546875 407.05714178085327,14.493504524230957 407.70649242401123,13.844153881073 408.0311677455902,13.194803237915039 408.0311677455902,12.87012791633606 408.0311677455902,12.54545259475708 408.0311677455902,12.54545259475708 407.38181710243225,12.2207772731781 406.4077911376953,11.57142663002014 406.4077911376953,10.922075986862183 406.08311581611633,10.922075986862183 405.75844049453735,10.922075986862183 407.38181710243225,10.922075986862183 409.00519371032715,11.57142663002014 409.6545443534851,11.57142663002014 411.27792096137995,12.54545259475708 412.5766222476959,13.194803237915039 415.8233754634857,15.467530488967896 417.12207674980164,16.441556453704834 418.09610271453863,16.441556453704834 418.4207780361176,16.441556453704834 418.4207780361176,16.441556453704834 418.4207780361176,16.766231775283813 418.7454533576966,17.740257740020752 418.7454533576966,18.38960838317871 418.7454533576966,18.71428370475769 418.7454533576966,20.01298499107361 418.7454533576966,21.636361598968506 418.7454533576966,22.285712242126465 418.09610271453863,20.337660312652588 417.12207674980164,17.090907096862793 416.4727261066437,14.818179845809937 416.4727261066437,13.519478559494019 416.4727261066437,12.2207772731781 416.4727261066437,10.922075986862183 416.4727261066437,9.623374700546265 416.4727261066437,9.298699378967285 416.1480507850647,8.974024057388306 416.1480507850647,8.649348735809326 415.8233754634857,8.324673414230347 415.8233754634857,7.999998092651367 415.49870014190674,7.350647449493408 415.49870014190674,7.025972127914429 415.49870014190674,6.701296806335449 415.49870014190674,6.701296806335449 415.49870014190674,6.37662148475647 415.49870014190674,6.05194616317749 415.49870014190674,5.727270841598511 415.49870014190674,5.40259552001953 415.49870014190674,5.40259552001953 415.49870014190674,5.077920198440552 414.5246741771698,6.05194616317749 412.9012975692749,6.701296806335449 411.6025962829589,8.649348735809326 409.6545443534851,10.272725343704224 409.00519371032715,10.597400665283203 408.68051838874817,10.597400665283203 408.68051838874817,10.597400665283203 408.3558430671692,10.597400665283203 408.3558430671692,10.272725343704224 409.00519371032715,9.298699378967285 409.97921967506414,7.999998092651367 409.97921967506414,7.025972127914429 411.27792096137995,6.05194616317749 411.92727160453796,5.40259552001953 413.55064821243286,4.428569555282593 414.1999988555908,4.428569555282593 414.5246741771698,4.428569555282593 414.5246741771698,4.103894233703613 413.87532353401184,4.103894233703613 413.2259728908539,4.103894233703613 410.95324563980097,5.077920198440552 408.3558430671692,5.40259552001953 407.70649242401123,5.40259552001953 407.38181710243225,5.40259552001953 407.38181710243225,5.727270841598511 407.38181710243225,5.727270841598511 406.4077911376953,5.727270841598511 404.7844145298004,6.37662148475647 404.13506388664246,6.37662148475647 403.8103885650635,6.37662148475647 403.48571324348444,7.025972127914429 402.8363626003265,7.025972127914429 403.8103885650635,7.025972127914429 405.1090898513794,7.025972127914429 408.3558430671692,7.025972127914429 411.27792096137995,7.025972127914429 414.1999988555908,7.025972127914429 416.1480507850647,7.025972127914429 416.79740142822266,6.37662148475647 417.12207674980164,6.37662148475647 417.4467520713806,5.727270841598511 418.09610271453863,5.727270841598511 418.4207780361176,5.727270841598511 418.4207780361176,6.37662148475647 417.7714273929596,9.623374700546265 416.1480507850647,14.818179845809937 415.49870014190674,16.441556453704834 415.49870014190674,17.090907096862793 416.1480507850647,15.467530488967896 416.1480507850647,13.844153881073 416.1480507850647,13.194803237915039 416.1480507850647,12.54545259475708 416.1480507850647,11.896101951599121 416.1480507850647,11.57142663002014 415.8233754634857,11.57142663002014 415.8233754634857,11.57142663002014 415.49870014190674,11.57142663002014 415.17402482032776,11.57142663002014 414.8493494987488,11.896101951599121 414.5246741771698,12.54545259475708 414.1999988555908,12.54545259475708 414.5246741771698,12.54545259475708 414.8493494987488,11.896101951599121 415.17402482032776,11.57142663002014 415.17402482032776,11.246751308441162 415.17402482032776,10.922075986862183 415.49870014190674,11.57142663002014 416.4727261066437,13.194803237915039 416.4727261066437,13.844153881073 416.79740142822266,16.766231775283813 416.79740142822266,18.38960838317871 416.79740142822266,19.03895902633667 416.79740142822266,19.03895902633667 416.79740142822266,19.36363434791565 416.79740142822266,19.36363434791565 416.79740142822266,19.68830966949463 417.12207674980164,20.01298499107361 417.12207674980164,20.337660312652588 417.4467520713806,20.662335634231567 417.7714273929596,20.987010955810547 418.09610271453863,21.636361598968506 418.7454533576966,21.636361598968506 419.07012867927546,21.961036920547485 419.39480400085444,21.961036920547485 420.04415464401245,21.961036920547485 420.04415464401245,22.285712242126465 420.36882996559143,22.285712242126465 420.36882996559143,22.610387563705444 420.6935052871704,22.93506288528442 421.0181806087494,23.259738206863403 421.0181806087494,23.584413528442383 421.0181806087494,23.90908885002136 421.0181806087494,24.233764171600342 421.0181806087494,24.233764171600342 421.66753125190735,25.53246545791626 421.66753125190735,26.831166744232178 421.66753125190735,27.805192708969116 421.66753125190735,28.779218673706055 421.66753125190735,29.428569316864014 421.66753125190735,29.753244638442993 421.66753125190735,30.72727060317993 421.66753125190735,32.02597188949585 421.66753125190735,32.99999785423279 421.66753125190735,33.32467317581177 421.66753125190735,33.32467317581177 421.66753125190735,33.64934849739075 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="437.57662081718445,69.03895854949951 437.57662081718445,69.36363387107849 437.9012961387634,70.33765983581543 438.2259714603424,71.31168580055237 438.2259714603424,71.63636112213135 438.2259714603424,72.93506240844727 438.87532210350037,73.58441305160522 438.87532210350037,74.23376369476318 439.19999742507935,74.23376369476318 439.19999742507935,73.9090883731842 439.19999742507935,73.58441305160522 439.19999742507935,73.25973773002625 439.19999742507935,73.25973773002625 439.19999742507935,72.93506240844727 439.19999742507935,72.61038708686829 439.19999742507935,72.61038708686829 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="331.40779066085815,81.70129609107971 331.40779066085815,82.35064673423767 331.73246598243713,82.67532205581665 331.73246598243713,83.6493480205536 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="353.48571252822876,20.5 353.48571252822876,20.824675321578976 353.48571252822876,21.14935064315796 353.48571252822876,21.79870128631592 353.48571252822876,22.123376607894897 353.48571252822876,22.448051929473877 353.48571252822876,22.77272725105286 353.48571252822876,22.77272725105286 353.81038784980774,22.77272725105286 355.7584397792816,21.79870128631592 355.7584397792816,21.14935064315796 356.0831151008606,20.824675321578976 356.0831151008606,20.5 355.7584397792816,20.5 355.7584397792816,20.5 355.43376445770264,21.14935064315796 354.7844138145447,21.47402596473694 354.7844138145447,21.79870128631592 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="434.65454292297363,31.538960933685303 435.62856888771057,31.538960933685303 436.27791953086853,31.538960933685303 436.6025948524475,31.538960933685303 437.25194549560547,33.1623375415802 437.25194549560547,34.7857141494751 438.2259714603424,35.43506479263306 438.87532210350037,35.43506479263306 439.84934806823736,35.43506479263306 439.84934806823736,33.81168818473816 439.84934806823736,31.538960933685303 439.84934806823736,30.240259647369385 439.84934806823736,29.266233682632446 438.87532210350037,29.266233682632446 437.57662081718445,29.266233682632446 436.6025948524475,29.266233682632446 436.6025948524475,29.590909004211426 436.6025948524475,29.91558432579041 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="257.38181734085083,215.95454359054565 257.38181734085083,217.25324487686157 257.38181734085083,218.87662148475647 258.35584330558777,219.8506474494934 259.3298692703247,221.14934873580933 259.97921991348267,221.14934873580933 260.9532458782196,221.14934873580933 261.60259652137756,220.49999809265137 261.60259652137756,219.8506474494934 261.60259652137756,219.20129680633545 261.60259652137756,218.87662148475647 261.2779211997986,218.55194616317746 259.6545445919037,218.55194616317746 259.0051939487457,218.55194616317746 258.68051862716675,218.55194616317746 258.35584330558777,218.55194616317746 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="233.03116822242737,112.05844068527222 233.03116822242737,112.3831160068512 233.03116822242737,112.70779132843018 233.68051886558533,112.70779132843018 233.68051886558533,112.70779132843018 234.0051941871643,112.70779132843018 234.0051941871643,112.3831160068512 "/>
+    
+    <polyline style="fill:blue;fill-opacity:0;stroke:white;stroke-width:0.5vw;" filter="url(#chalk)" stroke-linejoin="round" points="447.64155578613287,264.3311665058136 447.31688046455383,264.6558418273926 446.6675298213959,264.3311665058136 445.69350385665894,263.68181586265564 444.07012724876404,263.35714054107666 443.4207766056061,263.35714054107666 443.4207766056061,263.68181586265564 443.4207766056061,264.0064911842346 445.36882853507996,263.0324652194977 446.3428544998169,262.05843925476074 446.99220514297485,261.73376393318176 446.99220514297485,261.4090886116028 446.99220514297485,261.0844132900238 "/>
+    
+    
+    
+    </svg>
+            <div id="signoff">YOUR LETTER HAS BEEN SENT...</div>
+            <div id="againbutton" type="button" name="begin" class="cursorclick">Try Again?</div>
+            <div id="againbutton2" type="button" name="begin" class="cursorclick">Some Weeks Later...</div>
+            
+        </div>
+
+        <div id="wholeenvelope">
+        <div id="submissionpaper" class="ev_hand">
+            <img src="media/tiledpaper.png" class="papermottle" style="opacity:0.5;" >   
+             <h2><span class="textred">My Lord,</span></h2>
+
+            <p>I return to London on Tuesday by way of Plymouth on the First Coach where I shall Report with you Direcktly - but I send this Letter ahead of me knowing of the Haste recuired by Mrs. Chester -:</p>
+
+            <p>I have made a Encuiry of this Crime by all the Evidense sent with this Note - & I shall Explain my Reasoning when I arrive with you - but it is my Estimation that it was <textarea name="suspect" id="suspect" class="cursorclick" placeholder="1. Write your suspect's name &#9998;"></textarea> that did the Deed -:</p>
+
+            <p class="endright">Your Humble Servant,</p>
+
+                <canvas id="drawingCanvas" class="cursorclick endright"></canvas><span id="instruction">2. Sign your name here &#9998;</span>
+
+    
+
+            <button id="submit" class="disappear cursorclick">3. Send Letter &#9993;</button>
+
+        </div>
+        <div id="envelopelid">
+            <img src="media/envelopescratch.png" style="width: 100%;height: 100%;opacity: 0.1;transform:rotate(180deg);"> 
+
+
+        </div>
+        <div id="envelopebase"><img src="media/envelopescratch.png" style="width: 100%;height: 100%;opacity: 0.1;transform:rotate(90deg);">  </div>
+        <div id="envelopebaseupper"><img src="media/envelopescratch.png" style="width: 100%;height: 100%;opacity: 0.1;"> <div id="envelopeaddress" class="ev_hand">
+            Sir William Moreton, Lord Recorder<br >
+            The Old Bailey<br >
+            Off Ludgate Hill<br >
+            London
+        </div></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  
+ 
+<!-- =LOAD THIRD PARTY SCRIPTS======================================================================================================================================================================== -->
+        <!-- SCRIPTS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="scripts/amb_scripts.js" defer></script>
+
+<script src="scripts/oridomi.min.js" ></script>
+
+<script> 
+    $(document).ready(function(){
+ $("#submit").click(function(){
+  
+     $(this).addClass("disappear").removeClass("appear");
+     $(".wdyt").addClass("disappear").removeClass("wdytappear");
+ 
+     setTimeout(() => {
+         $("#submissionpaper").css("top", "30%");
+           }, 1000); 
+           setTimeout(() => {
+             $("#envelopelid").css("z-index", "22");
+             $("#envelopelid").css("transform", "rotateX(180deg)");
+               }, 3000); 
+
+               setTimeout(() => {
+                 $("#wholeenvelope").css("top", "100%");
+                 $("#wholeenvelope").css("left", "5000px");
+                 $("#wholeenvelope").css("transform", "rotate(80deg)");
+                   }, 5000); 
+
+ });
+});
+ </script>
+
+
+
+    </body>
+</html>
