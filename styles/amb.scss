@@ -157,7 +157,7 @@ background: linear-gradient(0deg, rgba(218,7,7,1) 0%, rgba(244,141,24,1) 100%);
 
   #boardtitle h1 {
     font-family: "IM Fell Double Pica SC", serif;
-    letter-spacing: 1vw;
+    letter-spacing: 0.7vw;
     font-size: 5vw;
     font-weight: bold;
     background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
@@ -2329,8 +2329,8 @@ margin: 0 auto;
 }
 
 .hrlittle {
-width:30%;
-height:auto;
+width:51%;
+height:7px;
 margin: 0 auto;
 display:block;
 margin-top:1vw;
@@ -3188,6 +3188,7 @@ font-weight:normal;
 
 #rednumber {
   color:#b40d36;
+  font-size:2vw;
 }
 
 .folded {

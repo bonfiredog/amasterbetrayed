@@ -83,7 +83,7 @@
 
 <p>I am so Sorry to only hear now; is it the sixth day sinse All Hallows Eve and here in Torpoint this breakfasttime I heard an Irishman (this is a man from Ireland, a place across the Water) speak of you. You would prick an Ear and laugh to hear what they say but I do not. And now I know whyfore I could not find the Lockett when I left that Night; all wrapt in a Cloth ready as a Present for you when we Reached the Inn. Is it a lovely thing my Velvett to love Beauty (Beauty is a kind of prettyness, the very Best sort); but what a <s>Complication</s> Fuss it has Caused us!</p>
     
-<p>Perhaps your News shall even reach Virginia (I have told you of Virginia, and Williamsburg) before <s>I</s> we Shall; there is a Ship callt the Hannah which leaves for Ireland (I have told you of Ireland) tomorrow on the Full Moon, and it is the last Crossing of the Season; & I must think of Mary & George, with my purse is nearing Empty here, & Mr. Winslow's charity e'en Emptier (Charity is a sort of love for your fellow Christian my Velvett). You shall understand that I cannot pay any Bail (Bail is a sort of rent to keap a Person from the Gaol), not e'en anonymously (this means without them knowing it was me) as they do not Allow it for Murder. Nor can I shew myself there now for it should kill poor Mary dead and despite everything she is a good Wife and as a Christian man I cannot do it. You shall know that I cannot do it.</p>
+<p>Perhaps your News shall even reach Virginia (I have told you of Virginia, and Williamsburg) before <s>I</s> we Shall; there is a Ship callt the Hannah which leaves for Ireland (I have told you of Ireland above) tomorrow on the Full Moon, and it is the last Crossing of the Season; & I must think of Mary & George, with my purse is nearing Empty here, & Mr. Winslow's charity e'en Emptier (Charity is a sort of love for your fellow Christian my Velvett). You shall understand that I cannot pay any Bail (Bail is a sort of rent to keap a Person from the Gaol), not e'en anonymously (this means without them knowing it was me) as they do not Allow it for Murder. Nor can I shew myself there now for it should kill poor Mary dead and despite everything she is a good Wife and as a Christian man I cannot do it. You shall know that I cannot do it.</p>
 
 <p>You have been so Clever and Faithfull to me; for to claim you are with Child shall give us a Little Time. Have I thought on it all this Night gone (I have not Slept for it); and took to my Bible which I know shall have you laughing even now; I have dreamed only of your loud Laugh this week long waiting for You; and God forgive me but did I love to stand in the stuff and damp of that dining Room that Night and <s>pantomime</s> pre-tend to Die with you; watching your Throat move like a Bucket up a Well as you Scream'd and Smil'd at me; so keap that Smile and know that if I take the Hannah on the morning I shall have a House for us in Williamsburg within Three Month just as you Askt for it; then <s>Instruckt</s> pay for a Lawyer to meet with you at Bodmin. A Lawyer is a sort of man who shall Save you; and before Long you shall be coursing home to me across that Sea; to a house Warm with Fire and Food; new Names; a new Lockett if you Wish it; Rings; Hams; books if they still Please you. What was that Rhyme you Taught to me; may you Sing it even now and think of America still.</p>
 
@@ -101,17 +101,17 @@
 
 <h1>Thank You For Playing!</h1>
 
-<div id="stats">So far, <span id="rednumber">10</span> people have made a guess. Below are some of the accusations left by other players.</div>
+<div id="stats">So far, <span id="rednumber"></span> people have tried to solve the mystery. Below are some of the accusations left by other players.</div>
 
 <div id="accusationsbox">
-    <span style="left: 13%;top: 32%;transform: rotate(10deg);">Penhell!</span>
-    <span style="top: 4%;left: 66%;transform: rotate(-1deg);">Melly Solommon</span>
-    <span style="top: 50%;left: 56%;transform: rotate(-15deg);">The Reverend!</span>
-    <span style="top: 7%;left: 0%;transform: rotate(25deg);">He's not dead!</span>
-    <span style="top: 80%;left: 10%;transform: rotate(5deg);">Margaret did it</span>
-       <span style="top: 28%;left: 43%;transform: rotate(-18deg);">Not guilty</span>
-       <span style="top: 80%;left: 71%;transform: rotate(-30deg);">Jesse</span>
-  <span style="top: 68%;left: -14%;transform: rotate(-57deg);">Margaret</span>
+    <span style="left: 13%;top: 41%;"></span>
+    <span style="top: 4%;left: 66%;"></span>
+    <span style="top: 50%;left: 56%;"></span>
+    <span style="top: 7%;left: 0%;"></span>
+    <span style="top: 80%;left: 10%;"></span>
+       <span style="top: 28%;left: 43%;"></span>
+       <span style="top: 80%;left: 71%;"></span>
+  <span style="top: 68%;left: -9%;"></span>
     
 </div>
 </div>
@@ -133,6 +133,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
   <script src="script.js"></script>
+
+  <script>
+        $(document).ready(function () {
+            $.getJSON('../accusations.json', function (data) {
+                let accusationsArray = Object.values(data); // Convert JSON object to array
+                let totalEntries = accusationsArray.length;
+
+                $("#rednumber").text(totalEntries);
+                
+                if (accusationsArray.length === 0) {
+                    console.log("No accusations found.");
+                    return;
+                }
+
+                // Shuffle the array and get 8 random elements
+                let shuffled = accusationsArray.sort(() => 0.5 - Math.random());
+                let selected = shuffled.slice(0, 8);
+
+                // Populate spans inside #accusationsbox
+                $('#accusationsbox span').each(function (index) {
+                    if (selected[index]) {
+                        $(this).text(selected[index]);
+                    }
+                });
+            }).fail(function () {
+                console.log("Error loading accusations.json");
+            });
+        });
+  </script>
 
 </body>
 </html>

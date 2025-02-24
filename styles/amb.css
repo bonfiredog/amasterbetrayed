@@ -71,7 +71,6 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
   height: calc(100vh + 169vw + 87vw);
-  position: relative;
 }
 
 h1 {
@@ -124,7 +123,7 @@ h1 {
 
 #boardtitle h1 {
   font-family: "IM Fell Double Pica SC", serif;
-  letter-spacing: 1vw;
+  letter-spacing: 0.7vw;
   font-size: 5vw;
   font-weight: bold;
   background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
@@ -343,7 +342,7 @@ h1 {
   left: 0vw;
   width: 15vw;
   height: 4vw;
-  top: 5vw;
+  top: 6vw;
   opacity: 0.8;
   position: absolute;
   text-align: center;
@@ -933,13 +932,13 @@ h1 {
 }
 
 .wennacaptionon {
-  top: 28vw;
+  top: 36vw;
   left: -20vw;
   transform: rotate(-13deg);
 }
 
 #cove_caption {
-  width: 22vw;
+  width: 16vw;
   height: auto;
   transition: top 1.2s, left 1, 2s, transform 1.2s;
 }
@@ -1306,7 +1305,7 @@ h1 {
 }
 
 #ul {
-  display: inline;
+  display: inline-block;
   text-decoration-color: #b40d36;
   text-decoration-line: underline;
   text-decoration-style: wavy;
@@ -2043,7 +2042,7 @@ span.horizontal-4 {
 }
 
 .ccc12_comeUp {
-  top: 45vh;
+  top: 61vh;
   transform: rotate(-5deg);
   left: 68vw;
 }
@@ -2145,8 +2144,8 @@ span.horizontal-4 {
 }
 
 .hrlittle {
-  width: 30%;
-  height: auto;
+  width: 51%;
+  height: 7px;
   margin: 0 auto;
   display: block;
   margin-top: 1vw;
@@ -2291,7 +2290,7 @@ h6 {
 
 .playbutton span {
   position: absolute;
-  top: -3vw;
+  top: -73%;
 }
 
 .playbutton img {
@@ -2978,6 +2977,7 @@ h6 {
 
 #rednumber {
   color: #b40d36;
+  font-size: 2vw;
 }
 
 .folded {
@@ -3706,25 +3706,6 @@ s {
 
 .lastsignoff {
   margin-top: 20%;
-}
-
-#bottomgrad {
-  position: absolute;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 0%, rgba(0, 212, 255, 0) 100%);
-  bottom: -7%;
-  left: 0;
-  width: 100vw;
-  height: 21%;
-  z-index: 4999;
-}
-
-#cc15 h2, #cc10 h2 {
-  font-size: 1.8vw;
-}
-
-#cc15 p, #cc15 ul, #cc10 p, #cc10 ul {
-  font-size: 1.4vw;
 }
 
 /* RESPONSIVE STYLES */
