@@ -26,6 +26,14 @@ For desktop and laptop, Firefox and Chrome.
 
 ---
 
+### More
+
+- The experience is available on the web at [http://bonfiredog.co.uk/resources/amasterbetrayed](http://bonfiredog.co.uk/resources/amasterbetrayed).
+- Also as a downloadable app (via Electron) at [itch.io](https://bonfiredog.itch.io/a-master-betrayed).
+- I also wrote a case study for [the Historical Games Network's 'Gender' issue](https://www.historicalgames.net/a-master-betrayed/). 
+
+---
+
 ### Credits
 
 - With the greatest thanks to Hugh McCann.
