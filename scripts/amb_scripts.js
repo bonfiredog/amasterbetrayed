@@ -703,27 +703,27 @@ $(".loadmodel").click(function(){
 switch ($(this).parent().attr("id")) {
 case "p5":
 currentmodel = "#c5 iframe";
-$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/knife/index.html?v=${timestamp}");
+$(currentmodel).attr("src", "3d/knife/index.html?v=${timestamp}");
 break;
 case "p5c":
 currentmodel = "#c5c iframe";
-$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/loveidol/index.html?v=${timestamp}");
+$(currentmodel).attr("src", "3d/loveidol/index.html?v=${timestamp}");
 break;
 case "p5b":
 currentmodel = "#c5b iframe";
-$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/lantern/index.html?v=${timestamp}");
+$(currentmodel).attr("src", "3d/lantern/index.html?v=${timestamp}");
 break;
 case "p5a":
 currentmodel = "#c5a iframe";
-$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/mask/index.html?v=${timestamp}");
+$(currentmodel).attr("src", "3d/mask/index.html?v=${timestamp}");
 break;
 case "p5e":
 currentmodel = "#c5e iframe";
-$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/charm/index.html?v=${timestamp}");
+$(currentmodel).attr("src", "3d/charm/index.html?v=${timestamp}");
 break;
 case "p5d":
 currentmodel = "#c5d iframe";
-$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/locket/index.html?v=${timestamp}");
+$(currentmodel).attr("src", "3d/locket/index.html?v=${timestamp}");
 break;
 }
 
