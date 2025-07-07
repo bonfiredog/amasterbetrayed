@@ -697,44 +697,46 @@ $(".captionbox, #cc3, #cc5, #c16").draggable(
 //Loading the correct model to the paper.
 
 $(".loadmodel").click(function(){
+    const timestamp = Date.now();
+    $(".threedeeloadingsign").removeClass("disappear").addClass("appear");
+    modelloaded = false;
 switch ($(this).parent().attr("id")) {
 case "p5":
 currentmodel = "#c5 iframe";
-$(currentmodel).attr("src", "3d/knife/index.html");
+$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/knife/index.html?v=${timestamp}");
 break;
 case "p5c":
 currentmodel = "#c5c iframe";
-$(currentmodel).attr("src", "3d/loveidol/index.html");
+$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/loveidol/index.html?v=${timestamp}");
 break;
 case "p5b":
 currentmodel = "#c5b iframe";
-$(currentmodel).attr("src", "3d/lantern/index.html");
+$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/lantern/index.html?v=${timestamp}");
 break;
 case "p5a":
 currentmodel = "#c5a iframe";
-$(currentmodel).attr("src", "3d/mask/index.html");
+$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/mask/index.html?v=${timestamp}");
 break;
 case "p5e":
 currentmodel = "#c5e iframe";
-$(currentmodel).attr("src", "3d/charm/index.html");
+$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/charm/index.html?v=${timestamp}");
 break;
 case "p5d":
 currentmodel = "#c5d iframe";
-$(currentmodel).attr("src", "3d/locket/index.html");
+$(currentmodel).attr("src", "https://bonfiredog.co.uk/resources/amasterbetrayed/3d/locket/index.html?v=${timestamp}");
 break;
 }
+
 $(currentmodel).on('load', function(){
 $(".threedeeloadingsign").removeClass("appear").addClass("disappear");
 });
-
-
 modelloaded = true;
 });
 
 
 $(".close").click(function() {
     if (modelloaded == true) {
-        $(currentmodel).attr("src", "");
+        $(currentmodel).attr("src", "about:blank");
     }
 });
 
